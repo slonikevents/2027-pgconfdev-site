@@ -1,0 +1,123 @@
+:root {
+  --page-margin: max(var(--margin), (100vw - 38rem) / 2);
+
+  @media (width >= 48rem) {
+    --page-margin: var(--margin);
+  }
+
+  @media (width >= 80rem) {
+    --page-margin: calc((100vw - 80rem) / 2 + var(--margin));
+  }
+
+  --side: clamp(12rem, 25vw, 16rem);
+  @media (width >= 64rem) {
+    --side: clamp(12rem, 25vw - 4rem, 16rem);
+  }
+
+  --side-margin: calc(var(--page-margin) + var(--side) + var(--margin));
+}
+
+.\(, :where(.\*\:\() > *, .\), :where(.\*\:\)) > * {
+  display: none;
+  margin-inline: revert-layer;
+}
+
+.main, :where(.\*\:main) > *,
+.\(main\), :where(.\*\:\(main\)) > *,
+.\(main, :where(.\*\:\(main) > *,
+.main\), :where(.\*\:main\)) > * {
+  display: revert-layer;
+  margin-inline: var(--page-margin);
+}
+
+@media (width >= 48rem) {
+  .main, :where(.\*\:main) > *,
+  .\(main\), :where(.\*\:\(main\)) > *,
+  .\(main, :where(.\*\:\(main) > *,
+  .main\), :where(.\*\:main\)) > * {
+    float: none;
+    margin-block-start: revert-layer;
+    width: revert-layer;
+  }
+
+  .main, :where(.\*\:main) > *,
+  .\(main, :where(.\*\:\(main) > * {
+    clear: none;
+    margin-inline: var(--page-margin) var(--side-margin);
+  }
+
+  .\(main\), :where(.\*\:\(main\)) > *,
+  .main\), :where(.\*\:main\)) > * {
+    --pagegrid-template: 1fr var(--side);
+    clear: inline-end;
+    margin-inline: var(--page-margin);
+  }
+
+  .\), :where(.\*\:\)) > * {
+    clear: inline-end;
+    display: revert-layer;
+    float: inline-end;
+    margin-block-start: 0;
+    margin-inline: var(--margin) var(--page-margin);
+    width: var(--side);
+  }
+}
+
+@media (width >= 64rem) {
+  .main, :where(.\*\:main) > *,
+  .main\), :where(.\*\:main\)) > * {
+    float: none;
+    margin-block-start: revert-layer;
+    width: revert-layer;
+  }
+
+  .main, :where(.\*\:main) > * {
+    clear: none;
+    margin-inline: var(--side-margin);
+  }
+
+  .main\), :where(.\*\:main\)) > * {
+    --pagegrid-template: 1fr var(--side);
+    clear: inline-end;
+    margin-inline: var(--side-margin) var(--page-margin);
+  }
+
+  .\), :where(.\*\:\)) > * {
+    --pagegrid-template: 1fr;
+    clear: inline-end;
+    display: revert-layer;
+    float: inline-end;
+    margin-block-start: 0;
+    margin-inline: var(--margin) var(--page-margin);
+    width: var(--side);
+  }
+
+  .\(main\), :where(.\*\:\(main\)) > *,
+  .\(main, :where(.\*\:\(main) > * {
+    float: none;
+    margin-block-start: revert-layer;
+    width: revert-layer;
+  }
+
+  .\(main\), :where(.\*\:\(main\)) > * {
+    --pagegrid-template: var(--side) 1fr var(--side);
+    clear: both;
+    margin-inline: var(--page-margin);
+  }
+
+  .\(main, :where(.\*\:\(main) > * {
+    --pagegrid-template: var(--side) 1fr;
+    clear: inline-start;
+    margin-inline: var(--page-margin) var(--side-margin);
+  }
+
+  .\(, :where(.\*\:\() > * {
+    --pagegrid-template: 1fr;
+    clear: inline-start;
+    display: revert-layer;
+    float: inline-start;
+    margin-block-start: 0;
+    margin-inline: var(--page-margin) var(--margin);
+    width: var(--side);
+  }
+}

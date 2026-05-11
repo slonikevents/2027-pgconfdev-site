@@ -1,0 +1,25 @@
+@layer normalize, scheme, system, layout, page;
+
+@import "@csstools/normalize.css" layer(normalize);
+@import "scheme.css" layer(scheme);
+@import "system.css" layer(system);
+@import "page.css" layer(page);
+
+/* Counters */
+
+main {
+  counter-reset: section;
+}
+
+.section-number::before {
+  content: "§ " counter(section, decimal-leading-zero) " · ";
+  counter-increment: section;
+}
+
+.li-number::before {
+  color: var(--fg-tint);
+  content: counter(list-item, decimal-leading-zero);
+  font-family: var(--mono-font);
+  font-size: 0.875em;
+  margin-inline-end: 1em;
+}

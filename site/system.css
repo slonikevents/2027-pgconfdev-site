@@ -1,0 +1,422 @@
+/* Universal elements */
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  transition-duration: 0.15s;
+  transition-property: none;
+  transition-timing-function: ease-in-out;
+}
+
+:target {
+  scroll-margin-block: var(--gap);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--sans-font);
+  line-height: 1.5;
+  margin: 0;
+  min-width: 20rem;
+  overflow-wrap: break-word;
+}
+
+/* Sectioning content */
+
+article, aside, nav, section, .section {
+  margin-block: var(--margin);
+}
+
+/* Heading content */
+
+h1, h2, h3, h4, h5, h6, :where(:not(hgroup)):is(.h1, .h2, .h3, .h4, .h5, .h6) {
+  font: 550 calc(1rem * var(--size)) var(--header-font);
+  letter-spacing: calc(-2% * (1 - exp(1 - var(--size))));
+  line-height: calc(1 + 0.5 * exp(1 - var(--size)));
+  margin-block: 1.5em 0.5em;
+  text-wrap: balance;
+}
+
+h6, .h6, :where(hgroup).h6 > :where(:heading) {
+  font-family: var(--sans-font);
+}
+
+hgroup {
+  margin-block: calc(1.5rem * var(--size)) calc(0.5rem * var(--size));
+}
+
+h1, hgroup:has(> :where(h1)), .h1, :where(hgroup).h1 > :where(:heading) {
+  --size: var(--h1-size);
+}
+
+h2, hgroup:has(> :where(h2)), .h2, :where(hgroup).h2 > :where(:heading) {
+  --size: var(--h2-size);
+}
+
+h3, hgroup:has(> :where(h3)), .h3, :where(hgroup).h3 > :where(:heading) {
+  --size: var(--h3-size);
+}
+
+h4, hgroup:has(> :where(h4)), .h4, :where(hgroup).h4 > :where(:heading) {
+  --size: var(--h4-size);
+}
+
+h5, hgroup:has(> :where(h5)), .h5, :where(hgroup).h5 > :where(:heading) {
+  --size: var(--h5-size);
+}
+
+h6, hgroup:has(> :where(h6)), .h6, :where(hgroup).h6 > :where(:heading) {
+  --size: var(--h6-size);
+}
+
+:where(h1, .h1, hgroup:has(> h1)) + :is(h2, h3, h4, h5, h6),
+:where(h1, .h1, hgroup:has(> h1)) + hgroup:has(> :where(h2, h3, h4, h5, h6)),
+:where(h1, .h1, hgroup:has(> h1)) + :is(.h2, .h3, .h4, .h5, .h6),
+:where(h2, .h2, hgroup:has(> h2)) + :is(h3, h4, h5, h6),
+:where(h2, .h2, hgroup:has(> h2)) + hgroup:has(> :where(h3, h4, h5, h6)),
+:where(h2, .h2, hgroup:has(> h2)) + :is(.h3, .h4, .h5, .h6),
+:where(h3, .h3, hgroup:has(> h3)) + :is(h4, h5, h6),
+:where(h3, .h3, hgroup:has(> h3)) + hgroup:has(> :where(h4, h5, h6)),
+:where(h3, .h3, hgroup:has(> h3)) + :is(.h4, .h5, .h6),
+:where(h4, .h4, hgroup:has(> h4)) + :is(h5, h6, hgroup:has(> :where(h5, h6))),
+:where(h4, .h4, hgroup:has(> h4)) + :is(.h5, .h6),
+:where(h5, .h5, hgroup:has(> h5)) + :is(h6, hgroup:has(> :where(h6))),
+:where(h5, .h5, hgroup:has(> h5)) + .h6 {
+  margin-block-start: 0;
+}
+
+hgroup > :is(h1, h2, h3, h4, h5, h6, p) {
+  margin-block: 0;
+}
+
+hgroup > p:has(~ :where(:heading)), .over {
+  color: var(--fg-tint);
+  font: 0.75rem var(--mono-font);
+  letter-spacing: 7.5%;
+  text-transform: uppercase;
+}
+
+hgroup > p:has(+ :where(:heading)) {
+  margin-block-end: calc(2em / 3);
+}
+
+hgroup > :where(:heading) ~ p, caption, figcaption, small, .deck {
+  color: var(--fg-mute);
+  font-size: 0.875em;
+}
+
+/* Flow content except heading content, phrasing content, sectioning content,
+ * <dialog>, and <div>. */
+
+address, blockquote, details, dl, fieldset, figure, footer, form, header, hr,
+main, menu, ol, p, pre, search, table, ul, .p {
+  margin-block: 0 1em;
+}
+
+.margin-gap {
+  margin-block: 0 var(--gap);
+}
+
+blockquote, figure, hr {
+  margin-inline: 0;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid var(--border);
+}
+
+pre {
+  overflow: auto;
+}
+
+/* List elements */
+
+:where(dd, li) > :is(dl, menu, ol, ul) {
+  margin-block: 0.25em 0;
+}
+
+menu, ol, ul {
+  padding-inline-start: var(--gap);
+
+  :where(nav, search) &, &.dedent {
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+}
+
+dd, li {
+  margin-block: 0 0.25em;
+}
+
+dd {
+  margin-inline-start: var(--gap);
+
+  :where(nav, search) &,
+  &.dedent,
+  :where(dl).dedent > :where(div) > &,
+  :where(dl).dedent > & {
+    margin-inline-start: 0;
+  }
+}
+
+/* Caption elements */
+
+:is(caption, figcaption, :where(.over)) {
+  margin-block: calc(2em / 3);
+}
+
+:is(figcaption, :where(.over)) + * {
+  margin-block-start: 0;
+}
+
+*:has(+ :is(figcaption, :where(.over))) {
+  margin-block-end: 0;
+}
+
+/* Margin trim */
+
+.margin-gap, h1, h2, h3, h4, h5, h6, hgroup, .h1, .h2, .h3, .h4, .h5, .h6,
+article, aside, nav, section, .section, address, blockquote, details, dl,
+fieldset, figure, footer, form, header, hr, main, menu, ol, p, pre, search,
+table, ul, .p, dd, li, caption, figcaption, .over {
+  :where(&):first-child {
+    margin-block-start: 0;
+  }
+
+  :where(&):last-child {
+    margin-block-end: 0;
+  }
+
+  :where(&):has(+ #svelte-announcer) {
+    margin-block-end: 0;
+  }
+}
+
+/* Text-level semantics */
+
+code, kbd, pre, samp {
+  font-family: var(--mono-font);
+  font-size: 0.875em;
+
+  :where(&) & {
+    font-size: inherit;
+  }
+}
+
+code {
+  color: var(--code-color);
+}
+
+mark {
+  background-color: color-mix(in oklch, var(--notice) 50%, white);
+}
+
+sub, sup {
+  font-size: 0.75em;
+}
+
+.lead, .lede {
+  font-family: var(--header-font);
+  font-size: 1.25em;
+}
+
+.text {
+  max-width: 38rem;
+}
+
+.note > :where(blockquote, dl, menu, ol, p, ul) {
+  color: var(--fg-mute);
+  font-size: 0.875em;
+}
+
+.mono {
+  font-family: var(--mono-font);
+}
+
+.mute {
+  color: var(--fg-mute);
+}
+
+.size\+ {
+  font-size: 1.125em;
+}
+
+.size\+\+ {
+  font-size: 1.25em;
+}
+
+.size- {
+  font-size: 0.875em;
+}
+
+.size-- {
+  font-size: 0.75em;
+}
+
+/* Links */
+
+a {
+  color: var(--action-fg);
+
+  &:hover {
+    color: var(--action-fg-active);
+  }
+
+  &:active {
+    color: color-mix(in oklch, var(--action-fg-active), black 12%);
+  }
+}
+
+:where(nav, search) a {
+  color: inherit;
+  display: inline-block;
+  margin-inline: -0.75em;
+  padding-block: 0.375em;
+  padding-inline: 0.75em;
+  text-decoration: none;
+  width: stretch;
+
+  &:active {
+    translate: 0 1px;
+  }
+
+  &:hover {
+    background-color: var(--bg-tint);
+  }
+}
+
+/* Edits */
+
+del {
+  color: var(--delete-fg);
+}
+
+ins {
+  color: var(--insert-fg);
+}
+
+/* Embedded content */
+
+audio:where([controls]), canvas, embed, iframe, img, object, picture, video {
+  display: block;
+  width: stretch;
+}
+
+iframe {
+  border: 0;
+  height: auto;
+}
+
+/* Tabular data */
+
+table {
+  border-collapse: collapse;
+  overflow: auto;
+  width: stretch;
+}
+
+.stripe > :where(tbody) > tr:where(:nth-child(odd)) {
+  background-color: var(--bg-tint);
+}
+
+:where(tbody) > tr:where(:not(:last-child)) {
+  border-block-end: 1px solid var(--border);
+}
+
+:where(thead, tbody, tfoot):has(+ * > :where(tr)) > tr:last-child {
+  border-block-end: 3px solid var(--border);
+}
+
+th, td {
+  padding: 0.5em;
+}
+
+th {
+  text-align: inherit;
+}
+
+/* Forms */
+
+button, .button,
+::file-selector-button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  --accent-bg: var(--bg);
+  --accent-fg: var(--fg);
+  --bg-tint: var(--action-bg-tint);
+  --fg-active: var(--action-fg-active);
+  --fg: var(--action-fg);
+
+  border-radius: var(--radius);
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  justify-content: center;
+  line-height: inherit;
+  padding-block: calc(1em * var(--button-size));
+  padding-inline: calc(2em * var(--button-size));
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+
+  &:hover {
+    --accent-bg: var(--bg-tint);
+    --accent-fg: var(--fg-active);
+  }
+
+  &:active {
+    --accent-fg: color-mix(in oklch, var(--fg-active), black 12%);
+    translate: 0 1px;
+  }
+
+  &.circle {
+    border-radius: calc(1px * infinity);
+    padding-inline: calc(3em * var(--button-size));
+  }
+
+  &:where(:not(.stroke)), &:where(:not(.stroke)):hover {
+    background-color: var(--accent-fg);
+    color: var(--static-bg);
+  }
+
+  &.stroke, &.stroke:hover {
+    background-color: var(--accent-bg);
+    box-shadow: inset 0 0 0 1px currentColor;
+    color: var(--accent-fg);
+  }
+}
+
+/* Icons */
+
+:is(.iconic, .inline-iconic) {
+  align-items: center;
+  box-sizing: content-box;
+  flex-wrap: nowrap;
+  min-size: 1lh;
+
+  > .icon {
+    flex: none;
+  }
+
+  > * {
+    margin-block: 0;
+  }
+}
+
+.iconic {
+  display: flex;
+  gap: 0.5em;
+}
+
+.inline-iconic {
+  display: inline-flex;
+  gap: 0.25em;
+}
+
+.icon {
+  size: 1em;
+}

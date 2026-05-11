@@ -8,7 +8,7 @@ export default {
       },
     },
   ],
-  importOrderSafeSideEffects: ["\\.css$"],
+  importOrderSafeSideEffects: ["^@fontsource/.*\\.css$"],
   importOrderTypeScriptVersion: "6.0.0",
   svelteSortOrder: "options-scripts-styles-markup",
 };

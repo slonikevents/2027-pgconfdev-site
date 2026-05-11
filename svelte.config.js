@@ -1,4 +1,4 @@
-import adapter from "@sveltejs/adapter-static";
+import adapter from "./adapter-pagefind.js";
 
 export default {
   compilerOptions: {
@@ -13,15 +13,18 @@ export default {
     files: {
       appTemplate: "site.html",
       hooks: {
-        client: "hook.client",
-        server: "hook.server",
-        universal: "hook",
+        client: "source/hook.client",
+        server: "source/hook.server",
+        universal: "source/hook",
       },
       lib: "common",
       routes: "site",
-      serviceWorker: "worker",
+      serviceWorker: "source/worker",
       src: "source",
     },
     outDir: ".svelte",
+    paths: {
+      base: process.env.SVELTE_BASE ?? "",
+    },
   },
 };

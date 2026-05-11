@@ -14,9 +14,6 @@ Table of Contents
 - [Developing](#developing)
 - [Building](#building)
 - [Publishing](#publishing)
-- [Svelte Overview](#svelte-overview)
-  - [Adding a Page](#adding-a-page)
-  - [Static Assets](#static-assets)
 - [Content](#content)
 
 Prerequisites
@@ -91,9 +88,20 @@ Before pushing a change or submitting a PR, run:
 npm run check
 npm run format
 npm run lint
+npm test
 ```
 
 This ensures your code is properly formatted and free of common issues.
+
+`npm test` runs the component tests in a real browser, through [Vitest]'s
+browser mode on WebKit, so install that browser once after `npm install`:
+
+```bash
+npx playwright install webkit
+```
+
+A test file sits beside the component it covers and ends in `.svelte.test.ts`,
+e.g. [`/common/Link/Root.svelte.test.ts`].
 
 Building
 --------
@@ -116,82 +124,22 @@ Simply push, or submit a pull request, to the `main` branch to publish the site.
 The "[Deploy to GitHub Pages]" workflow in GitHub Actions listens for changes on
 this branch.
 
-Svelte Overview
----------------
-
-Each `.svelte` file is a _[Svelte component]_ made up of HTML, CSS, and
-TypeScript. CSS is scoped to the component by default.
-
-SvelteKit uses the file structure in [`/site`] as the source of the site's
-pages.
-
-- Each `+page.svelte` file in [`/site`] defines a page on the site.
-- The site-wide layout is defined in [`/site/+layout.svelte`].
-- Files without a `+` prefix are helper components or static assets used within
-  pages and layouts. Helper components should begin with a capital letter.
-- You shouldn't need to modify files outside [`/site`], except to add sponsor
-  logos. Each sponsor's logo should be its own component in [`/common/logo`].
-
-For details on how SvelteKit uses different file types to construct the site,
-see [SvelteKit routing].
-
-### Adding a Page
-
-To add a new page, create a directory in [`/site`] matching the URL path where
-the page should appear, and add a `+page.svelte` file inside it with the page's
-content.
-
-For example, to create a page at `/info`, add the file `/root/info/+page.svelte`
-with content such as:
-
-```svelte
-<script>
-  import view from './view.png';
-</script>
-
-<style>
-  img {
-    border-radius: var(--border-radius);
-    margin: 1rem;
-    max-width: 100%;
-  }
-</style>
-
-<h1>Info</h1>
-
-<p>This is some information that should be on this page.</p>
-
-<img src={view} alt="View of this info" />
-```
-
-### Static Assets
-
-Static assets such as images or PDFs must be imported and referenced using
-interpolation. For example, to include a PDF:
-
-```svelte
-<script>
-  import schedule from './schedule.pdf';
-</script>
-
-<a href={schedule} download>Schedule</a>
-```
-
 Content
 -------
 
 Keep it simple; this site is designed to be editable by non-technical people.
 When in doubt, write normal HTML and CSS.
 
-> **Note**: The only exception is that static assets (like images), must be
-> imported and interpolated into the markup. See [Static Assets](#static-assets)
-> below.
+How the source tree is laid out, how to add a page, how to reference a static
+asset, and every CSS utility the site is built from are documented on the
+site itself, at [`/readme`]. Run the development server and visit
+<http://localhost:5173/readme>.
 
 Text should be written in [Standard Canadian English]. In Vim, this is `set
 spell spelllang=en_ca`.
 
 Ensure your content is accessible and responsive across both small and large
-screens. Target breakpoints are `480px`, `768px`, and `1200px`.
+screens. Target breakpoints are `48rem`, `64rem`, and `80rem`.
 
 Use semantic HTML. Eschew `<div>`, `<span>`, etc. when a [more appropriate
 element] exists.
@@ -201,10 +149,8 @@ element] exists.
 [adapter-static]: https://svelte.dev/docs/kit/adapter-static
 [Homebrew]: https://brew.sh/
 [Deploy to GitHub Pages]: https://github.com/slonikevents/2027-pgconfdev-site/actions/workflows/main.yaml
-[Svelte component]: https://svelte.dev/docs/svelte/svelte-files
-[`/site`]: /site
-[`/site/+layout.svelte`]: /site/+layout.svelte
-[`/common/logo`]: /common/logo
-[SvelteKit routing]: https://svelte.dev/docs/kit/routing#page
+[Vitest]: https://vitest.dev/guide/browser/
+[`/common/Link/Root.svelte.test.ts`]: /common/Link/Root.svelte.test.ts
+[`/readme`]: /site/readme
 [Standard Canadian English]: https://en.wikipedia.org/wiki/Standard_Canadian_English
 [more appropriate element]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element

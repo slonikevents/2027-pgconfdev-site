@@ -30,6 +30,7 @@ jobs:
       uses: actions/checkout@v6
 
     - name: Setup GitHub Pages
+      id: configure-pages
       uses: actions/configure-pages@v6
 
     - name: Setup NodeJS
@@ -39,8 +40,9 @@ jobs:
     - run: npm ci
 
     - run: npm run build
-      # env:
-      #   VITE_CLOUDFLARE_TOKEN: "0aab34cb5bd14a3bb175daa01ecd9b64"
+      env:
+        SVELTE_BASE: ${{ steps.configure-pages.outputs.base_path }}
+        # VITE_CLOUDFLARE_TOKEN: "0aab34cb5bd14a3bb175daa01ecd9b64"
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v5
