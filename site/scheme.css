@@ -1,0 +1,149 @@
+@import "@fontsource-variable/public-sans/wght-italic.css";
+@import "@fontsource-variable/public-sans/wght.css";
+
+@import "@fontsource-variable/newsreader/opsz-italic.css";
+@import "@fontsource-variable/newsreader/opsz.css";
+
+@import "@fontsource-variable/jetbrains-mono/wght-italic.css";
+@import "@fontsource-variable/jetbrains-mono/wght.css";
+
+@property --view-size {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0;
+}
+
+@property --unit-size {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 16px;
+}
+
+@property --view-unit {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --view {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+:root {
+  --header-font: "Newsreader Variable", Georgia, serif;
+  --mono-font: "JetBrains Mono Variable", ui-monospace, monospace;
+  --sans-font: "Public Sans Variable", system-ui, sans-serif;
+
+  /* Work around the absence of unit division in CSS */
+  --view-size: 100vw;
+  --unit-size: 1rem;
+  --view-unit: tan(atan2(var(--view-size), var(--unit-size)));
+
+  /* 0 @ 22.5rem -> 1 @ 80rem */
+  --view: clamp(0, (var(--view-unit) - 22.5) / 57.5, 1);
+
+  --gap: 1.5rem;
+  --margin: calc(1.5rem + 1.5rem * var(--view));
+  --radius: 0.25rem;
+
+  /* Each --h*-size is a size, in rem, as a "dimensionless" number */
+  --button-size: 0.375;
+  --h0-size: calc(3.5 + 2.75 * var(--view));
+  --h1-size: calc(2.5 + 0.75 * var(--view));
+  --h2-size: calc(1.75 + 0.5 * var(--view));
+  --h3-size: 1.5;
+  --h4-size: 1.25;
+  --h5-size: 1.125;
+  --h6-size: 1;
+
+  --static: oklch(0.15 0.01 245.25);
+  --static-fg: color-mix(in oklch, var(--static) 80%, white);
+  --static-bg: white;
+  --static-bg-tint: color-mix(in oklch, var(--static) 4%, white);
+  --static-border: color-mix(in oklch, var(--static) 20%, white);
+
+  --action: oklch(0.4973 0.12 245.25);
+  --action-fg: var(--action);
+  --action-fg-active: color-mix(in oklch, var(--action-fg), black 12%);
+  --action-bg: color-mix(in oklch, var(--action) 12%, white);
+  --action-bg-tint: color-mix(in oklch, var(--action) 6%, white);
+  --action-border: color-mix(in oklch, var(--action) 40%, white);
+
+  --notice: oklch(0.8 0.14 80.25);
+  --notice-fg: color-mix(in oklch, var(--notice), black 35%);
+  --notice-bg: color-mix(in oklch, var(--notice) 18%, white);
+  --notice-bg-tint: color-mix(in oklch, var(--notice) 9%, white);
+  --notice-border: color-mix(in oklch, var(--notice) 40%, white);
+
+  --insert: oklch(0.58 0.14 142.14);
+  --insert-fg: var(--insert);
+  --insert-bg: color-mix(in oklch, var(--insert) 15%, white);
+  --insert-bg-tint: color-mix(in oklch, var(--insert) 8%, white);
+  --insert-border: color-mix(in oklch, var(--insert) 40%, white);
+
+  --delete: oklch(0.58 0.14 28.82);
+  --delete-fg: var(--delete);
+  --delete-bg: color-mix(in oklch, var(--delete) 15%, white);
+  --delete-bg-tint: color-mix(in oklch, var(--delete) 8%, white);
+  --delete-border: color-mix(in oklch, var(--delete) 40%, white);
+
+  /* Text */
+  --fg: var(--static-fg);
+
+  /* Secondary text, i.e. <figcaption>, <small>, .mute, .note */
+  --fg-mute: color-mix(in oklch, var(--static) 65%, white);
+
+  /* Tertiary text, i.e. .over */
+  --fg-tint: color-mix(in oklch, var(--static) 40%, white);
+
+  /* Fill */
+  --bg: var(--static-bg);
+
+  /* Secondary fill, i.e. :hover, .stripe, .area */
+  --bg-tint: var(--static-bg-tint);
+
+  /* Separation, i.e. <hr>, <tr>, .border */
+  --border: var(--static-border);
+
+  /* Accent rule, i.e. <blockquote>, .acme, .edge */
+  --edge: color-mix(in oklch, var(--static) 50%, white);
+
+  /* Miscellaneous */
+  --code-bg: color-mix(in oklch, var(--action) 6%, white);
+  /* TODO: legacy */
+  --code-color: rgb(92 99 112);
+}
+
+:where(.action, .notice, .insert, .delete) {
+  color: var(--fg);
+}
+
+.action {
+  --fg: var(--action-fg);
+  --fg-active: color-mix(in oklch, var(--action-fg), black 12%);
+  --fg-mute: color-mix(in oklch, var(--action-fg) 65%, white);
+  --fg-tint: color-mix(in oklch, var(--action-fg) 40%, white);
+}
+
+.notice {
+  --fg: var(--notice-fg);
+  --fg-active: color-mix(in oklch, var(--notice-fg), black 12%);
+  --fg-mute: color-mix(in oklch, var(--notice-fg) 65%, white);
+  --fg-tint: color-mix(in oklch, var(--notice-fg) 40%, white);
+}
+
+.insert {
+  --fg: var(--insert-fg);
+  --fg-active: color-mix(in oklch, var(--insert-fg), black 12%);
+  --fg-mute: color-mix(in oklch, var(--insert-fg) 65%, white);
+  --fg-tint: color-mix(in oklch, var(--insert-fg) 40%, white);
+}
+
+.delete {
+  --fg: var(--delete-fg);
+  --fg-active: color-mix(in oklch, var(--delete-fg), black 12%);
+  --fg-mute: color-mix(in oklch, var(--delete-fg) 65%, white);
+  --fg-tint: color-mix(in oklch, var(--delete-fg) 40%, white);
+}

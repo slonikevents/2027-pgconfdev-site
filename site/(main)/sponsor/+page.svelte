@@ -1,0 +1,233 @@
+<script>
+  import { resolve } from "$app/paths";
+  import Link from "$lib/Link";
+  import BreadcrumbNav from "./BreadcrumbNav.svelte";
+</script>
+
+<style>
+  :global #root > hr {
+    display: none;
+  }
+
+  :global main {
+    margin-block-end: var(--gap);
+  }
+
+  section.area {
+    margin-block: 0;
+    padding-block: var(--margin);
+    padding-inline: 0;
+  }
+
+  /* .tier-gold { */
+  /*   --tier-color: oklch(0.72 0.13 85); */
+  /* } */
+  /* .tier-silver { */
+  /*   --tier-color: oklch(0.62 0.02 245); */
+  /* } */
+  /* .tier-bronze { */
+  /*   --tier-color: oklch(0.58 0.09 50); */
+  /* } */
+  /**/
+  /* .tier { */
+  /*   border-inline-start-color: var(--tier-color); */
+  /* } */
+  /**/
+  /* .tier .price { */
+  /*   color: var(--tier-color); */
+  /* } */
+</style>
+
+<svelte:head>
+  <title>Sponsors — PGConf.dev 2027</title>
+  <meta
+    name="description"
+    content="Sponsor PGConf.dev 2027. The companies underwriting the annual PostgreSQL Developer Conference."
+  />
+</svelte:head>
+
+<BreadcrumbNav />
+
+<header class="(main)">
+  <hgroup>
+    <p class="action">Sponsors</p>
+    <h1>The Companies Sponsoring 2027.</h1>
+  </hgroup>
+
+  <p class="lede mute text">
+    PGConf.dev is non-profit. Tickets alone don't cover our costs. Sponsors help
+    cover the venue, A/V, catering, scholarships, and more.
+  </p>
+</header>
+
+<hr class="section" />
+
+<nav aria-labelledby="on-this-page" class=") none@-48 note">
+  <h2 id="on-this-page" class="over">On this page</h2>
+  <ol>
+    <li><a class="li-number" href="#confirmed">2027 sponsors</a></li>
+    <li><a class="li-number" href="#become">Why sponsor</a></li>
+    <li><a class="li-number" href="#tiers">Sponsorship tiers</a></li>
+  </ol>
+</nav>
+
+<!-- Add back in when we post the actual sponsorship levels
+<aside class=") note area border" aria-labelledby="tiers-glance">
+  <h2 id="tiers-glance" class="over">Tiers at a Glance</h2>
+
+  <hr />
+
+  <dl class="dedent">
+    <div class="p">
+      <dt class="over">Gold</dt>
+      <dd>CAD $15,000</dd>
+    </div>
+    <div class="p">
+      <dt class="over">Silver</dt>
+      <dd>CAD $7,500</dd>
+    </div>
+    <div class="p">
+      <dt class="over">Bronze</dt>
+      <dd>CAD $3,000</dd>
+    </div>
+  </dl>
+</aside>
+-->
+
+<section class="main">
+  <div class="action-area edge">
+    <h3 class="h6">Sponsorships are open</h3>
+    <p>
+      We are actively seeking sponsors for the 2027 edition. Tiers will be
+      announced soon. <Link href={`${resolve("/about/team")}#contact`}
+        >Contact the sponsorship team</Link
+      > for a full prospectus.
+    </p>
+  </div>
+</section>
+
+<section id="confirmed" class="main">
+  <hgroup>
+    <p class="section-number">2027 sponsors</p>
+    <h2>Confirmed sponsors will appear here.</h2>
+  </hgroup>
+
+  <p>
+    Announcements will be made as sponsorships are confirmed. Check back or
+    follow us on social media.
+  </p>
+</section>
+
+<section id="become" class="main">
+  <hgroup>
+    <p class="section-number">Become a sponsor</p>
+    <h2>Why sponsor PGConf.dev?</h2>
+  </hgroup>
+
+  <p class="lede">
+    PGConf.dev puts your company in front of the engineers who build, maintain,
+    and extend PostgreSQL — not just use it.
+  </p>
+
+  <p>
+    The audience is different from general PostgreSQL conferences. The majority
+    of attendees are committers, patch authors, extension maintainers, and
+    database infrastructure engineers from companies shipping Postgres at scale.
+    If your company's products or services reach this audience, sponsoring
+    PGConf.dev is the most direct way to do it.
+  </p>
+
+  <p>
+    Sponsorship funds directly cover: venue costs, A/V production, catering, and
+    the scholarship program (travel grants for speakers and contributors who
+    couldn't otherwise attend).
+  </p>
+</section>
+
+<section id="tiers">
+  <hgroup class="main">
+    <p class="section-number">Sponsorship tiers</p>
+    <h2>Three levels of support.</h2>
+  </hgroup>
+
+  <p class="main note">
+    Pricing in Canadian dollars. Contact us for the full prospectus with
+    detailed benefit descriptions.
+  </p>
+
+  <!-- Add back in when we post the actual sponsorship levels
+  <div class="grid+16 (main)">
+    <div class="note border edge tier tier-gold">
+      <hgroup class="h4">
+        <h3>Gold</h3>
+        <p class="mono price">CAD $15,000</p>
+      </hgroup>
+      <p>
+        Logo on website, printed program, and sponsor banner. Two complimentary
+        registrations. Table in the sponsor area.
+      </p>
+    </div>
+
+    <div class="note border edge tier tier-silver">
+      <hgroup class="h4">
+        <h3>Silver</h3>
+        <p class="mono price">CAD $7,500</p>
+      </hgroup>
+      <p>
+        Logo on website and printed program. One complimentary registration.
+        Shared sponsor table.
+      </p>
+    </div>
+
+    <div class="note border edge tier tier-bronze">
+      <hgroup class="h4">
+        <h3>Bronze</h3>
+        <p class="mono price">CAD $3,000</p>
+      </hgroup>
+      <p>Logo on website. One complimentary registration.</p>
+    </div>
+  </div>
+  -->
+</section>
+
+<!-- Add back in when we post the actual sponsorship levels
+<section class="main">
+  <p>
+    <small>
+      Custom arrangements are possible — contact us to discuss. All sponsors are
+      listed in the printed program, website, and social media announcements.
+      Benefits are fulfilled based on the tier at time of contract.
+    </small>
+  </p>
+
+  <p class="section">
+    <Link href={`${resolve("/about/team")}#contact`} class="button circle">
+      Contact the sponsorship team
+    </Link>
+  </p>
+</section>
+-->
+
+<section
+  class="area"
+  style:--fg-mute="var(--bg)"
+  style:--fg-tint="var(--bg)"
+  style:background-color="var(--action)"
+  style:color="var(--bg)"
+>
+  <div class="(main)">
+    <hgroup class="h1">
+      <p>Past editions</p>
+      <h2 class="text">
+        Thank you to our
+        <Link href="https://2026.pgconf.dev/sponsor" style="color: var(--bg)">
+          2026 sponsors
+        </Link>.
+      </h2>
+    </hgroup>
+
+    <p class="lede text">
+      We're grateful for your support, and we'd love to see you back in 2027.
+    </p>
+  </div>
+</section>
