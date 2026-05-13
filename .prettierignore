@@ -1,6 +1,9 @@
 README.md
 site.html
 
+*.yaml
+*.yml
+
 # Package Managers
 package-lock.json
 pnpm-lock.yaml

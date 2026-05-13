@@ -1,0 +1,12 @@
+version: 2
+updates:
+- package-ecosystem: "npm"
+  directory: "/"
+  groups:
+    lint:
+      patterns: ["eslint*", "@eslint/*", "prettier*"]
+    main:
+      patterns: ["*"]
+  schedule:
+    interval: "weekly"
+  versioning-strategy: increase
