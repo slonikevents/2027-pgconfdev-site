@@ -19,8 +19,12 @@
 {#snippet list()}
   <li><Link href={resolve("/attend")}>Venue</Link></li>
   <li><Link href={resolve("/attend/travel")}>Travel &amp; Hotels</Link></li>
+  <!-- Social Events hidden until we know what we're running — see hidden/social
   <li><Link href={resolve("/attend/social")}>Social Events</Link></li>
+  -->
+  <!-- Volunteer hidden until signup opens — see hidden/volunteer
   <li><Link href={resolve("/attend/volunteer")}>Volunteer</Link></li>
+  -->
 {/snippet}
 
 <SectionNav aria-labelledby="attend-nav" {...rest}>

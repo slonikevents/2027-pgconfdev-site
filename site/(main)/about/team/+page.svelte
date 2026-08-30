@@ -176,11 +176,13 @@
     registration in return.
   </p>
 
+  <!-- Volunteer hidden until signup opens — see hidden/volunteer
   <p>
     <Link href={resolve("/attend/volunteer")}>
       Volunteer at PGConf.dev 2027 →
     </Link>
   </p>
+  -->
 </section>
 
 <section id="contact">

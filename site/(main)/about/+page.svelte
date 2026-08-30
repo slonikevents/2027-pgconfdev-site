@@ -299,7 +299,7 @@
 
       <div class="note">
         <h4>This year</h4>
-        <p>Plaza Centre-Ville · 11 – 14 May · CFP closes 14 February</p>
+        <p>Plaza Centre-Ville · 11 – 14 May</p>
       </div>
     </div>
   </div>

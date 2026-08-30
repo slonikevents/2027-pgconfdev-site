@@ -47,9 +47,9 @@
     margin-block: var(--margin);
   }
 
-  section.border {
-    padding: var(--margin);
-  }
+  /* section.border { */
+  /*   padding: var(--margin); */
+  /* } */
 
   section.area {
     margin-block: 0;
@@ -104,19 +104,19 @@
     </div>
 
     <div>
-      <dt class="over">Content</dt>
-      <dd class="lede">
-        Due <time datetime="2027-02-14">Feb 14</time>
-      </dd>
-      <dd><small>11:59pm UTC</small></dd>
+      <dt class="over">Price</dt>
+      <dd class="lede">$480</dd>
+      <dd><small>Early-bird through Jan 31</small></dd>
     </div>
   </dl>
 
   <div class="(main) flex section">
     <a href="#" class="button circle delete stroke">Register</a>
+    <!-- "Submit a talk" hidden until the CFP opens — see hidden/program
     <Link href={resolve("/program")} class="button circle stroke">
-      Submit a talk
+      Submit a Talk
     </Link>
+    -->
   </div>
 </header>
 
@@ -145,36 +145,6 @@
       <p><Link href={resolve("/about")}>Read more about who we are →</Link></p>
     </div>
   </div>
-</section>
-
-<section
-  class="(main) border insert-edge grid-2:1@48-"
-  style:align-items="center"
->
-  <div class="margin-gap note">
-    <hgroup class="h3">
-      <p class="iconic insert">
-        <Circle class="size--" style="fill: currentColor" />
-        Call for Proposals — open through 14 Feb 2027
-      </p>
-      <h2>Submit a talk, unconference topic, or tutorial.</h2>
-    </hgroup>
-
-    <p>
-      We're looking for technical talks from contributors at every level — your
-      first commit, your hardest debug, the extension you wish existed. Three
-      formats: 45-minute talks, 90-minute tutorials, and ad-hoc unconference
-      sessions.
-    </p>
-  </div>
-
-  <Link
-    class="button circle"
-    href={resolve("/program")}
-    style="justify-self: end"
-  >
-    Submit a proposal
-  </Link>
 </section>
 
 <section class="area">
@@ -285,7 +255,7 @@
       style:letter-spacing="0.05em"
       style:opacity="0.85"
     >
-      <strong style="font-weight: 550">Early-bird $480</strong> through 31 Jan
+      <strong style="font-weight: 550">Early-bird $480</strong> through Jan 31
       &nbsp;·&nbsp;
       <strong style="font-weight: 550">Standard $640</strong>
       &nbsp;·&nbsp;

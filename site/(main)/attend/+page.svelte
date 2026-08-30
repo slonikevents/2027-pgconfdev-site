@@ -35,7 +35,7 @@
   <title>Attend — PGConf.dev 2027</title>
   <meta
     name="description"
-    content="Venue, travel, social events, and everything you need to attend PGConf.dev 2027 in Montréal."
+    content="Venue, travel, and everything you need to attend PGConf.dev 2027 in Montréal."
   />
 </svelte:head>
 

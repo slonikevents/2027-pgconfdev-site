@@ -7,7 +7,6 @@
   import { list as aboutList } from "./about/SectionNav.svelte";
   import { list as attendList } from "./attend/SectionNav.svelte";
   import Header from "./Header";
-  import { list as programList } from "./program/SectionNav.svelte";
 
   const { children }: LayoutProps = $props();
 </script>
@@ -35,11 +34,13 @@
 </style>
 
 <Header class="(main) page-extent margin-gap">
+  <!-- Program section hidden until the CFP opens and a schedule exists — see hidden/program
   <li>
     <Header.Menu name="Program">
       {@render programList()}
     </Header.Menu>
   </li>
+  -->
 
   <li>
     <Header.Menu name="Attend">
