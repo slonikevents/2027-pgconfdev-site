@@ -2,57 +2,31 @@
   import { resolve } from "$app/paths";
   import { GitHub } from "$lib/icon";
   import Link from "$lib/Link";
+  import Code from "./Code.svelte";
   import OnThisPage from "./OnThisPage";
   import T from "./T.svelte";
-
-  // The `<\/script>` escapes are load-bearing: an unescaped closing tag inside
-  // these samples ends this component's own script block.
-  /* eslint-disable no-useless-escape */
-
-  const pageSource = `<script>
-  import view from './view.png';
-<\/script>
-
-<style>
-  img {
-    border-radius: var(--border-radius);
-    margin: 1rem;
-    max-width: 100%;
-  }
-</style>
-
-<h1>Info</h1>
-
-<p>This is some information that should be on this page.</p>
-
-<img src={view} alt="View of this info" />`;
-
-  const assetSource = `<script>
-  import schedule from './schedule.pdf';
-<\/script>
-
-<a href={schedule} download>Schedule</a>`;
-
-  /* eslint-enable no-useless-escape */
 </script>
 
 <svelte:head>
   <title>Readme — PGConf.dev 2027</title>
 </svelte:head>
 
-<aside class="main ) border note p">
-  <p class="over">Repository</p>
+<div class="main ) section">
+  <Link class="button circle iconic" href={GitHub.href}>
+    <GitHub /> <span class="size-">Edit on GitHub</span>
+  </Link>
+</div>
 
-  <p class="iconic">
-    <GitHub />
-    <Link href={GitHub.href}>slonikevents/2027-pgconfdev-site</Link>
-  </p>
-
-  <p>
-    The project readme there covers what this page doesn't: prerequisites, local
-    setup, and how a change reaches the live site.
-  </p>
-</aside>
+<OnThisPage class=") note section">
+  {@const { Link } = OnThisPage}
+  <ol>
+    <li><Link class="li-number" href="#structure">Structure</Link></li>
+    <li><Link class="li-number" href="#static-assets">Static assets</Link></li>
+    <li>
+      <Link class="li-number" href="#style-reference">Style reference</Link>
+    </li>
+  </ol>
+</OnThisPage>
 
 <section class="main" style:margin-block-start="0">
   <hgroup>
@@ -65,19 +39,13 @@
     Keep it simple; this site is designed to be editable by non-technical
     people. When in doubt, write normal HTML and CSS.
   </p>
-</section>
 
-<OnThisPage class=") note">
-  {@const { Link } = OnThisPage}
-  <ol>
-    <li><Link class="li-number" href="#structure">Structure</Link></li>
-    <li><Link class="li-number" href="#adding-a-page">Adding a page</Link></li>
-    <li><Link class="li-number" href="#static-assets">Static assets</Link></li>
-    <li>
-      <Link class="li-number" href="#style-reference">Style reference</Link>
-    </li>
-  </ol>
-</OnThisPage>
+  <p>
+    To add a page, follow
+    <Link href={resolve("/readme/adding-a-page")}>Adding a Page</Link>, which
+    builds one from an empty file step by step.
+  </p>
+</section>
 
 <section id="structure" class="main">
   <hgroup>
@@ -112,14 +80,6 @@
     <li>You shouldn't need to modify files outside <T>site/</T>.</li>
   </ul>
 
-  <p>
-    For details on how SvelteKit uses different file types to construct the
-    site, see
-    <Link href="https://svelte.dev/docs/kit/routing#page">
-      SvelteKit routing
-    </Link>.
-  </p>
-
   <div class="notice-area edge p">
     <p class="over">Public vs Private</p>
 
@@ -137,26 +97,14 @@
       > is served at <T>/info</T>.
     </p>
   </div>
-</section>
-
-<section id="adding-a-page" class="main">
-  <hgroup>
-    <h2 class="section-number">Adding a page</h2>
-    <p>A directory, a <T>+page.svelte</T>, and the content.</p>
-  </hgroup>
 
   <p>
-    To add a new page, create a directory in <T>site/(main)/</T> matching the URL
-    path where the page should appear, and add a <T>+page.svelte</T> file inside it
-    with the page's content.
+    For details on how SvelteKit uses different file types to construct the
+    site, see
+    <Link href="https://svelte.dev/docs/kit/routing#page">
+      SvelteKit routing
+    </Link>.
   </p>
-
-  <p>
-    For example, to create a page at <T>/info</T>, add the file
-    <T>site/(main)/info/+page.svelte</T> with content such as:
-  </p>
-
-  <pre><code>{pageSource}</code></pre>
 </section>
 
 <section id="static-assets" class="main">
@@ -170,7 +118,14 @@
     interpolation. For example, to include a PDF:
   </p>
 
-  <pre><code>{assetSource}</code></pre>
+  <Code
+    source={/* eslint-disable no-useless-escape */ `
+<script>
+  import schedule from './schedule.pdf';
+<\/script>
+
+<a href={schedule} download>Schedule</a>`}
+  />
 </section>
 
 <section id="style-reference" class="main">
@@ -185,14 +140,9 @@
     markup first and then adjusted with the classes below.
   </p>
 
-  <p>
-    Before writing new CSS, look for a utility that already does the job. If
-    none does, the styles live in <T>site/system.css</T> and
-    <T>site/page.css</T>, and a new utility belongs there rather than in a
-    component.
-  </p>
+  <p>Before writing new CSS, look for a utility that already does the job.</p>
 
-  <dl class="dedent section">
+  <dl class="dedent">
     <div class="p">
       <dt>
         <Link href={resolve("/readme/page-layout")}>Page Layout</Link>

@@ -19,7 +19,7 @@
 </OnThisPage>
 
 <hgroup class="main" style:margin-block-start="0">
-  <p>README</p>
+  <p>Reference</p>
   <h1>Text</h1>
   <p>
     Every reusable class, with the result on top and the markup below. Copy a

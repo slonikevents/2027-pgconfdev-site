@@ -16,6 +16,7 @@
   <h2 id="readme" class="over">Readme</h2>
   <ul>
     <li><Link href={resolve("/readme")}>Overview</Link></li>
+    <li><Link href={resolve("/readme/adding-a-page")}>Adding a Page</Link></li>
     <li><Link href={resolve("/readme/page-layout")}>Page Layout</Link></li>
     <li><Link href={resolve("/readme/text")}>Text</Link></li>
     <li><Link href={resolve("/readme/appearance")}>Appearance</Link></li>

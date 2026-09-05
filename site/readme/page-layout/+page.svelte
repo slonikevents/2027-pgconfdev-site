@@ -68,7 +68,7 @@
 
 <section class="main" style:margin-block-start="0">
   <hgroup>
-    <p>README</p>
+    <p>Reference</p>
     <h1>Page Layout</h1>
     <p>
       Place a top-level block in the centre column, in a sidebar, or spanning

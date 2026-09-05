@@ -1,24 +1,5 @@
-<script module lang="ts">
-  import html from "@shikijs/langs/html";
-  import catppuccinMacchiato from "@shikijs/themes/catppuccin-macchiato";
-  import { createHighlighterCore } from "shiki/core";
-  import { createJavaScriptRegexEngine } from "shiki/engine/javascript";
-
-  const highlighter = await createHighlighterCore({
-    engine: createJavaScriptRegexEngine(),
-    langs: [html],
-    themes: [catppuccinMacchiato],
-  });
-
-  function render(source: string) {
-    return highlighter.codeToHtml(source.trim(), {
-      lang: "html",
-      theme: "catppuccin-macchiato",
-    });
-  }
-</script>
-
 <script lang="ts">
+  import { render } from "$lib/syntax";
   import type { SvelteHTMLElements } from "svelte/elements";
 
   type Props = SvelteHTMLElements["div"] & { source: string };
@@ -55,6 +36,6 @@
   </div>
 
   <figcaption>
-    {@html render(source)}
+    {@html render(source, "html")}
   </figcaption>
 </figure>

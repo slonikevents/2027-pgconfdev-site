@@ -256,7 +256,7 @@ sub, sup {
 
 /* Links */
 
-a {
+a:where(:not(.button)) {
   color: var(--action-fg);
 
   &:hover {
