@@ -19,7 +19,7 @@
 {#snippet list()}
   <li><Link href={resolve("/about")}>About PGConf.dev</Link></li>
   <li><Link href={resolve("/about/team")}>Team</Link></li>
-  <li><Link href={resolve("/about/conduct")}>Code of Conduct</Link></li>
+  <li><Link href={resolve("/about/code-of-conduct")}>Code of Conduct</Link></li>
   <li>
     <Link href={resolve("/about/policies")}>Policies &amp; Privacy</Link>
   </li>

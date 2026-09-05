@@ -55,8 +55,8 @@
     <Link href="https://www.postgresql.org/about/policies/conferences/">
       PostgreSQL community conference policies
     </Link>. The
-    <Link href={resolve("/about/conduct")}>code of conduct</Link> applies at all conference
-    venues and conference-related social events.
+    <Link href={resolve("/about/code-of-conduct")}>code of conduct</Link> applies
+    at all conference venues and conference-related social events.
   </p>
 </section>
 
