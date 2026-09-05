@@ -105,8 +105,8 @@
 
     <div>
       <dt class="over">Price</dt>
-      <dd class="lede">$480</dd>
-      <dd><small>Early-bird through Jan 31</small></dd>
+      <dd class="lede">Individual $350</dd>
+      <dd><small>Corporate $550</small></dd>
     </div>
   </dl>
 
@@ -240,6 +240,7 @@
 
 <section
   class="area"
+  style:--fg-mute="var(--bg)"
   style:--fg-tint="var(--bg)"
   style:background-color="var(--action)"
   style:color="var(--bg)"
@@ -255,11 +256,13 @@
       style:letter-spacing="0.05em"
       style:opacity="0.85"
     >
-      <strong style="font-weight: 550">Early-bird $480</strong> through Jan 31
+      <strong style="font-weight: 550">Individual (self-pay) $350</strong>
       &nbsp;·&nbsp;
-      <strong style="font-weight: 550">Standard $640</strong>
+      <strong style="font-weight: 550">Corporate $550</strong>
       &nbsp;·&nbsp;
-      <strong style="font-weight: 550">Student $120</strong>
+      <strong style="font-weight: 550">Student $75</strong>
+      <br />
+      <small>Plus 14.975% tax (5% GST + 9.975% QST)</small>
     </p>
 
     <a
