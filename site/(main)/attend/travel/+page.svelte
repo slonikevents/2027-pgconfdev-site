@@ -74,8 +74,9 @@
   </hgroup>
 
   <p class="lede">
-    YUL is the main hub for Montréal, served by Air Canada, WestJet, Delta,
-    United, Air France, and most major carriers.
+    Montréal–Trudeau International Airport (YUL) is the main hub for Montréal,
+    served by Air Canada, WestJet, Delta, United, Air France, and most major
+    carriers.
   </p>
 
   <p>
@@ -107,14 +108,6 @@
     <h2>Visas and eTAs.</h2>
   </hgroup>
 
-  <aside class=") note">
-    <h3 class="over">Apply early</h3>
-    <p>
-      Visa and eTA processing can be slow, especially around major holidays.
-      Apply at least 8 weeks before the conference if in doubt.
-    </p>
-  </aside>
-
   <div class="main">
     <p>Entry requirements depend on your country of citizenship:</p>
 
@@ -136,9 +129,11 @@
     </ul>
 
     <p>
-      If you need a formal invitation letter for your visa application, email
-      <Link href={`${resolve("/about/team")}#contact`}>info@pgconf.dev</Link> with
-      your full name and country of citizenship.
+      If you need a formal invitation letter for your visa application, you must
+      first register for the conference. Registered attendees can then email
+      <Link href={`${resolve("/about/team")}#contact`}>contact@pgconf.dev</Link> and
+      we will provide you with a form to fill out so we can issue you an invitation
+      letter.
     </p>
   </div>
 </section>
