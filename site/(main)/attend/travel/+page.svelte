@@ -153,26 +153,31 @@
 
 <section aria-label="Partner hotels" class="(main)">
   <div class="grid+14">
-    <div class="note border">
+    <div class="main band">
       <hgroup class="h5">
-        <h3>Hotel details to be confirmed</h3>
-        <p class="mono action">Rate TBD · Deadline TBD</p>
+        <h3>Alt Hotel Montreal</h3>
+        <p class="mono action">$239+Tax(19%) Rate valid till April 8 2027</p>
       </hgroup>
-      <p>Partner hotel details will be posted by March 2027.</p>
-    </div>
-    <div class="note border">
-      <hgroup class="h5">
-        <h3>Hotel details to be confirmed</h3>
-        <p class="mono action">Rate TBD · Deadline TBD</p>
-      </hgroup>
-      <p>Partner hotel details will be posted by March 2027.</p>
-    </div>
-    <div class="note border">
-      <hgroup class="h5">
-        <h3>Hotel details to be confirmed</h3>
-        <p class="mono action">Rate TBD · Deadline TBD</p>
-      </hgroup>
-      <p>Partner hotel details will be posted by March 2027.</p>
+      <p>
+        <a href="https://www.germainhotels.com/en/alt-hotel/montreal"
+          >The Alt Hotel</a
+        >
+        is located at 120, rue Peel, approximately a 15 minute walk from the conference
+        venue.
+      </p>
+      <ul>
+        <li>A room with a queen bed is $239+tax(19%).</li>
+        <li>A corner room with a queen bed is $269+tax(19%).</li>
+        <li>A room with two queen beds is $259+tax(19%).</li>
+      </ul>
+      <p>
+        You can book
+        <a
+          href="https://reservation.germainhotels.com/ibe/details.aspx?propertyid=17532&nights=7&checkin=05/08/2027&group=2705POSTGR&lang=en-us&adults=1&childAges="
+        >
+          online at this link</a
+        >
+      </p>
     </div>
   </div>
 </section>
