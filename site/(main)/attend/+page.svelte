@@ -89,7 +89,10 @@
   <dl class="facts">
     <div>
       <dt class="over">Address</dt>
-      <dd>777 Boulevard Robert-Bourassa, Montréal, QC H3C 3Z7</dd>
+      <dd>
+        Inside the EVO building, 777 Boulevard Robert-Bourassa, Montréal, QC H3C
+        3Z7
+      </dd>
     </div>
     <div>
       <dt class="over">Métro</dt>
@@ -98,10 +101,6 @@
     <div>
       <dt class="over">Dates</dt>
       <dd>11 – 14 May 2027 (Tue – Fri)</dd>
-    </div>
-    <div>
-      <dt class="over">Registration</dt>
-      <dd>Main lobby. Open from 08:00 each day.</dd>
     </div>
   </dl>
 
@@ -123,8 +122,7 @@
 
   <p>
     The conference takes over the meeting rooms of the Plaza Centre-Ville for
-    the week. Room names and numbers are confirmed closer to the conference; the
-    spaces below are what to expect.
+    the week.
   </p>
 
   <dl class="facts">
@@ -137,23 +135,15 @@
       <dd>Three parallel talk tracks, 150 seats each</dd>
     </div>
     <div>
-      <dt class="over">Tutorial rooms</dt>
-      <dd>40 seats, tables for laptops</dd>
-    </div>
-    <div>
       <dt class="over">Unconference rooms</dt>
       <dd>Friday only, flexible seating</dd>
-    </div>
-    <div>
-      <dt class="over">Sponsor hall</dt>
-      <dd>Adjacent to registration, open all four days</dd>
     </div>
     <div>
       <dt class="over">Foyer</dt>
       <dd>Breaks, hallway track, coffee</dd>
     </div>
     <div>
-      <dt class="over">Lunch</dt>
+      <dt class="over">Light breakfast, snacks and lunch</dt>
       <dd>Catered on site (included in registration)</dd>
     </div>
   </dl>
@@ -163,29 +153,19 @@
   <div class="action-area edge">
     <h3 class="h6">Floor plans</h3>
 
-    <p>
-      Detailed floor plans will be published closer to the conference and
-      included in the printed program distributed at registration.
-    </p>
+    <p>Detailed floor plans will be published closer to the conference.</p>
   </div>
 </section>
 
 <section id="accessibility" class="main">
   <hgroup>
     <p class="section-number">Accessibility</p>
-    <h2>Accessible by design.</h2>
+    <h2>Accessible.</h2>
   </hgroup>
 
   <p>
-    The Plaza Centre-Ville is fully wheelchair accessible, with elevators
-    serving all levels. Accessible entrances are available on Boulevard
-    Robert-Bourassa and via the underground Square-Victoria–OACI métro station.
-  </p>
-
-  <p>
     If you have specific accessibility requirements, contact us in advance at
-    <Link href={`${resolve("/about/team")}#contact`}>info@pgconf.dev</Link> so we
-    can make arrangements. Captioning and hearing loop availability will be confirmed
-    closer to the conference.
+    <Link href={`${resolve("/about/team")}#contact`}>contact@pgconf.dev</Link> so
+    we can make arrangements.
   </p>
 </section>
