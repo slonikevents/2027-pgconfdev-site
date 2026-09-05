@@ -5,9 +5,6 @@
 </script>
 
 <style>
-  .tier-platinum {
-    --tier-color: var(--action-fg);
-  }
   .tier-gold {
     --tier-color: oklch(0.72 0.13 85);
   }
@@ -60,16 +57,13 @@
   </ol>
 </nav>
 
+<!-- Add back in when we post the actual sponsorship levels
 <aside class=") note area border" aria-labelledby="tiers-glance">
   <h2 id="tiers-glance" class="over">Tiers at a Glance</h2>
 
   <hr />
 
   <dl class="dedent">
-    <div class="p">
-      <dt class="over">Platinum</dt>
-      <dd>CAD $25,000</dd>
-    </div>
     <div class="p">
       <dt class="over">Gold</dt>
       <dd>CAD $15,000</dd>
@@ -84,14 +78,15 @@
     </div>
   </dl>
 </aside>
+-->
 
 <section class="main">
   <div class="action-area edge">
     <h3 class="h6">Sponsorships are open</h3>
     <p>
-      We are actively seeking sponsors for the 2027 edition. See the tiers below
-      or <Link href={`${resolve("/about/team")}#contact`}
-        >contact the sponsorship team</Link
+      We are actively seeking sponsors for the 2027 edition. Tiers will be
+      announced soon. <Link href={`${resolve("/about/team")}#contact`}
+        >Contact the sponsorship team</Link
       > for a full prospectus.
     </p>
   </div>
@@ -138,7 +133,7 @@
 <section id="tiers">
   <hgroup class="main">
     <p class="section-number">Sponsorship tiers</p>
-    <h2>Four levels of support.</h2>
+    <h2>Three levels of support.</h2>
   </hgroup>
 
   <p class="main note">
@@ -146,19 +141,8 @@
     detailed benefit descriptions.
   </p>
 
+  <!-- Add back in when we post the actual sponsorship levels
   <div class="grid+16 (main)">
-    <div class="note border edge tier tier-platinum">
-      <hgroup class="h4">
-        <h3>Platinum</h3>
-        <p class="mono price">CAD $25,000</p>
-      </hgroup>
-      <p>
-        Prominent logo placement throughout the venue and website, speaking
-        opportunity at the opening session, two complimentary registrations,
-        dedicated table in the sponsor area.
-      </p>
-    </div>
-
     <div class="note border edge tier tier-gold">
       <hgroup class="h4">
         <h3>Gold</h3>
@@ -189,8 +173,10 @@
       <p>Logo on website. One complimentary registration.</p>
     </div>
   </div>
+  -->
 </section>
 
+<!-- Add back in when we post the actual sponsorship levels
 <section class="main">
   <p>
     <small>
@@ -201,11 +187,12 @@
   </p>
 
   <p class="section">
-    <Link href={`${resolve("/about/team")}#contact`} class="button circle"
-      >Contact the sponsorship team</Link
-    >
+    <Link href={`${resolve("/about/team")}#contact`} class="button circle">
+      Contact the sponsorship team
+    </Link>
   </p>
 </section>
+-->
 
 <section
   class="(main)"
