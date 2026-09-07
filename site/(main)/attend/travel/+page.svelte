@@ -1,4 +1,5 @@
 <script>
+  import { Bus, Car, Footprints, TrainFront } from "@lucide/svelte";
   import { resolve } from "$app/paths";
   import { getContext } from "$lib/layout";
   import Link from "$lib/Link";
@@ -6,16 +7,23 @@
   const { BreadcrumbNav, SectionNav } = getContext();
 </script>
 
+<style>
+  .step {
+    margin-inline-start: calc(0.5em - 1.5px);
+    padding-inline-start: calc(1em - 1.5px);
+  }
+</style>
+
 <svelte:head>
   <title>Travel &amp; Hotels — PGConf.dev 2027</title>
   <meta
     name="description"
-    content="Getting to PGConf.dev 2027 in Montréal — flights, train, métro, and partner hotels."
+    content="Getting to PGConf.dev 2027 in Montréal: flights and trains, the métro and buses, entry requirements and eTAs, and partner hotels downtown."
   />
 </svelte:head>
 
 <BreadcrumbNav>
-  <li>Travel &amp; hotels</li>
+  <li>Travel &amp; Hotels</li>
 </BreadcrumbNav>
 
 <header class="(main)">
@@ -25,8 +33,8 @@
   </hgroup>
 
   <p class="lede mute text">
-    Montréal is well-connected by air and rail. The Plaza Centre-Ville is in the
-    heart of downtown, directly on the métro.
+    Montréal is easy to reach by air and rail. Entering Canada takes a little
+    paperwork, and downtown hotels fill up early.
   </p>
 </header>
 
@@ -34,156 +42,253 @@
 
 <SectionNav />
 
-<nav aria-labelledby="on-this-page" class=") none@-48 note">
+<nav aria-labelledby="on-this-page" class=") note">
   <h2 id="on-this-page" class="over">On this page</h2>
   <ol>
-    <li><a class="li-number" href="#air">By air</a></li>
-    <li><a class="li-number" href="#train">By train</a></li>
-    <li><a class="li-number" href="#visa">Entry requirements</a></li>
+    <li><a class="li-number" href="#by-air">By air</a></li>
+    <li><a class="li-number" href="#by-train">By train</a></li>
+    <li>
+      <a class="li-number" href="#entry-requirements">Entry requirements</a>
+    </li>
     <li><a class="li-number" href="#hotels">Hotels</a></li>
   </ol>
 </nav>
 
-<aside class=") note area border" aria-labelledby="yul-glance">
-  <h2 id="yul-glance" class="over">YUL → venue</h2>
-
-  <hr />
-
-  <dl class="dedent">
-    <div class="p">
-      <dt class="over">747 bus</dt>
-      <dd>YUL → Lionel-Groulx · 24/7 · CAD $11 (STM pass accepted)</dd>
-    </div>
-
-    <div class="p">
-      <dt class="over">Métro</dt>
-      <dd>Lionel-Groulx → Square-Victoria–OACI · Orange line · 20 min</dd>
-    </div>
-
-    <div class="p">
-      <dt class="over">Taxi / rideshare</dt>
-      <dd>~45 min from airport · CAD $45–55</dd>
-    </div>
-  </dl>
-</aside>
-
-<section id="air" class="main">
+<section id="by-air" class="*:main">
   <hgroup>
     <p class="section-number">By air</p>
     <h2>Montréal–Trudeau International Airport (YUL).</h2>
   </hgroup>
 
   <p class="lede">
-    Montréal–Trudeau International Airport (YUL) is the main hub for Montréal,
-    served by Air Canada, WestJet, Delta, United, Air France, and most major
-    carriers.
+    YUL is Montréal's main hub, served by Air Canada, WestJet, and most major
+    U.S. and European carriers.
   </p>
 
   <p>
-    The best way to get from YUL to the Plaza Centre-Ville is by the
-    <strong>747 Express bus</strong> to Lionel-Groulx station, then the Orange line
-    to Square-Victoria–OACI — about 45 minutes total, no transfers required from the
-    métro. Taxis and rideshare are readily available; typical fare is CAD $45–55.
+    Getting downtown is straightforward by transit or by taxi. Both options
+    start on the arrivals level: follow the signs for
+    <em>Ground Transportation</em> out of baggage claim.
   </p>
+
+  <aside class="main ) note" aria-labelledby="rem">
+    <h3 id="rem" class="over">A train from the airport?</h3>
+
+    <p>
+      The <Link href="https://rem.info/en/">REM</Link>, Montréal's light metro,
+      is building a branch from YUL to Gare Centrale. Once it opens, it will
+      make the trip in 26 minutes, direct.
+    </p>
+
+    <p>
+      It's scheduled to open sometime in 2027. If it's running by May, we'll
+      update this page.
+    </p>
+  </aside>
+
+  <div>
+    <h3>By transit · 45–50 min · CAD $11.25</h3>
+
+    <h4 class="h6 iconic">
+      <Bus aria-hidden="true" /> 747 bus · 30–35 min
+    </h4>
+
+    <p class="edge step">
+      Board either route 1 or 2 at <strong>door 28</strong> and ride to
+      <strong class="action">Lionel-Groulx</strong> station. Buy your fare before
+      you board, at the vending machines or the STM counter by that door.
+    </p>
+
+    <h4 class="h6 iconic">
+      <TrainFront aria-hidden="true" />
+      Orange line · 4 stops
+    </h4>
+
+    <p class="edge step">
+      Take the Orange line toward Montmorency and get off at
+      <strong class="action">Square-Victoria–OACI</strong>. Your 747 fare covers
+      this leg and stays valid across the entire STM network for 24 hours.
+    </p>
+
+    <h4 class="h6 iconic">
+      <Footprints aria-hidden="true" /> Walk · 3 min
+    </h4>
+
+    <p class="edge step">Head south from the station to the venue door.</p>
+  </div>
+
+  <aside class="notice-area acme" style:margin-block="var(--gap)">
+    <h4 class="h5">Arriving late?</h4>
+
+    <p>
+      The métro stops running at 12:45 a.m., or half an hour later on Saturday
+      nights, while the 747 bus runs all night.
+    </p>
+
+    <p>
+      On a late arrival, take <strong>route 1</strong> and stay on past
+      Lionel-Groulx, getting off at
+      <strong class="action">René-Lévesque / Union</strong>. From there it's a
+      seven-minute walk to the venue, southeast along Boulevard Robert-Bourassa.
+    </p>
+
+    <p>
+      If you'd rather not walk at that hour, a taxi from
+      <strong>door 23</strong> is a fixed $56.70 overnight.
+    </p>
+  </aside>
+
+  <h3>By taxi or rideshare · 20–30 min · CAD $49.45+</h3>
+
+  <p>Allow extra time during rush hour.</p>
+
+  <p>
+    Taxis queue at <strong>door 23</strong>. Fares to downtown are fixed at CAD
+    $49.45, or $56.70 between 11 p.m. and 5 a.m.
+  </p>
+
+  <p>Rideshares pick up from a separate area. Fares vary.</p>
 </section>
 
-<section id="train" class="main">
+<section id="by-train" class="*:main">
   <hgroup>
     <p class="section-number">By train</p>
     <h2>VIA Rail and Amtrak.</h2>
   </hgroup>
 
+  <p class="lede">
+    Intercity trains arrive at Gare Centrale, in the heart of downtown and a
+    five-minute walk from the venue.
+  </p>
+
+  <aside class="main ) note" aria-labelledby="underground-city">
+    <h3 id="underground-city" class="over">Underground city</h3>
+
+    <p>
+      If the weather isn't cooperating, you can walk from Gare Centrale to the
+      venue without going outside through the
+      <Link href="https://en.wikipedia.org/wiki/Underground_City,_Montreal">
+        RÉSO underground city
+      </Link>.
+    </p>
+  </aside>
+
   <p>
-    Montréal's Gare Centrale is served by VIA Rail from Québec City, Ottawa,
-    Toronto, and Halifax, and by Amtrak's <em>Adirondack</em> (New
-    York–Montréal) and <em>Maple Leaf</em> connections. The station is connected underground
-    to the Square-Victoria–OACI métro station (Orange line), a short walk from the
-    venue.
+    <Link href="https://www.viarail.ca/en">VIA Rail</Link> runs from Québec City,
+    Ottawa, Toronto, and Halifax.
+  </p>
+
+  <p>
+    From the United States, <Link href="https://www.amtrak.com/">Amtrak</Link>'s
+    <em>Adirondack</em> comes up from New York; any other routing connects onto VIA.
   </p>
 </section>
 
-<section id="visa">
-  <hgroup class="main">
+<!-- "May in Montréal" aside hidden — see hidden/may-weather-aside.svelte -->
+<!-- "Getting around" hidden — see hidden/getting-around-section.svelte -->
+
+<section id="entry-requirements" class="*:main">
+  <hgroup>
     <p class="section-number">Entry requirements</p>
     <h2>Visas and eTAs.</h2>
   </hgroup>
 
-  <div class="main">
-    <p>Entry requirements depend on your country of citizenship:</p>
+  <p class="lede">
+    Most international visitors need a visa or an Electronic Travel
+    Authorization (eTA) to enter Canada. This
+    <Link href="https://ircc.canada.ca/english/visit/visas.asp">visa tool</Link>
+    will tell you which applies.
+  </p>
 
-    <ul class="edge dedent">
-      <li>
-        <strong>U.S. citizens and permanent residents</strong> — entry is visa-free;
-        a valid passport or NEXUS card is required.
-      </li>
-      <li>
-        <strong>Citizens of visa-exempt countries</strong> — must apply for an
-        <strong>Electronic Travel Authorization (eTA)</strong> before flying to Canada.
-        An eTA is CAD $7 and typically approved in minutes, though processing can
-        take several days in some cases.
-      </li>
-      <li>
-        <strong>All other visitors</strong> — a temporary resident visa is required.
-        Apply well in advance; processing times vary significantly.
-      </li>
-    </ul>
+  <dl class="dedent action-area edge">
+    <dt class="h6">U.S. citizens and permanent residents</dt>
+    <dd>
+      No visa or eTA is required. Citizens need a valid passport; requirements
+      for lawful permanent residents
+      <Link
+        href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/entry-requirements-country.html#american-traveller"
+        >depend on how they arrive</Link
+      >.
+    </dd>
 
-    <p>
-      If you need a formal invitation letter for your visa application, you must
-      first register for the conference. Registered attendees can then email
-      <Link href={`${resolve("/about/team")}#contact`}>contact@pgconf.dev</Link> and
-      we will provide you with a form to fill out so we can issue you an invitation
-      letter.
-    </p>
-  </div>
+    <dt class="h6">
+      Citizens of <Link
+        href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/entry-requirements-country.html#need-eta"
+      >
+        visa-exempt countries
+      </Link>
+    </dt>
+    <dd>
+      You need an
+      <Link
+        href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html"
+      >
+        eTA
+      </Link>. Most applications are approved within minutes, although some take
+      several days.
+    </dd>
+
+    <dt class="h6">All other visitors</dt>
+    <dd>
+      You need a <Link
+        href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/about-visitor-visa.html"
+      >
+        visitor visa
+      </Link>. Applications can take a long time to process, so start as soon as
+      you've decided to attend.
+    </dd>
+  </dl>
+
+  <h3 class="h6">Invitation letters</h3>
+
+  <p>
+    Registered attendees who need an invitation letter should email
+    <Link href={resolve("/about/team#contact")}>contact@pgconf.dev</Link>.
+  </p>
 </section>
 
-<section id="hotels" class="main">
+<section id="hotels" class="*:main">
   <hgroup>
     <p class="section-number">Hotels</p>
     <h2>Partner hotels for 2027.</h2>
   </hgroup>
 
-  <p>
+  <p class="lede">
     We are negotiating rates at several downtown hotels within walking distance
     of the Plaza Centre-Ville. Partner hotels will be listed here once
-    confirmed. Book early — May is peak conference season in Montréal.
+    confirmed.
   </p>
-</section>
 
-<section aria-label="Partner hotels" class="(main)">
-  <div class="grid+14">
-    <div class="note border">
+  <ul class="(main grid+14 dedent" aria-label="Partner hotels">
+    <li class="note border">
       <hgroup class="h5">
-        <h3>Hotel details to be confirmed</h3>
+        <h3>Hotel to be confirmed</h3>
         <p class="mono action">Rate TBD · Deadline TBD</p>
       </hgroup>
       <p>Partner hotel details will be posted by March 2027.</p>
-    </div>
-    <div class="note border">
+    </li>
+    <li class="note border">
       <hgroup class="h5">
-        <h3>Hotel details to be confirmed</h3>
+        <h3>Hotel to be confirmed</h3>
         <p class="mono action">Rate TBD · Deadline TBD</p>
       </hgroup>
       <p>Partner hotel details will be posted by March 2027.</p>
-    </div>
-    <div class="note border">
+    </li>
+    <li class="note border">
       <hgroup class="h5">
-        <h3>Hotel details to be confirmed</h3>
+        <h3>Hotel to be confirmed</h3>
         <p class="mono action">Rate TBD · Deadline TBD</p>
       </hgroup>
       <p>Partner hotel details will be posted by March 2027.</p>
-    </div>
-  </div>
-</section>
+    </li>
+  </ul>
 
-<section class="main">
   <div class="action-area edge">
     <h3 class="h6">Book early</h3>
     <p>
-      Montréal is a popular conference destination in spring. Even outside our
-      partner hotels, downtown options book up quickly in May. We recommend
-      confirming accommodation as soon as your registration is confirmed.
+      May is peak conference season in Montréal, and downtown hotels — partner
+      or not — book up quickly. We recommend confirming your accommodation as
+      soon as your registration is.
     </p>
   </div>
 </section>

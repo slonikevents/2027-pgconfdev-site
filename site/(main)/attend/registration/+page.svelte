@@ -67,8 +67,9 @@
 
   <p>
     If you need an invitation letter for a visa, see
-    <Link href={resolve("/attend/travel#visa")}>entry requirements</Link>. For
-    anything else, email
+    <Link href={resolve("/attend/travel#entry-requirements")}>
+      entry requirements
+    </Link>. For anything else, email
     <Link href={resolve("/about/team#contact")}>contact@pgconf.dev</Link>.
   </p>
 </section>

@@ -337,7 +337,7 @@
     <dt><T>resolve()</T></dt>
     <dd>
       Builds the path to another page on the site. Give it the full path from
-      the root, e.g. <T>resolve("/attend/travel#visa")</T>.
+      the root, e.g. <T>resolve("/attend/travel#entry-requirements")</T>.
     </dd>
   </dl>
 </section>
@@ -652,7 +652,7 @@
 
     <p>
       If you need an invitation letter for a visa, see
-      <Link href={resolve("/attend/travel#visa")}>
+      <Link href={resolve("/attend/travel#entry-requirements")}>
         entry requirements
       </Link>.
     </p>
