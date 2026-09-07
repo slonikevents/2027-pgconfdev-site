@@ -129,17 +129,17 @@
 
     <div>
       <p class="lede">
-        PGConf.dev is the annual gathering of PostgreSQL hackers, committers,
-        extension authors, and the developers who work with them. Four days of
-        unconference sessions, hallway-track conversations, and talks that go
-        deeper than the conference circuit usually allows — written by the
-        people actually shipping the database.
+        PGConf.dev is the annual gathering of PostgreSQL community organizers,
+        hackers, extension maintainers, and the developers who build on their
+        work. Join us for four days of unconference sessions, workshops,
+        hallway-track conversations, and talks that focus on building the future
+        of PostgreSQL.
       </p>
 
       <p>
-        Now in its fourth year, the conference moves between cities each spring
-        to keep the core team and contributor community in the same room at
-        least once a year.
+        Now in its fourth year, the conference draws a significant portion of
+        current PostgreSQL contributors, and also introduces hundreds of new
+        people each year to the PostgreSQL community.
       </p>
 
       <p><Link href={resolve("/about")}>Read more about who we are →</Link></p>

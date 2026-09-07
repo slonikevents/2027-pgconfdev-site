@@ -232,11 +232,9 @@
   </aside>
 
   <p>
-    The conference grew out of the long-running PGCon, held annually in Ottawa
-    from 2007 to 2023. When PGCon wound down, the contributor community rebooted
-    the format under a new name in Vancouver. Each spring since, the conference
-    moves between cities to stay close to different parts of the global
-    community.
+    When the long-running PGCon wound down, the contributor community rebooted
+    the format under a new name in Vancouver. Each spring, the conference moves
+    between coasts to remain accessible to the global community.
   </p>
 
   <div class="(main main) pagegrid section timeline">
@@ -247,10 +245,11 @@
       </figure>
 
       <div class="note">
-        <h4>The first PGConf.dev</h4>
+        <h4>PGCon → PGConf.dev</h4>
         <p>
-          ~250 attendees · 38 talks · the first unconference day · the format
-          proves itself
+          The first PGConf.dev takes over the mantle from PGCon, and adds new
+          formats like the Student Breakfast and Patch Review Workshop. 210
+          attendees take the leap with us.
         </p>
       </div>
     </div>
@@ -264,10 +263,11 @@
       </figure>
 
       <div class="note">
-        <h4>Second year, expanded program</h4>
+        <h4>New ways to connect</h4>
         <p>
-          ~280 attendees · tutorial day added · scholarships program launches
-          with 22 funded seats
+          Meet &amp; Eat launches to build new community relationships over a
+          meal. The Poster Session debuts, highlighting even more community work
+          asynchronously.
         </p>
       </div>
     </div>
@@ -281,10 +281,11 @@
       </figure>
 
       <div class="note">
-        <h4>Return to the West Coast</h4>
+        <h4>Four days, 30 years</h4>
         <p>
-          ~300 attendees · two co-located workshops · first year with a
-          dedicated community day
+          Community Discussion Sessions join the program, and Tuesday opens to
+          everyone. PostgreSQL's 30th anniversary makes it a real party. Sold
+          out at 250 attendees.
         </p>
       </div>
     </div>
@@ -299,7 +300,7 @@
 
       <div class="note">
         <h4>This year</h4>
-        <p>Plaza Centre-Ville · May 11 – 14</p>
+        <p>Four days at the Plaza Centre-Ville, May 11 – 14.</p>
       </div>
     </div>
   </div>
