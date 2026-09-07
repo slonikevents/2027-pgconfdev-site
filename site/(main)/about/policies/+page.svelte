@@ -21,7 +21,7 @@
 <header class="(main)">
   <hgroup>
     <p class="action">About</p>
-    <h1>Policies &amp; privacy.</h1>
+    <h1>Policies &amp; Privacy.</h1>
   </hgroup>
 
   <p class="lede mute text">
@@ -35,7 +35,7 @@
 <SectionNav />
 
 <nav aria-labelledby="on-this-page" class=") note">
-  <h2 id="on-this-page" class="over">On This Page</h2>
+  <h2 id="on-this-page" class="over">On this page</h2>
   <ol>
     <li><a class="li-number" href="#policies">Policies</a></li>
     <li><a class="li-number" href="#privacy">Privacy</a></li>

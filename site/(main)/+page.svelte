@@ -123,7 +123,7 @@
 <section>
   <div class="(main) grid-1:2@48-" style:gap="var(--margin)">
     <hgroup>
-      <p>About the Conference</p>
+      <p>About the conference</p>
       <h2>Built by and for PostgreSQL contributors.</h2>
     </hgroup>
 
@@ -214,7 +214,7 @@
     <div class="(main) margin-gap grid-2:1@48-">
       <hgroup class="margin-gap">
         <p>Latest</p>
-        <h2>News from the organizers</h2>
+        <h2>News from the organizers.</h2>
         <p class="text">
           Schedule drops, deadlines, and travel notes — posted to @pgconfdev on
           Mastodon as they happen.

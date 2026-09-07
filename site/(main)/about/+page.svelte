@@ -64,7 +64,7 @@
 <SectionNav class="( main" />
 
 <nav class="main ) note" aria-labelledby="on-this-page">
-  <h2 id="on-this-page" class="over">On This Page</h2>
+  <h2 id="on-this-page" class="over">On this page</h2>
   <ol>
     <li><a class="li-number" href="#what">What PGConf.dev is</a></li>
     <li><a class="li-number" href="#who">Who attends</a></li>
@@ -73,7 +73,7 @@
 </nav>
 
 <aside class="main ) area@-48 border@-48 note" aria-labelledby="at-a-glance">
-  <h2 id="at-a-glance" class="over">At a Glance</h2>
+  <h2 id="at-a-glance" class="over">At a glance</h2>
 
   <hr />
 

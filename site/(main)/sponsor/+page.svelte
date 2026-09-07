@@ -37,7 +37,7 @@
 <header class="(main)">
   <hgroup>
     <p class="action">Sponsors</p>
-    <h1>The companies underwriting 2027.</h1>
+    <h1>The Companies Underwriting 2027.</h1>
   </hgroup>
 
   <p class="lede mute text">

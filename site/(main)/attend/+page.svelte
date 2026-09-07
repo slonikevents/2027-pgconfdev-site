@@ -84,7 +84,7 @@
 </section>
 
 <nav class=") note" aria-labelledby="on-this-page">
-  <h2 id="on-this-page" class="over">On This Page</h2>
+  <h2 id="on-this-page" class="over">On this page</h2>
   <ol>
     <li><a class="li-number" href="#venue">Venue</a></li>
     <li><a class="li-number" href="#location">Location &amp; map</a></li>

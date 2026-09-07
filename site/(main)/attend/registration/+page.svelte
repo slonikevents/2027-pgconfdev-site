@@ -46,7 +46,7 @@
 <SectionNav />
 
 <nav aria-labelledby="on-this-page" class=") note">
-  <h2 id="on-this-page" class="over">On This Page</h2>
+  <h2 id="on-this-page" class="over">On this page</h2>
   <ol>
     <li>
       <a class="li-number" href="#registration-types">Registration types</a>
@@ -74,7 +74,7 @@
 </section>
 
 <aside class="main ) note border area" aria-labelledby="at-a-glance">
-  <h2 id="at-a-glance" class="over">At a Glance</h2>
+  <h2 id="at-a-glance" class="over">At a glance</h2>
 
   <hr />
 
