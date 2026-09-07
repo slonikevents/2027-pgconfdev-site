@@ -25,8 +25,7 @@
   </hgroup>
 
   <p class="lede mute text">
-    The required bits. How PGConf.dev is run, what we do with your data, and
-    where the money goes.
+    How PGConf.dev is run, what this site collects, and where the money goes.
   </p>
 </header>
 
@@ -50,13 +49,12 @@
   </hgroup>
 
   <p>
-    PGConf.dev is a recognised PostgreSQL Community Event and is run in
-    accordance with the
+    PGConf.dev is a
     <Link href="https://www.postgresql.org/about/policies/conferences/">
-      PostgreSQL community conference policies
-    </Link>. The
-    <Link href={resolve("/about/code-of-conduct")}>code of conduct</Link> applies
-    at all conference venues and conference-related social events.
+      PostgreSQL Community Event
+    </Link>. All attendees are required to follow our
+    <Link href={resolve("/about/code-of-conduct")}>code of conduct</Link>, which
+    applies at all conference venues and conference-related social events.
   </p>
 </section>
 
@@ -67,23 +65,34 @@
   </hgroup>
 
   <p>
-    This site is hosted on GitHub Pages; see GitHub's
+    This site is hosted on
     <Link
+      href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection"
+    >
+      GitHub Pages
+    </Link>; see GitHub's <Link
       href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
     >
-      General Privacy Statement</Link
-    > for details on server-side logging.
+      General Privacy Statement
+    </Link> for more information.
   </p>
 
   <p>
-    We measure traffic with <strong>Cloudflare Web Analytics</strong>, which
-    keeps no client-side state and does not fingerprint visitors — there are no
-    advertising cookies on this site. Our emails contain no tracking pixels or
-    open-tracking links.
+    We measure our outreach with
+    <Link href="https://www.cloudflare.com/web-analytics/">
+      Cloudflare Web Analytics
+    </Link>, which doesn't use any client-side state, such as cookies or
+    <code>localStorage</code>, to collect usage metrics. We also don't
+    &ldquo;fingerprint&rdquo; individuals via their IP address,
+    <code>User-Agent</code> string, or any other data.
   </p>
 
+  <p>Our emails contain no tracking of any kind.</p>
+
   <p>
-    The conference is organised by Slonik Events Canada, which follows its own
+    The conference is organised by
+    <Link href="https://www.pgevents.ca/">Slonik Events Canada</Link>, which
+    follows its own
     <Link href="https://www.pgevents.ca/about/privacypolicy/">
       Privacy Policy
     </Link> for registration and attendee data.
@@ -97,10 +106,12 @@
   </hgroup>
 
   <p>
-    PGConf.dev is underwritten by <strong>Slonik Events Canada</strong>, a
-    Canadian non-profit, with support from our
-    <Link href={resolve("/sponsor")}>sponsors</Link>. All proceeds support the
-    PostgreSQL community as set out in the
+    PGConf.dev is underwritten by
+    <Link href="https://www.pgevents.ca/">Slonik Events Canada</Link>, a
+    Canadian non-profit organisation incorporated expressly to organise this
+    conference, with support from our
+    <Link href={resolve("/sponsor")}>sponsors</Link>. All proceeds belong to
+    Slonik Events Canada and support the PostgreSQL community as set out in the
     <Link
       href="https://www.pgevents.ca/media/local/pdf/slonik-events-bylaws-2023.pdf"
     >
