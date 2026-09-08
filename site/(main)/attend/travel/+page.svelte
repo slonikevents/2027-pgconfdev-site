@@ -254,41 +254,70 @@
   </hgroup>
 
   <p class="lede">
-    We are negotiating rates at several downtown hotels within walking distance
-    of the Plaza Centre-Ville. Partner hotels will be listed here once
-    confirmed.
+    We're negotiating rates at several downtown hotels within walking distance
+    of the Plaza Centre-Ville. The first is confirmed below, and the rest will
+    be listed here as they're settled.
   </p>
 
-  <ul class="(main grid+14 dedent" aria-label="Partner hotels">
-    <li class="note border">
+  <aside class="main ) note p">
+    <p class="over">Hotel taxes</p>
+
+    <p>
+      Quebec levies a 3.5% tax on lodging. The federal GST at 5% and the Quebec
+      QST at 9.975% apply on top of that.
+    </p>
+
+    <p>
+      Together they add <strong>19%</strong> to the listed rate, so a $239 room comes
+      to $284.41 a night at checkout.
+    </p>
+  </aside>
+
+  <ul class="main grid+16 dedent">
+    <li class="action-acme band note">
       <hgroup class="h5">
-        <h3>Hotel to be confirmed</h3>
-        <p class="mono action">Rate TBD · Deadline TBD</p>
+        <h3>
+          <Link href="https://www.germainhotels.com/en/alt-hotel/montreal">
+            Alt Hotel Montreal
+          </Link>
+        </h3>
+        <p class="mono">From CAD $239</p>
+        <p class="mono">
+          <Link
+            href="https://reservation.germainhotels.com/ibe/details.aspx?propertyid=17532&amp;nights=7&amp;checkin=05/08/2027&amp;group=2705POSTGR&amp;lang=en-us&amp;adults=1&amp;childAges="
+          >
+            Book online
+          </Link> by April 8, 2027
+        </p>
       </hgroup>
-      <p>Partner hotel details will be posted by March 2027.</p>
-    </li>
-    <li class="note border">
-      <hgroup class="h5">
-        <h3>Hotel to be confirmed</h3>
-        <p class="mono action">Rate TBD · Deadline TBD</p>
-      </hgroup>
-      <p>Partner hotel details will be posted by March 2027.</p>
-    </li>
-    <li class="note border">
-      <hgroup class="h5">
-        <h3>Hotel to be confirmed</h3>
-        <p class="mono action">Rate TBD · Deadline TBD</p>
-      </hgroup>
-      <p>Partner hotel details will be posted by March 2027.</p>
+
+      <p>Located at 120 Rue Peel, a fifteen-minute walk from the venue.</p>
+
+      <table style:font-variant-numeric="tabular-nums">
+        <tbody>
+          <tr>
+            <td>1× Queen Bed</td>
+            <td class="mono" style:text-align="end">$239</td>
+          </tr>
+          <tr>
+            <td>2× Queen Beds</td>
+            <td class="mono" style:text-align="end">$259</td>
+          </tr>
+          <tr>
+            <td>1× Queen Bed, Corner</td>
+            <td class="mono" style:text-align="end">$269</td>
+          </tr>
+        </tbody>
+      </table>
     </li>
   </ul>
 
   <div class="action-area edge">
     <h3 class="h6">Book early</h3>
+
     <p>
-      May is peak conference season in Montréal, and downtown hotels — partner
-      or not — book up quickly. We recommend confirming your accommodation as
-      soon as your registration is.
+      Montréal's convention season runs from May through September, and downtown
+      hotels book up quickly. Reserve your room as soon as you've registered.
     </p>
   </div>
 </section>
