@@ -58,7 +58,7 @@
     display: revert-layer;
     float: inline-end;
     margin-block-start: 0;
-    margin-inline: var(--margin) var(--page-margin);
+    margin-inline: 0 var(--page-margin);
     width: var(--side);
   }
 }
@@ -88,7 +88,7 @@
     display: revert-layer;
     float: inline-end;
     margin-block-start: 0;
-    margin-inline: var(--margin) var(--page-margin);
+    margin-inline: 0 var(--page-margin);
     width: var(--side);
   }
 
@@ -117,7 +117,7 @@
     display: revert-layer;
     float: inline-start;
     margin-block-start: 0;
-    margin-inline: var(--page-margin) var(--margin);
+    margin-inline: var(--page-margin) 0;
     width: var(--side);
   }
 }

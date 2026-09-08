@@ -134,7 +134,7 @@
     métro, Gare Centrale, and the downtown core.
   </p>
 
-  <figure style:overflow="hidden">
+  <figure>
     <img
       class="photo"
       src={concourse}
@@ -174,7 +174,7 @@
     bars, to the north.
   </p>
 
-  <figure style:overflow="hidden">
+  <figure>
     <iframe
       title="Map of the Plaza Centre-Ville, 777 Boulevard Robert-Bourassa, Montréal"
       loading="lazy"
