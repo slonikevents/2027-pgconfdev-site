@@ -2,26 +2,33 @@
   @component
 
   An `<a>` that sets `aria-current="page"` when it targets the active page, and
-  sets `target="_blank"` when it targets an external origin.
+  sets `rel="external"` with `target="_blank"` when it targets an external HTTP
+  or HTTPS origin.
 -->
 
 <script lang="ts">
   import { page } from "$app/state";
   import type { HTMLAnchorAttributes } from "svelte/elements";
 
-  type Props = HTMLAnchorAttributes & { href: string };
-  const { href, children, ...rest }: Props = $props();
+  const { href, children, ...rest }: HTMLAnchorAttributes = $props();
 
-  const to = $derived(new URL(href, page.url));
-  const http = $derived(["http:", "https:"].includes(to.protocol));
-  const auto = $derived(to.origin === page.url.origin);
+  type Attributes = Pick<
+    HTMLAnchorAttributes,
+    "aria-current" | "rel" | "target"
+  >;
+  const same: Attributes = { "aria-current": "page" };
+  const auto = $derived.by((): Attributes => {
+    if (href == null) return {};
 
-  const ariaCurrent = $derived(
-    http && auto && to.pathname === page.url.pathname ? "page" : undefined,
-  );
-  const target = $derived(http && !auto ? "_blank" : undefined);
+    const to = new URL(href, page.url);
+    if (!["http:", "https:"].includes(to.protocol)) return {};
+    if (to.origin !== page.url.origin)
+      return { rel: "external", target: "_blank" };
+
+    return to.pathname === page.url.pathname ? same : {};
+  });
 </script>
 
-<a aria-current={ariaCurrent} {href} {target} {...rest}>
+<a {href} {...auto} {...rest}>
   {@render children?.()}
 </a>
