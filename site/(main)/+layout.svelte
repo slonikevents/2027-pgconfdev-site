@@ -59,7 +59,7 @@
 
 <hr class="margin-gap" />
 
-<main style:flex="auto">
+<main data-pagefind-body style:flex="auto">
   {@render children()}
 </main>
 

@@ -15,6 +15,8 @@
   setContext(context);
 
   let open = $state(false);
+
+  let search: HTMLElement & { open?(): void; close?(): void };
 </script>
 
 <style>
@@ -22,8 +24,7 @@
     column-gap: calc(0.5 * var(--gap) + 0.25rem);
   }
 
-  button,
-  .button {
+  :is(button, .button) {
     --button-size: 0.5;
   }
 
@@ -46,14 +47,14 @@
     }
   }
 
-  .toggle-button {
-    padding: calc(1em * var(--button-size));
-  }
-
   .signin-button {
     @media (48rem <= width < 56rem) {
       padding: calc(1em * var(--button-size));
     }
+  }
+
+  .toggle-button {
+    padding: calc(1em * var(--button-size));
   }
 
   nav {
@@ -92,8 +93,10 @@
 
   <div class="flex-center" style:gap="0.25rem">
     <button
+      aria-haspopup="dialog"
       aria-labelledby="search-{id}"
       class="button circle iconic stroke search-button"
+      onclick={() => search.open?.()}
     >
       <span id="search-{id}" class="none@-64">Search</span>
       <Search class="size++" />
@@ -133,3 +136,13 @@
     </menu>
   </nav>
 </header>
+
+<!-- svelte-ignore a11y_click_events_have_key_events -->
+<!-- svelte-ignore a11y_no_static_element_interactions -->
+<pagefind-modal
+  bind:this={search}
+  onclick={(e: MouseEvent) => {
+    /* See https://github.com/Pagefind/pagefind/issues/1125 */
+    if ((e.target as Element).closest("a")) search.close?.();
+  }}
+></pagefind-modal>

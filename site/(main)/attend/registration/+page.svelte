@@ -77,7 +77,11 @@
   </p>
 </section>
 
-<aside class="main ) note border area" aria-labelledby="at-a-glance">
+<aside
+  aria-labelledby="at-a-glance"
+  class="main ) area@-48 border@-48 note"
+  data-pagefind-ignore
+>
   <h2 id="at-a-glance" class="over">At a glance</h2>
 
   <hr />

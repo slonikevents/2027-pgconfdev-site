@@ -1,3 +1,4 @@
+import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import staticAdapter from "@sveltejs/adapter-static";
 
@@ -23,7 +24,19 @@ export default function (options) {
     if (index === undefined || errors.length > 0)
       throw new Error(errors.join("\n"));
 
-    await index.addDirectory({ path: pages });
+    const { base } = builder.config.kit.paths;
+    for (const name of await readdir(pages, { recursive: true })) {
+      if (!name.endsWith(".html")) continue;
+
+      var url = `${base}/${name}`;
+      url = url.replace(/(?<=\/)index\.html$/, "");
+      url = url.replace(/\.html$/, "");
+
+      const content = await readFile(join(pages, name), "utf8");
+
+      const { errors } = await index.addHTMLFile({ url, content });
+      if (errors.length > 0) throw new Error(errors.join("\n"));
+    }
 
     const client = builder.getClientDirectory();
     await Promise.all([
