@@ -39,6 +39,10 @@
     Three registration types, one ticket for all four days. Prices are in
     Canadian dollars.
   </p>
+
+  <p>
+    <Link href="#" class="button circle stroke">Buy a Ticket</Link>
+  </p>
 </header>
 
 <hr class="section" />
@@ -239,13 +243,6 @@
     <Link href={resolve("/about/team#contact")}>contact@pgconf.dev</Link> with the
     name and email address on the registration.
   </p>
-
-  <p class="edge notice-area">
-    One exception: a registration we've issued a
-    <strong>visa invitation letter</strong> for cannot be refunded, whatever the date.
-    The letter tells Canadian immigration authorities that you're expected at the
-    conference, so please request one only if you intend to come.
-  </p>
 </section>
 
 <section id="speakers" class="main">
@@ -274,9 +271,10 @@
   </p>
 
   <p>
-    Register as a student first, and we'll email you for proof of enrollment: a
-    current student ID, or a similar document showing you're enrolled for the
-    2026 to 2027 academic year. If you aren't sure whether you qualify, email
+    Register as a student, then show proof of enrollment when you pick up your
+    badge. A current student ID works, as does any document showing you're
+    enrolled for the 2026 to 2027 academic year. If you aren't sure whether you
+    qualify, email
     <Link href={resolve("/about/team#contact")}>contact@pgconf.dev</Link> before you
     register and we'll give you a definitive answer.
   </p>
