@@ -5,23 +5,37 @@
 </script>
 
 <style>
-  .tier-gold {
-    --tier-color: oklch(0.72 0.13 85);
-  }
-  .tier-silver {
-    --tier-color: oklch(0.62 0.02 245);
-  }
-  .tier-bronze {
-    --tier-color: oklch(0.58 0.09 50);
+  :global #root > hr {
+    display: none;
   }
 
-  .tier {
-    border-inline-start-color: var(--tier-color);
+  :global main {
+    margin-block-end: var(--gap);
   }
 
-  .tier .price {
-    color: var(--tier-color);
+  section.area {
+    margin-block: 0;
+    padding-block: var(--margin);
+    padding-inline: 0;
   }
+
+  /* .tier-gold { */
+  /*   --tier-color: oklch(0.72 0.13 85); */
+  /* } */
+  /* .tier-silver { */
+  /*   --tier-color: oklch(0.62 0.02 245); */
+  /* } */
+  /* .tier-bronze { */
+  /*   --tier-color: oklch(0.58 0.09 50); */
+  /* } */
+  /**/
+  /* .tier { */
+  /*   border-inline-start-color: var(--tier-color); */
+  /* } */
+  /**/
+  /* .tier .price { */
+  /*   color: var(--tier-color); */
+  /* } */
 </style>
 
 <svelte:head>
@@ -195,24 +209,25 @@
 -->
 
 <section
-  class="(main)"
+  class="area"
+  style:--fg-mute="var(--bg)"
+  style:--fg-tint="var(--bg)"
   style:background-color="var(--action)"
   style:color="var(--bg)"
-  style:padding-block="var(--margin)"
 >
-  <hgroup class="h1">
-    <p style:color="var(--bg)">Past editions</p>
-    <h2 style:color="var(--bg)" style:max-width="38rem">
-      Thank you to our 2026 sponsors.
-    </h2>
-  </hgroup>
+  <div class="(main)">
+    <hgroup class="h1">
+      <p>Past editions</p>
+      <h2 class="text">Thank you to our 2026 sponsors.</h2>
+    </hgroup>
 
-  <p
-    class="margin-gap mono size-"
-    style:opacity="0.85"
-    style:letter-spacing="0.05em"
-  >
-    EDB · Microsoft · AWS · Huawei · Databricks · Percona · Fujitsu · HighGo ·
-    pganalyze · Supabase · SRA OSS · Snowflake · CYBERTEC · Xata
-  </p>
+    <p
+      class="mono size- text"
+      style:letter-spacing="0.05em"
+      style:opacity="0.85"
+    >
+      EDB · Microsoft · AWS · Huawei · Databricks · Percona · Fujitsu · HighGo ·
+      pganalyze · Supabase · SRA OSS · Snowflake · CYBERTEC · Xata
+    </p>
+  </div>
 </section>
