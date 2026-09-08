@@ -51,12 +51,12 @@
 <header class="(main)">
   <hgroup>
     <p class="action">Sponsors</p>
-    <h1>The Companies Underwriting 2027.</h1>
+    <h1>The Companies Sponsoring 2027.</h1>
   </hgroup>
 
   <p class="lede mute text">
-    PGConf.dev is non-profit. Sponsors cover the venue, A/V, catering,
-    scholarships, and the parts of the program that ticket revenue alone can't.
+    PGConf.dev is non-profit. Tickets alone don't cover our costs. Sponsors help
+    cover the venue, A/V, catering, scholarships, and more.
   </p>
 </header>
 
@@ -114,7 +114,7 @@
 
   <p>
     Announcements will be made as sponsorships are confirmed. Check back or
-    subscribe to the mailing list for updates.
+    follow us on social media.
   </p>
 </section>
 
@@ -138,9 +138,9 @@
   </p>
 
   <p>
-    Sponsorship funds directly cover: venue costs, A/V production, catering, the
-    scholarship program (travel grants for contributors who couldn't otherwise
-    attend), and speaker travel support.
+    Sponsorship funds directly cover: venue costs, A/V production, catering, and
+    the scholarship program (travel grants for speakers and contributors who
+    couldn't otherwise attend).
   </p>
 </section>
 
@@ -217,7 +217,11 @@
 >
   <div class="(main)">
     <hgroup class="h1">
-      <p>Past editions</p>
+      <p>
+        <a style:color="var(--bg)" href="https://2026.pgconf.dev">
+          Past editions
+        </a>
+      </p>
       <h2 class="text">Thank you to our 2026 sponsors.</h2>
     </hgroup>
 

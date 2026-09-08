@@ -147,10 +147,11 @@
   <div class="(main)">
     <hgroup class="margin-gap">
       <p>Sponsors</p>
-      <h2>The companies underwriting 2027.</h2>
+      <h2>The companies sponsoring 2027.</h2>
       <p class="text">
-        PGConf.dev is non-profit. Sponsors cover the venue, A/V, scholarships,
-        and the parts of the program that ticket revenue alone can't.
+        PGConf.dev is non-profit. Sponsors help cover the venue, A/V,
+        scholarships, and the parts of the program that ticket revenue alone
+        can't.
       </p>
     </hgroup>
 
