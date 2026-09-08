@@ -28,8 +28,8 @@
   -->
 {/snippet}
 
-<SectionNav aria-labelledby="attend-nav" {...rest}>
-  <h2 id="attend-nav" class="over">Attend</h2>
+<SectionNav aria-labelledby="attend-the-conference" {...rest}>
+  <h2 id="attend-the-conference" class="over">Attend the Conference</h2>
   <ul>
     {@render list()}
   </ul>

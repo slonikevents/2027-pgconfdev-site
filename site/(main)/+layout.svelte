@@ -68,10 +68,10 @@
 <footer class="(main) flex@48- margin-gap note">
   <p>
     Follow us on
-    <Link class="inline-iconic" href={Mastodon.href} aria-label="Mastodon">
+    <Link class="inline-iconic" href={Mastodon.href}>
       Mastodon<Mastodon class="size-" />
     </Link> or
-    <Link class="inline-iconic" href={LinkedIn.href} aria-label="LinkedIn">
+    <Link class="inline-iconic" href={LinkedIn.href}>
       LinkedIn<LinkedIn class="size-" />
     </Link> for the latest news on PGConf.dev 2027
   </p>

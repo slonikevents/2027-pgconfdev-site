@@ -21,10 +21,7 @@
 <SectionNav class="( main)" />
 
 <section class="main)">
-  <hgroup>
-    <p class="action">About</p>
-    <h1>The Organizing Committee.</h1>
-  </hgroup>
+  <h1>The Organizing Committee.</h1>
 
   <p class="lede mute text">
     No paid staff. These volunteers handle the program, logistics, and
@@ -116,8 +113,10 @@
       </figcaption>
     </figure>
   </div>
+</section>
 
-  <h2 id="contact">How to reach us.</h2>
+<section id="contact" class="main)">
+  <h2>How to reach us.</h2>
 
   <p class="text">
     We'd love to hear from you with questions, comments, or anything else about

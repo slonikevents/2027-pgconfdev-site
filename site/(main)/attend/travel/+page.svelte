@@ -71,8 +71,8 @@
     <em>Ground Transportation</em> out of baggage claim.
   </p>
 
-  <aside class="main ) note" aria-labelledby="rem">
-    <h3 id="rem" class="over">A train from the airport?</h3>
+  <aside class="main ) note">
+    <h3 class="over">A train from the airport?</h3>
 
     <p>
       The <Link href="https://rem.info/en/">REM</Link>, Montréal's light metro,
@@ -90,7 +90,7 @@
     <h3>By transit · 45–50 min · CAD $11.25</h3>
 
     <h4 class="h6 iconic">
-      <Bus aria-hidden="true" /> 747 bus · 30–35 min
+      <Bus /> 747 bus · 30–35 min
     </h4>
 
     <p class="edge step">
@@ -100,7 +100,7 @@
     </p>
 
     <h4 class="h6 iconic">
-      <TrainFront aria-hidden="true" />
+      <TrainFront />
       Orange line · 4 stops
     </h4>
 
@@ -111,7 +111,7 @@
     </p>
 
     <h4 class="h6 iconic">
-      <Footprints aria-hidden="true" /> Walk · 3 min
+      <Footprints /> Walk · 3 min
     </h4>
 
     <p class="edge step">Head south from the station to the venue door.</p>
@@ -161,8 +161,8 @@
     five-minute walk from the venue.
   </p>
 
-  <aside class="main ) note" aria-labelledby="underground-city">
-    <h3 id="underground-city" class="over">Underground city</h3>
+  <aside class="main ) note">
+    <h3 class="over">Underground city</h3>
 
     <p>
       If the weather isn't cooperating, you can walk from Gare Centrale to the
@@ -294,6 +294,7 @@
       <p>Located at 120 Rue Peel, a fifteen-minute walk from the venue.</p>
 
       <table style:font-variant-numeric="tabular-nums">
+        <caption>Nightly rates</caption>
         <tbody>
           <tr>
             <td>1× Queen Bed</td>

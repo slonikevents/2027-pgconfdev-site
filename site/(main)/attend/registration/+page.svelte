@@ -2,7 +2,6 @@
   import { resolve } from "$app/paths";
   import { getContext } from "$lib/layout";
   import Link from "$lib/Link";
-  import Rule from "$lib/Rule.svelte";
 
   const { BreadcrumbNav, SectionNav } = getContext();
 </script>
@@ -177,7 +176,7 @@
   </p>
 
   <aside class="( main note p">
-    <p class="over">Quebec sales tax</p>
+    <h3 class="over">Quebec sales tax</h3>
 
     <p>
       Two sales taxes apply to a conference ticket: the federal GST at 5% and
@@ -186,8 +185,8 @@
     </p>
   </aside>
 
-  <figure>
-    <table class="stripe" style="caption-side: bottom;">
+  <div>
+    <table class="stripe">
       <caption>Registration prices for PGConf.dev 2027</caption>
       <thead>
         <tr>
@@ -215,12 +214,16 @@
         <tr>
           <td>Speaker</td>
           <td colspan="2">
-            <Rule style="margin-block: 0">Free</Rule>
+            <div class="iconic">
+              <hr aria-hidden="true" style:flex="auto" />
+              <span class="over">Free</span>
+              <hr aria-hidden="true" style:flex="auto" />
+            </div>
           </td>
         </tr>
       </tbody>
     </table>
-  </figure>
+  </div>
 </section>
 
 <section id="refunds" class="main">

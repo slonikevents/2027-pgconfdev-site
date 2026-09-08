@@ -94,8 +94,8 @@
   </ol>
 </nav>
 
-<aside class="( main ) note p" aria-labelledby="finding-the-venue">
-  <h2 id="finding-the-venue" class="over">Finding the venue</h2>
+<aside class="( main ) note p">
+  <h2 class="over">Finding the venue</h2>
 
   <p>
     The building is signed EVO, not Plaza Centre-Ville. Once you're inside, head
@@ -189,8 +189,8 @@
   </figure>
 </section>
 
-<aside class=") note" aria-labelledby="air-and-rail">
-  <h2 id="air-and-rail" class="over">Air &amp; rail</h2>
+<aside class=") note">
+  <h2 class="over">Air &amp; rail</h2>
 
   <p>
     See <Link href={resolve("/attend/travel")}>Travel &amp; Hotels</Link> for flights,
@@ -198,8 +198,8 @@
   </p>
 </aside>
 
-<aside class=") note" aria-labelledby="underground-city">
-  <h2 id="underground-city" class="over">Underground city</h2>
+<aside class=") note">
+  <h2 class="over">Underground city</h2>
 
   <p>
     Square-Victoria–OACI is an entrance to the
@@ -219,7 +219,7 @@
   <dl class="dedent">
     <div class="p">
       <dt class="iconic over">
-        <TrainFront class="mute" aria-hidden="true" /> Métro
+        <TrainFront class="mute" /> Métro
       </dt>
       <dd>
         Take the Orange line to Square-Victoria–OACI. The venue entrance is
@@ -229,7 +229,7 @@
 
     <div class="p">
       <dt class="iconic over">
-        <Car class="mute" aria-hidden="true" /> Car
+        <Car class="mute" /> Car
       </dt>
       <dd>
         Paid underground parking in the EVO garage, entrance at 800 Rue Gauvin.
@@ -239,7 +239,7 @@
 
     <div class="p">
       <dt class="iconic over">
-        <DoorOpen class="mute" aria-hidden="true" /> Entrance
+        <DoorOpen class="mute" /> Entrance
       </dt>
       <dd>
         On Boulevard Robert-Bourassa, between Rue Saint-Antoine Ouest and Rue
@@ -257,31 +257,31 @@
 
   <ul class="dedent">
     <li class="iconic p">
-      <Wifi class="mute" aria-hidden="true" />
+      <Wifi class="mute" />
       Wi-Fi is available throughout the venue.
     </li>
     <li class="iconic p">
-      <Projector class="mute" aria-hidden="true" />
+      <Projector class="mute" />
       Every session room has a screen, a projector, and microphones.
     </li>
     <li class="iconic p">
-      <Utensils class="mute" aria-hidden="true" />
+      <Utensils class="mute" />
       Breakfast, snacks, and lunch are catered on site every day.
     </li>
     <li class="iconic p">
-      <Salad class="mute" aria-hidden="true" />
+      <Salad class="mute" />
       The venue kitchen accommodates dietary requirements. Please tell us about yours
       when you register.
     </li>
     <li class="iconic p">
-      <Shirt class="mute" aria-hidden="true" />
+      <Shirt class="mute" />
       Coat check is self-service, on the conference level.
     </li>
   </ul>
 </section>
 
-<aside class="main action-area edge" aria-labelledby="rooms-and-floor-plans">
-  <h3 id="rooms-and-floor-plans" class="h6">Rooms &amp; floor plans</h3>
+<aside class="main action-area edge">
+  <h3 class="h6">Rooms &amp; floor plans</h3>
 
   <p>
     We are still working out which rooms we are taking and how the tracks are
