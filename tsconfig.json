@@ -1,6 +1,6 @@
 {
   "extends": "./.svelte/tsconfig.json",
-  "files": ["./hook.ts"],
+  "files": ["./source/hook.ts"],
   "compilerOptions": {
     "rewriteRelativeImportExtensions": true,
     "allowJs": true,
