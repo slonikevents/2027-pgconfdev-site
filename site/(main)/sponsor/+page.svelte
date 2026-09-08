@@ -217,21 +217,17 @@
 >
   <div class="(main)">
     <hgroup class="h1">
-      <p>
-        <a style:color="var(--bg)" href="https://2026.pgconf.dev">
-          Past editions
-        </a>
-      </p>
-      <h2 class="text">Thank you to our 2026 sponsors.</h2>
+      <p>Past editions</p>
+      <h2 class="text">
+        Thank you to our
+        <Link href="https://2026.pgconf.dev/sponsor" style="color: var(--bg)">
+          2026 sponsors
+        </Link>.
+      </h2>
     </hgroup>
 
-    <p
-      class="mono size- text"
-      style:letter-spacing="0.05em"
-      style:opacity="0.85"
-    >
-      EDB · Microsoft · AWS · Huawei · Databricks · Percona · Fujitsu · HighGo ·
-      pganalyze · Supabase · SRA OSS · Snowflake · CYBERTEC · Xata
+    <p class="lede text">
+      We're grateful for your support, and we'd love to see you back in 2027.
     </p>
   </div>
 </section>
