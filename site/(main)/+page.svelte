@@ -165,8 +165,8 @@
     <p>From past editions</p>
     <h2>Three years of contributor conversation.</h2>
     <p class="text">
-      From keynote talks to unconference discussions, a few moments from
-      Vancouver and Montréal.
+      From keynote talks to unconference discussions, a few moments from past
+      events.
     </p>
   </hgroup>
 
