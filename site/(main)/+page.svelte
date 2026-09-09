@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { Circle } from "@lucide/svelte";
   import { resolve } from "$app/paths";
   import { Mastodon } from "$lib/icon";
   import Link from "$lib/Link";

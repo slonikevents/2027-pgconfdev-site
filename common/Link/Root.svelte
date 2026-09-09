@@ -29,6 +29,7 @@
   });
 </script>
 
+<!-- eslint-disable svelte/no-navigation-without-resolve -->
 <a {href} {...auto} {...rest}>
   {@render children?.()}
 </a>

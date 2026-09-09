@@ -38,8 +38,12 @@ export default defineConfig(
     },
   },
   {
-    // Override or add rule settings here, such as:
-    // 'svelte/button-has-type': 'error'
-    rules: {},
+    rules: {
+      "@typescript-eslint/ban-ts-comment": [
+        "error",
+        { "ts-ignore": "allow-with-description" },
+      ],
+      "svelte/no-at-html-tags": "off",
+    },
   },
 );

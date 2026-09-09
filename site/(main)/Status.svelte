@@ -65,9 +65,9 @@
       <p class="hint mono">@{username}</p>
     </hgroup>
 
-    <a class="hint" {href} target="_blank" rel="noreferrer">
+    <Link class="hint" {href}>
       <time>5d</time>
-    </a>
+    </Link>
   </header>
 
   <div class="p" style:flex="auto">

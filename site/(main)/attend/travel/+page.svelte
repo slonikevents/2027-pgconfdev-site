@@ -1,5 +1,5 @@
 <script>
-  import { Bus, Car, Footprints, TrainFront } from "@lucide/svelte";
+  import { Bus, Footprints, TrainFront } from "@lucide/svelte";
   import { resolve } from "$app/paths";
   import { getContext } from "$lib/layout";
   import Link from "$lib/Link";

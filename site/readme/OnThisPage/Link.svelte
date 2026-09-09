@@ -28,6 +28,7 @@
   }
 </style>
 
+<!-- eslint-disable svelte/no-navigation-without-resolve -->
 <a
   aria-current={active ? "location" : undefined}
   {href}
