@@ -304,12 +304,12 @@ ins {
 
 audio:where([controls]), canvas, embed, iframe, img, object, picture, video {
   display: block;
+  height: auto;
   width: stretch;
 }
 
 iframe {
   border: 0;
-  height: auto;
 }
 
 /* Tabular data */

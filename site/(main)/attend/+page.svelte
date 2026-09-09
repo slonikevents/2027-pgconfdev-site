@@ -34,13 +34,6 @@
     }
   }
 
-  iframe,
-  img {
-    display: block;
-    height: auto;
-    width: 100%;
-  }
-
   .photo {
     aspect-ratio: 16 / 9;
     object-fit: cover;
@@ -136,7 +129,6 @@
 
   <figure>
     <img
-      class="photo"
       src={concourse}
       alt="The concourse at the Plaza Centre-Ville: a bar to the left, buffet
       and standing tables in the middle, armchairs and the doors to the Régence
@@ -144,6 +136,8 @@
       loading="lazy"
       width="1600"
       height="1067"
+      style:aspect-ratio="16 / 9"
+      style:object-fit="cover"
     />
 
     <figcaption>
