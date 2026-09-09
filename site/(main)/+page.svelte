@@ -6,9 +6,6 @@
   import Status from "./Status.svelte";
 
   const { data }: PageProps = $props();
-
-  const href =
-    "https://2026.pgconf.dev/svelte/immutable/assets/butcher.BRs9V-uj.avif";
 </script>
 
 <style>
@@ -163,27 +160,45 @@
   </div>
 </section>
 
-<section class="(main)">
+<section class="(main)" id="past-editions">
   <hgroup class="margin-gap">
     <p>From past editions</p>
     <h2>Three years of contributor conversation.</h2>
     <p class="text">
-      A look at the rooms, the hallway track, and the people who keep showing
-      up.
+      From keynote talks to unconference discussions, a few moments from
+      Vancouver and Montréal.
     </p>
   </hgroup>
 
   <div class="grid+16">
     <figure>
-      <img src={href} alt="" />
+      <enhanced:img
+        src="./photos/2026-vancouver-retrospective.jpeg?w=1200;800;400"
+        alt="Panelists smiling together on stage after the 30 Years of PostgreSQL retrospective"
+        loading="lazy"
+        sizes="(width >= 80rem) 20rem, (width >= 48rem) 50vw, 100vw"
+        style:height="auto"
+        style:aspect-ratio="16 / 9"
+        style:object-fit="cover"
+        style:object-position="center bottom"
+      />
       <figcaption class="over">
         <strong>2026 · Vancouver</strong>
-        Day-one keynote
+        30 Years of PostgreSQL retrospective
       </figcaption>
     </figure>
 
     <figure>
-      <img src={href} alt="" />
+      <enhanced:img
+        src="./photos/2025-montreal-unconference.jpeg?w=1200;800;400"
+        alt="An unconference organizer leading a vote beside a board of handwritten session proposals"
+        loading="lazy"
+        sizes="(width >= 80rem) 20rem, (width >= 48rem) 50vw, 100vw"
+        style:height="auto"
+        style:aspect-ratio="16 / 9"
+        style:object-fit="cover"
+        style:object-position="center 45%"
+      />
       <figcaption class="over">
         <strong>2025 · Montréal</strong>
         Unconference scheduling
@@ -191,18 +206,36 @@
     </figure>
 
     <figure>
-      <img src={href} alt="" />
+      <enhanced:img
+        src="./photos/2024-vancouver-keynote.jpeg?w=1200;800;400"
+        alt="Margo Seltzer speaking and gesturing from the podium during her keynote"
+        loading="lazy"
+        sizes="(width >= 80rem) 20rem, (width >= 48rem) 50vw, 100vw"
+        style:height="auto"
+        style:aspect-ratio="16 / 9"
+        style:object-fit="cover"
+        style:object-position="center 35%"
+      />
       <figcaption class="over">
         <strong>2024 · Vancouver</strong>
-        Hallway-track conversation
+        Margo Seltzer’s keynote
       </figcaption>
     </figure>
 
     <figure>
-      <img src={href} alt="" />
+      <enhanced:img
+        src="./photos/2025-montreal-registration.jpeg?w=1200;800;400"
+        alt="Magnus Hagander, Katherine Saar, Paul Ramsey, and Steve Singer smiling beside the registration desk"
+        loading="lazy"
+        sizes="(width >= 80rem) 20rem, (width >= 48rem) 50vw, 100vw"
+        style:height="auto"
+        style:aspect-ratio="16 / 9"
+        style:object-fit="cover"
+        style:object-position="center 35%"
+      />
       <figcaption class="over">
         <strong>2025 · Montréal</strong>
-        Tutorial day
+        Welcome at registration
       </figcaption>
     </figure>
   </div>
