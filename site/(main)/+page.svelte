@@ -160,7 +160,7 @@
   </div>
 </section>
 
-<section class="(main)" id="past-editions">
+<section class="(main)">
   <hgroup class="margin-gap">
     <p>From past editions</p>
     <h2>Three years of contributor conversation.</h2>
@@ -173,13 +173,11 @@
   <div class="grid+16">
     <figure>
       <enhanced:img
+        class="screen"
         src="./photos/2026-vancouver-retrospective.jpeg?w=1200;800;400"
         alt="Panelists smiling together on stage after the 30 Years of PostgreSQL retrospective"
         loading="lazy"
         sizes="(width >= 80rem) 20rem, (width >= 48rem) 50vw, 100vw"
-        style:height="auto"
-        style:aspect-ratio="16 / 9"
-        style:object-fit="cover"
         style:object-position="center bottom"
       />
       <figcaption class="over">
@@ -190,13 +188,11 @@
 
     <figure>
       <enhanced:img
+        class="screen"
         src="./photos/2025-montreal-unconference.jpeg?w=1200;800;400"
         alt="An unconference organizer leading a vote beside a board of handwritten session proposals"
         loading="lazy"
         sizes="(width >= 80rem) 20rem, (width >= 48rem) 50vw, 100vw"
-        style:height="auto"
-        style:aspect-ratio="16 / 9"
-        style:object-fit="cover"
         style:object-position="center 45%"
       />
       <figcaption class="over">
@@ -207,13 +203,11 @@
 
     <figure>
       <enhanced:img
+        class="screen"
         src="./photos/2024-vancouver-keynote.jpeg?w=1200;800;400"
         alt="Margo Seltzer speaking and gesturing from the podium during her keynote"
         loading="lazy"
         sizes="(width >= 80rem) 20rem, (width >= 48rem) 50vw, 100vw"
-        style:height="auto"
-        style:aspect-ratio="16 / 9"
-        style:object-fit="cover"
         style:object-position="center 35%"
       />
       <figcaption class="over">
@@ -224,13 +218,11 @@
 
     <figure>
       <enhanced:img
+        class="screen"
         src="./photos/2025-montreal-registration.jpeg?w=1200;800;400"
         alt="Magnus Hagander, Katherine Saar, Paul Ramsey, and Steve Singer smiling beside the registration desk"
         loading="lazy"
         sizes="(width >= 80rem) 20rem, (width >= 48rem) 50vw, 100vw"
-        style:height="auto"
-        style:aspect-ratio="16 / 9"
-        style:object-fit="cover"
         style:object-position="center 35%"
       />
       <figcaption class="over">
