@@ -15,4 +15,5 @@ bun.lockb
 /site/system.css
 
 # Miscellaneous
-/static/
+/hidden
+/static
