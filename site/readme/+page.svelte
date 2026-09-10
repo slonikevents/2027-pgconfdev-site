@@ -172,7 +172,8 @@
     <div class="p">
       <dt><Link href={resolve("/readme/layout")}>Layout</Link></dt>
       <dd>
-        Rules, counters, the grid and flex layout system, and <T>.dedent</T>.
+        Rules, counters, media shapes, the grid and flex layout system, and
+        <T>.dedent</T>.
       </dd>
     </div>
   </dl>

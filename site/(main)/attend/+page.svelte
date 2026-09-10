@@ -33,11 +33,6 @@
       margin-block-start: calc((1lh - 1em) / 2);
     }
   }
-
-  .photo {
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-  }
 </style>
 
 <svelte:head>
@@ -97,12 +92,11 @@
 
   <figure>
     <enhanced:img
+      class="screen"
       alt="The EVO building, seen from the street"
       loading="lazy"
       sizes="(width >= 48rem) 16rem, min(42rem, 100vw)"
       src="./facade.jpeg?w=2016;1344;672;512;256"
-      style:aspect-ratio="16 / 9"
-      style:object-fit="cover"
       style:object-position="center 85%"
     />
 
@@ -129,6 +123,7 @@
 
   <figure>
     <img
+      class="screen"
       src={concourse}
       alt="The concourse at the Plaza Centre-Ville: a bar to the left, buffet
       and standing tables in the middle, armchairs and the doors to the Régence
@@ -136,8 +131,6 @@
       loading="lazy"
       width="1600"
       height="1067"
-      style:aspect-ratio="16 / 9"
-      style:object-fit="cover"
     />
 
     <figcaption>
@@ -170,10 +163,10 @@
 
   <figure>
     <iframe
+      class="screen"
       title="Map of the Plaza Centre-Ville, 777 Boulevard Robert-Bourassa, Montréal"
       loading="lazy"
       src={embeddedMap}
-      style:aspect-ratio="16 / 10"
     ></iframe>
 
     <figcaption>

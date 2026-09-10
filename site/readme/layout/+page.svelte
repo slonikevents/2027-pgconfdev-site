@@ -16,6 +16,7 @@
   <ol>
     <li><Link class="li-number" href="#rule">Rule</Link></li>
     <li><Link class="li-number" href="#counters">Counters</Link></li>
+    <li><Link class="li-number" href="#media">Media</Link></li>
     <li><Link class="li-number" href="#layout">Layout</Link></li>
     <li><Link class="li-number" href="#dedent">Dedent</Link></li>
   </ol>
@@ -25,8 +26,8 @@
   <p>Reference</p>
   <h1>Layout</h1>
   <p>
-    Counters, the grid and flex layout system, and the page-layout classes.
-    Every reusable class, with the result on top and the markup below.
+    Counters, media shapes, the grid and flex layout system, and the page-layout
+    classes. Every reusable class, with the result on top and the markup below.
   </p>
 </hgroup>
 
@@ -102,6 +103,84 @@ import Rule from "$lib/Rule.svelte";
   </ol>
 </nav>`}
   />
+</section>
+
+<section id="media" class="main">
+  <hgroup>
+    <h2 class="section-number">Media</h2>
+    <p>Crop an image or embedded content to a standard size.</p>
+  </hgroup>
+
+  <p>
+    <T>.screen</T> gives an element the site's standard 16:9 aspect ratio. Its content
+    fills the element's box and is cropped to fit.
+  </p>
+
+  <Demo
+    source={`
+<img class="screen" src="facade.jpeg" alt="The EVO building, seen from the street" />`}
+  >
+    <enhanced:img
+      class="screen"
+      alt="The EVO building, seen from the street"
+      loading="lazy"
+      sizes="min(42rem, 100vw)"
+      src="../../(main)/attend/facade.jpeg?w=1344;672;336"
+    />
+  </Demo>
+
+  <p>
+    <T>.square</T> is similar, but with a 1:1 aspect ratio. Use it for portraits,
+    or for images that sit together in a grid.
+  </p>
+
+  <Demo
+    source={`
+<div class="grid-1:1">
+  <img class="square" src="Gwen Shapira.jpeg" alt="Gwen Shapira" />
+  <img class="square" src="Jonathan Katz.png" alt="Jonathan Katz" />
+  <img class="square" src="Melanie Plageman.jpeg" alt="Melanie Plageman" />
+  <img class="square" src="Steve Singer.jpeg" alt="Steve Singer" />
+</div>`}
+  >
+    <div class="grid-1:1">
+      <enhanced:img
+        class="square"
+        alt="Gwen Shapira"
+        loading="lazy"
+        sizes="(width >= 48rem) 21rem, 50vw"
+        src="../../(main)/about/team/Avatar/Gwen Shapira.jpeg?w=384;192"
+      />
+      <enhanced:img
+        class="square"
+        alt="Jonathan Katz"
+        loading="lazy"
+        sizes="(width >= 48rem) 21rem, 50vw"
+        src="../../(main)/about/team/Avatar/Jonathan Katz.png?w=384;192"
+      />
+      <enhanced:img
+        class="square"
+        alt="Melanie Plageman"
+        loading="lazy"
+        sizes="(width >= 48rem) 21rem, 50vw"
+        src="../../(main)/about/team/Avatar/Melanie Plageman.jpeg?w=384;192"
+      />
+      <enhanced:img
+        class="square"
+        alt="Steve Singer"
+        loading="lazy"
+        sizes="(width >= 48rem) 21rem, 50vw"
+        src="../../(main)/about/team/Avatar/Steve Singer.jpeg?w=384;192"
+      />
+    </div>
+  </Demo>
+
+  <p>
+    The crop on either <code>.screen</code> or <code>.square</code> is centered
+    by default. Set <code>object-position</code> to choose which part of the
+    image survives it, e.g. <code>object-position: center 85%</code> to keep the bottom
+    of a tall photo.
+  </p>
 </section>
 
 <section id="layout" class="main">

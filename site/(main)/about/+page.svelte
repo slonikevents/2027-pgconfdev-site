@@ -163,9 +163,7 @@
   </figure>
 
   <figure>
-    <div class="border" style:aspect-ratio="16 / 7">
-      [ Photo · main hall · past edition ]
-    </div>
+    <div class="border screen">[ Photo · main hall · past edition ]</div>
     <figcaption>
       Fig. 01 — A landscape photo from a recent edition — the main hall during a
       contributor talk. Replace with a real photograph.

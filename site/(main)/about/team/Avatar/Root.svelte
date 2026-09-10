@@ -46,7 +46,6 @@
 
 <style>
   div {
-    aspect-ratio: 1 / 1;
     color: var(--fg-tint);
     display: grid;
 
@@ -66,7 +65,7 @@
 </style>
 
 <figure class={["column-span-2@-30", "subgrid@-30", klass]} {...rest}>
-  <div>
+  <div class="square">
     <UserRound />
 
     {#if src}
