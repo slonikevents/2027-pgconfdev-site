@@ -241,7 +241,7 @@
         <p>Latest</p>
         <h2>News from the organizers.</h2>
         <p class="text">
-          Conference updates, deadlines, and travel notes — posted to @pgconfdev
+          Conference updates, deadlines, and travel notes, posted to @pgconfdev
           on Mastodon as they happen.
         </p>
       </hgroup>
