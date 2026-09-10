@@ -1,7 +1,9 @@
 <script>
+  import { Building2, MapPin } from "@lucide/svelte";
   import { Mastodon } from "$lib/icon";
   import { getContext } from "$lib/layout";
   import Link from "$lib/Link";
+  import Avatar from "./Avatar";
 
   const { BreadcrumbNav, SectionNav } = getContext();
 </script>
@@ -28,90 +30,103 @@
     sponsorship between them.
   </p>
 
-  <div class="grid+12">
-    <figure>
-      <div class="border" style:aspect-ratio="4 / 5"></div>
-      <figcaption class="note">
-        <hgroup class="h5">
-          <p class="delete">Responsibility TBD</p>
-          <h2>Andrey Borodin</h2>
-        </hgroup>
+  <div class="grid-3:4@-30 grid+12@30-">
+    <Avatar name="Andrey Borodin">
+      <hgroup class="h5">
+        <p class="delete">Responsibility TBD</p>
+        <h2>Andrey Borodin</h2>
+      </hgroup>
 
-        <p><!-- Affiliation --></p>
-      </figcaption>
-    </figure>
+      <ul class="dedent">
+        <li class="iconic">
+          <MapPin /> Yekaterinburg, RU
+        </li>
+      </ul>
+    </Avatar>
 
-    <figure>
-      <div class="border" style:aspect-ratio="4 / 5"></div>
-      <figcaption class="note">
-        <hgroup class="h5">
-          <p class="delete">Responsibility TBD</p>
-          <h2>Kaiting Chen</h2>
-        </hgroup>
+    <Avatar name="Kaiting Chen">
+      <hgroup class="h5">
+        <p>Operations · Tech</p>
+        <h2>Kaiting Chen</h2>
+      </hgroup>
 
-        <p>Domino Data Lab</p>
-      </figcaption>
-    </figure>
+      <ul class="dedent">
+        <li class="iconic"><Building2 />Domino Data Lab</li>
+        <li class="iconic"><MapPin />Philadelphia, PA</li>
+      </ul>
+    </Avatar>
 
-    <figure>
-      <div class="border" style:aspect-ratio="4 / 5"></div>
-      <figcaption class="note">
-        <hgroup class="h5">
-          <p class="delete">Responsibility TBD</p>
-          <h2>Jonathan Katz</h2>
-        </hgroup>
+    <Avatar name="Jonathan Katz">
+      <hgroup class="h5">
+        <p>Sponsors</p>
+        <h2>Jonathan Katz</h2>
+      </hgroup>
 
-        <p>Databricks</p>
-      </figcaption>
-    </figure>
+      <ul class="dedent">
+        <li class="iconic"><Building2 />Databricks</li>
+        <li class="iconic"><MapPin />New York, NY</li>
+      </ul>
+    </Avatar>
 
-    <figure>
-      <div class="border" style:aspect-ratio="4 / 5"></div>
-      <figcaption class="note">
-        <hgroup class="h5">
-          <p class="delete">Responsibility TBD</p>
-          <h2>Tristan Partin</h2>
-        </hgroup>
+    <Avatar name="Tristan Partin">
+      <hgroup class="h5">
+        <p class="delete">Responsibility TBD</p>
+        <h2>Tristan Partin</h2>
+      </hgroup>
 
-        <p><!-- Affiliation --></p>
-      </figcaption>
-    </figure>
+      <ul class="dedent">
+        <!-- Affiliation -->
+        <li class="iconic"><MapPin />Austin, TX</li>
+      </ul>
+    </Avatar>
 
-    <figure>
-      <div class="border" style:aspect-ratio="4 / 5"></div>
-      <figcaption class="note">
-        <hgroup class="h5">
-          <p class="delete">Responsibility TBD</p>
-          <h2>Melanie Plageman</h2>
-        </hgroup>
+    <Avatar name="Melanie Plageman">
+      <hgroup class="h5">
+        <p>Content</p>
+        <h2>Melanie Plageman</h2>
+      </hgroup>
 
-        <p>Microsoft</p>
-      </figcaption>
-    </figure>
+      <ul class="dedent">
+        <li class="iconic">
+          <Building2 /> Microsoft
+        </li>
+        <li class="iconic">
+          <MapPin /> Philadelphia, PA
+        </li>
+      </ul>
+    </Avatar>
 
-    <figure>
-      <div class="border" style:aspect-ratio="4 / 5"></div>
-      <figcaption class="note">
-        <hgroup class="h5">
-          <p class="delete">Responsibility TBD</p>
-          <h2>Gwen Shapira</h2>
-        </hgroup>
+    <Avatar name="Gwen Shapira">
+      <hgroup class="h5">
+        <p>Marketing</p>
+        <h2>Gwen Shapira</h2>
+      </hgroup>
 
-        <p>Nile</p>
-      </figcaption>
-    </figure>
+      <ul class="dedent">
+        <li class="iconic">
+          <Building2 /> Nile
+        </li>
+        <li class="iconic">
+          <MapPin /> Cupertino, CA
+        </li>
+      </ul>
+    </Avatar>
 
-    <figure>
-      <div class="border" style:aspect-ratio="4 / 5"></div>
-      <figcaption class="note">
-        <hgroup class="h5">
-          <p class="delete">Responsibility TBD</p>
-          <h2>Steve Singer</h2>
-        </hgroup>
+    <Avatar name="Steve Singer">
+      <hgroup class="h5">
+        <p>Finance · Legal</p>
+        <h2>Steve Singer</h2>
+      </hgroup>
 
-        <p>Nav Technologies</p>
-      </figcaption>
-    </figure>
+      <ul class="dedent">
+        <li class="iconic">
+          <Building2 /> Nav Technologies
+        </li>
+        <li class="iconic">
+          <MapPin /> Toronto, ON
+        </li>
+      </ul>
+    </Avatar>
   </div>
 </section>
 
