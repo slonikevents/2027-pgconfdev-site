@@ -302,7 +302,7 @@ ins {
 
 /* Embedded content */
 
-audio:where([controls]), canvas, embed, iframe, img, object, picture, video {
+audio:where([controls]), canvas, embed, iframe, img, object, video {
   display: block;
   height: auto;
   width: stretch;
