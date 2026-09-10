@@ -33,11 +33,14 @@
   <div class="grid-3:4@-30 grid+12@30-">
     <Avatar name="Andrey Borodin">
       <hgroup class="h5">
-        <p class="delete">Responsibility TBD</p>
+        <p>Content</p>
         <h2>Andrey Borodin</h2>
       </hgroup>
 
       <ul class="dedent">
+        <li class="iconic">
+          <Building2 /> Yandex Cloud
+        </li>
         <li class="iconic">
           <MapPin /> Yekaterinburg, RU
         </li>
@@ -51,8 +54,12 @@
       </hgroup>
 
       <ul class="dedent">
-        <li class="iconic"><Building2 />Domino Data Lab</li>
-        <li class="iconic"><MapPin />Philadelphia, PA</li>
+        <li class="iconic">
+          <Building2 /> Domino Data Lab
+        </li>
+        <li class="iconic">
+          <MapPin /> Philadelphia, PA
+        </li>
       </ul>
     </Avatar>
 
@@ -63,26 +70,34 @@
       </hgroup>
 
       <ul class="dedent">
-        <li class="iconic"><Building2 />Databricks</li>
-        <li class="iconic"><MapPin />New York, NY</li>
+        <li class="iconic">
+          <Building2 /> Databricks
+        </li>
+        <li class="iconic">
+          <MapPin /> New York, NY
+        </li>
       </ul>
     </Avatar>
 
     <Avatar name="Tristan Partin">
       <hgroup class="h5">
-        <p class="delete">Responsibility TBD</p>
+        <p>Venue</p>
         <h2>Tristan Partin</h2>
       </hgroup>
 
       <ul class="dedent">
-        <!-- Affiliation -->
-        <li class="iconic"><MapPin />Austin, TX</li>
+        <li class="iconic">
+          <Building2 /> AWS
+        </li>
+        <li class="iconic">
+          <MapPin /> Austin, TX
+        </li>
       </ul>
     </Avatar>
 
     <Avatar name="Melanie Plageman">
       <hgroup class="h5">
-        <p>Content</p>
+        <p>Content · Outreach</p>
         <h2>Melanie Plageman</h2>
       </hgroup>
 
@@ -98,7 +113,7 @@
 
     <Avatar name="Gwen Shapira">
       <hgroup class="h5">
-        <p>Marketing</p>
+        <p>Marketing · Sponsors</p>
         <h2>Gwen Shapira</h2>
       </hgroup>
 
