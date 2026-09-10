@@ -1,5 +1,5 @@
 <script>
-  import { Bus, Footprints, TrainFront } from "@lucide/svelte";
+  import { Bus, Footprints, Mail, Phone, TrainFront } from "@lucide/svelte";
   import { resolve } from "$app/paths";
   import { getContext } from "$lib/layout";
   import Link from "$lib/Link";
@@ -255,8 +255,7 @@
 
   <p class="lede">
     We're negotiating rates at several downtown hotels within walking distance
-    of the Plaza Centre-Ville. The first is confirmed below, and the rest will
-    be listed here as they're settled.
+    of the Plaza Centre-Ville. A few more hotels will be added soon.
   </p>
 
   <aside class="main ) note p">
@@ -294,7 +293,7 @@
       <p>Located at 120 Rue Peel, a fifteen-minute walk from the venue.</p>
 
       <table style:font-variant-numeric="tabular-nums">
-        <caption>Nightly rates</caption>
+        <caption style:margin-block-end="0">Nightly rates</caption>
         <tbody>
           <tr>
             <td>1× Queen Bed</td>
@@ -311,6 +310,74 @@
         </tbody>
       </table>
     </li>
+
+    <li class="action-acme band note">
+      <hgroup class="h5">
+        <h3>
+          <Link href="https://novotelmontreal.com/">
+            Novotel Montreal Centre
+          </Link>
+        </h3>
+        <p class="mono">From CAD $259</p>
+        <p class="mono">Book by March 24, 2027</p>
+      </hgroup>
+
+      <p>
+        Located at 1180 Rue de la Montagne, a seventeen-minute walk from the
+        venue.
+      </p>
+
+      <p>Email or call to book:</p>
+
+      <ul class="dedent p" style:font-variant-numeric="tabular-nums">
+        <li class="iconic">
+          <Mail />
+          <a href="mailto:reservations@novotelmontreal.com">
+            reservations@novotelmontreal.com
+          </a>
+        </li>
+        <li class="iconic">
+          <Phone />
+          <a style:letter-spacing="-5%" href="tel:+15148712138"
+            >+1 514-871-2138</a
+          > (Intl)
+        </li>
+        <li class="iconic">
+          <Phone />
+          <a style:letter-spacing="-5%" href="tel:+18668616112"
+            >+1 866-861-6112</a
+          > (US or Canada)
+        </li>
+      </ul>
+
+      <p>
+        Mention the name <q><span class="action">PGConf.dev 2027</span></q> to ensure
+        the group rate applies.
+      </p>
+
+      <table style:font-variant-numeric="tabular-nums">
+        <caption style:margin-block-end="0">Nightly rates</caption>
+        <tbody>
+          <tr>
+            <td>1× King Bed</td>
+            <td class="mono" style:text-align="end">$259</td>
+          </tr>
+          <tr>
+            <td>2× Double Beds</td>
+            <td class="mono" style:text-align="end">$269</td>
+          </tr>
+          <tr>
+            <td>1× King Bed, Executive Corner</td>
+            <td class="mono" style:text-align="end">$309</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        The first night is not refundable if cancelled, and no refunds are
+        available for cancellations within 14 days of the stay.
+      </p>
+    </li>
   </ul>
 
   <div class="action-area edge">
@@ -318,7 +385,8 @@
 
     <p>
       Montréal's convention season runs from May through September, and downtown
-      hotels book up quickly. Reserve your room as soon as you've registered.
+      hotels book up quickly. The Grand-Prix is the following week. Reserve your
+      room as soon as you've registered.
     </p>
   </div>
 </section>
