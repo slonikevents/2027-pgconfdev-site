@@ -1,4 +1,15 @@
 <script>
+  import {
+    Activity,
+    BookOpen,
+    CalendarDays,
+    Code,
+    GitCommitHorizontal,
+    Globe,
+    GraduationCap,
+    Layers,
+    Puzzle,
+  } from "@lucide/svelte";
   import { getContext } from "$lib/layout";
   import attendance from "./attendance.svg";
 
@@ -34,29 +45,28 @@
   </hgroup>
 
   <p class="lede mute text">
-    An annual gathering for contributors, committers, and the engineers building
-    software with Postgres at its core. Run by the community, for the community
-    — without the marketing layer.
+    Four days of talks, discussions, and an unconference to work out the next
+    year of PostgreSQL in person.
   </p>
 </header>
 
-<section class="(main) section" aria-label="Statistics">
-  <div class="band grid+12">
+<section class="band section" aria-label="Statistics">
+  <div class="(main) grid+12">
     <figure>
       <div class="action h2">~300</div>
       <figcaption class="over">Attendees</figcaption>
     </figure>
     <figure>
-      <div class="action h2">3</div>
-      <figcaption class="over">Parallel tracks</figcaption>
+      <div class="action h2">80+</div>
+      <figcaption class="over">Speakers</figcaption>
     </figure>
     <figure>
-      <div class="action h2">42</div>
-      <figcaption class="over">Talks</figcaption>
+      <div class="action h2">4</div>
+      <figcaption class="over">Days</figcaption>
     </figure>
     <figure>
-      <div class="action h2">18</div>
-      <figcaption class="over">Unconference sessions</figcaption>
+      <div class="action h2">~100</div>
+      <figcaption class="over">Sessions</figcaption>
     </figure>
   </div>
 </section>
@@ -85,13 +95,13 @@
     <div class="p">
       <dt class="over">Conference</dt>
       <dd>
-        PGConf.dev 2027 — the fourth annual PostgreSQL Developer Conference
+        PGConf.dev 2027, the fourth annual PostgreSQL Developer Conference
       </dd>
     </div>
 
     <div class="p">
       <dt class="over">Dates</dt>
-      <dd>May 11 – 14, 2027</dd>
+      <dd>May 11–14, 2027</dd>
     </div>
 
     <div class="p">
@@ -100,18 +110,13 @@
     </div>
 
     <div class="p">
-      <dt class="over">Attendance</dt>
-      <dd>~300 attendees</dd>
-    </div>
-
-    <div class="p">
       <dt class="over">Format</dt>
-      <dd>3 parallel tracks · tutorial day · 2 talk days · unconference day</dd>
+      <dd>3 days × 3+ tracks · 1 unconference day</dd>
     </div>
 
     <div class="p">
-      <dt class="over">Language</dt>
-      <dd>English</dd>
+      <dt class="over">Attendance</dt>
+      <dd>~300, including most Major Contributors</dd>
     </div>
 
     <div class="p">
@@ -124,29 +129,35 @@
 <section id="what" class="main">
   <hgroup>
     <p class="section-number">What it is</p>
-    <h2>A working conference for the people building Postgres.</h2>
+    <h2>A working conference on the future of PostgreSQL.</h2>
   </hgroup>
 
   <p class="lede">
-    PGConf.dev was founded in 2024 to fill a specific gap: a yearly room where
-    PostgreSQL contributors and the developers integrating Postgres into other
-    systems could spend four days together, deeply, without the conference
-    circuit's usual layer of polish.
+    PGConf.dev is four days of design discussion, patch review, and community
+    organizing, to plan for what PostgreSQL does next.
   </p>
 
   <p>
-    The format borrows from academic conferences — proposals are reviewed by a
-    program committee, talks are technical, and at least a third of the schedule
-    is unconference. The audience is mostly hands-on engineers: committers,
-    extension authors, internals contributors, and the database teams that ship
-    Postgres to production at scale.
+    It's run by and for PostgreSQL contributors. A third of the schedule is
+    unconference or working groups, where contributors plan the next year of
+    development, settle technical decisions, work through architectural
+    disagreements, and take up what the ecosystem and the community need next.
   </p>
 
   <p>
-    What it isn't: a vendor showcase, a marketing event, or an introductory
-    conference. There are excellent conferences for those audiences — PGConf.EU,
-    PostgresOpen, and a long tail of regional events. PGConf.dev sits adjacent
-    to them, focused specifically on the contributor track.
+    Talks are technical. They draw on what the project has already tried, and
+    they're where new ideas start.
+  </p>
+
+  <p>
+    The people who come are the ones you'll work with all year on the mailing
+    lists. For most of them, this is the one week that you'll all be in the same
+    room.
+  </p>
+
+  <p>
+    And if you run a community event or are trying to start one, this is the
+    conference where you'll find people doing the same.
   </p>
 
   <figure class="section">
@@ -174,41 +185,118 @@
 <section id="who" class="*:main">
   <hgroup>
     <p class="section-number">Who attends</p>
-    <h2>Roughly 300 people, two thirds of them contributors.</h2>
+    <h2>~300 people, including most Major Contributors.</h2>
   </hgroup>
 
-  <p>
-    The room is intentionally small. We cap attendance to keep the hallway track
-    real and the unconference sessions workable. Roughly:
+  <p class="lede">
+    If you do something that makes PostgreSQL great, this is the conference for
+    you. And if you'd like to but don't know how to start, ask anyone here.
   </p>
 
-  <ul class="edge dedent">
-    <li>
-      <strong>Core contributors</strong> — committers, major patch authors, and people
-      who show up regularly on -hackers
-    </li>
-    <li>
-      <strong>Extension authors</strong> — people building TimescaleDB, Citus, pgvector,
-      AGE, the long tail of PGXN
-    </li>
-    <li>
-      <strong>Internals engineers from downstream products</strong>
-      — Crunchy, Citus/Microsoft, EDB, Tembo, Supabase, Neon, the cloud providers
-    </li>
-    <li>
-      <strong>Application engineers</strong> who work close enough to the database
-      that the contributor track is relevant to their day job
-    </li>
-  </ul>
+  <dl
+    class="(main) grid+14 dedent"
+    style:gap="var(--margin)"
+    style:margin-block="var(--gap)"
+  >
+    <div>
+      <dt class="h6 iconic">
+        <GitCommitHorizontal /> <span>Core contributors</span>
+      </dt>
+      <dd class="deck">
+        Committers, patch authors and reviewers, translators, infrastructure
+        administrators, and regulars on
+        <code style:white-space="nowrap">-hackers</code>.
+      </dd>
+    </div>
+
+    <div>
+      <dt class="h6 iconic">
+        <Puzzle /> <span>Extension authors</span>
+      </dt>
+      <dd class="deck">
+        People building PostGIS, pgvector, TimescaleDB, Citus, and the hundreds
+        more on PGXN.
+      </dd>
+    </div>
+
+    <div>
+      <dt class="h6 iconic">
+        <Globe /> <span>Ecosystem maintainers</span>
+      </dt>
+      <dd class="deck">
+        Maintainers of drivers, ORMs, utilities (pooling, backup, monitoring,
+        administration), distributions, and packages.
+      </dd>
+    </div>
+
+    <div>
+      <dt class="h6 iconic">
+        <Layers /> <span>Platform engineers</span>
+      </dt>
+      <dd class="deck">
+        Everyone whose product is Postgres, or started as it: hyperscalers,
+        startups, and forks.
+      </dd>
+    </div>
+
+    <div>
+      <dt class="h6 iconic">
+        <Activity /> <span>Operators</span>
+      </dt>
+      <dd class="deck">
+        DBAs, SREs, and consultants: anyone who carries the pager for a
+        production cluster.
+      </dd>
+    </div>
+
+    <div>
+      <dt class="h6 iconic">
+        <Code /> <span>Application developers</span>
+      </dt>
+      <dd class="deck">
+        Application, data, and AI engineers who chose Postgres for a reason.
+      </dd>
+    </div>
+
+    <div>
+      <dt class="h6 iconic">
+        <CalendarDays /> <span>Community organizers</span>
+      </dt>
+      <dd class="deck">
+        People running a local user group, a conference, or the nonprofit behind
+        one.
+      </dd>
+    </div>
+
+    <div>
+      <dt class="h6 iconic">
+        <BookOpen /> <span>Writers and educators</span>
+      </dt>
+      <dd class="deck">
+        Bloggers, trainers, and advocates, who explain Postgres to everyone
+        else.
+      </dd>
+    </div>
+
+    <div>
+      <dt class="h6 iconic">
+        <GraduationCap /> <span>Academics and researchers</span>
+      </dt>
+      <dd class="deck">
+        Researchers and students studying database internals.
+      </dd>
+    </div>
+  </dl>
 
   <p>
-    If you've ever filed a bug report on -bugs, written an extension, or had to
-    read <code>postgres.c</code> to find an answer — this is the conference for you.
+    A decision that's been open since last autumn gets settled at a table over
+    lunch.
   </p>
 
   <p>
-    The room is small, but it isn't local. In 2026, attendees travelled from 29
-    countries across six continents, from New Zealand to Kenya to Japan.
+    In 2026, attendees travelled from 29 countries across six continents, from
+    New Zealand to Kenya to Japan. The project runs asynchronously across every
+    timezone all year. This is the one week it doesn't.
   </p>
 
   <figure class="(main) section">
