@@ -164,8 +164,8 @@
   <figure class="section">
     <blockquote class="action-acme h2 mute">
       <q>
-        At PGConf.dev 2026, I met the people behind Postgres, discussed patch
-        ideas, and got first-hand feedback on my own contribution.
+        I met the people behind Postgres, discussed patch ideas, and got
+        first-hand feedback on my own contribution.
       </q>
     </blockquote>
 
