@@ -163,19 +163,19 @@
 
   <figure class="section">
     <blockquote class="action-acme h2 mute">
-      <Link
-        href="https://www.postgresql.org/message-id/DITN90YX3328.2A0I3LCV164BA@gmail.com"
-      >
-        <q>
-          At PGConf.dev 2026, I met the people behind Postgres, discussed patch
-          ideas, and got first-hand feedback on my own contribution.
-        </q>
-      </Link>
+      <q>
+        At PGConf.dev 2026, I met the people behind Postgres, discussed patch
+        ideas, and got first-hand feedback on my own contribution.
+      </q>
     </blockquote>
 
     <figcaption class="over">
       <cite style:font-style="normal">
-        — Alberto Piai, New PostgreSQL contributor, PGConf.dev 2026
+        — Alberto Piai,
+        <Link
+          href="https://www.postgresql.org/message-id/DITN90YX3328.2A0I3LCV164BA@gmail.com"
+          >New PostgreSQL contributor</Link
+        >, PGConf.dev 2026
       </cite>
     </figcaption>
   </figure>
