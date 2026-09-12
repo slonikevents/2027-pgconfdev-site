@@ -11,6 +11,7 @@
     Puzzle,
   } from "@lucide/svelte";
   import { getContext } from "$lib/layout";
+  import Link from "$lib/Link";
   import attendance from "./attendance.svg";
 
   const { BreadcrumbNav, SectionNav } = getContext();
@@ -162,14 +163,20 @@
 
   <figure class="section">
     <blockquote class="action-acme h2 mute">
-      <q>
-        The only conference where I leave with a code review queue instead of a
-        swag bag.
-      </q>
+      <Link
+        href="https://www.postgresql.org/message-id/DITN90YX3328.2A0I3LCV164BA@gmail.com"
+      >
+        <q>
+          At PGConf.dev 2026, I met the people behind Postgres, discussed patch
+          ideas, and got first-hand feedback on my own contribution.
+        </q>
+      </Link>
     </blockquote>
 
     <figcaption class="over">
-      <cite style:font-style="normal">— Returning attendee, 2025</cite>
+      <cite style:font-style="normal">
+        — Alberto Piai, New PostgreSQL contributor, PGConf.dev 2026
+      </cite>
     </figcaption>
   </figure>
 
