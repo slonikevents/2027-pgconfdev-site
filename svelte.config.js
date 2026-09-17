@@ -10,6 +10,9 @@ export default {
   kit: {
     adapter: adapter(),
     appDir: "svelte",
+    experimental: {
+      explicitEnvironmentVariables: true,
+    },
     files: {
       appTemplate: "site.html",
       hooks: {
