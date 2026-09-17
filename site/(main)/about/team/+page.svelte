@@ -145,6 +145,47 @@
   </div>
 </section>
 
+<section id="program-committee" class="main)">
+  <hgroup>
+    <p>Program</p>
+    <h2>The 2026 program team.</h2>
+  </hgroup>
+
+  <p class="lede text">
+    The 2027 committees will be announced before submissions open. Last year's
+    program was run by the following community members.
+  </p>
+
+  <div class="grid+14" style:gap="var(--margin)">
+    <div>
+      <h3 class="h5">Program committee</h3>
+      <ul class="dedent">
+        <li>Melanie Plageman · Microsoft</li>
+        <li>Dilip Kumar · Google</li>
+        <li>Jonathan Katz · Databricks</li>
+        <li>Paul Ramsey · Snowflake</li>
+        <li>Jacob Champion · EDB</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="h5">Tuesday planning committee</h3>
+      <ul class="dedent">
+        <li>Claire Giordano · Microsoft</li>
+        <li>Corey Hunker · Apple</li>
+        <li>Matthias van de Meent · Databricks</li>
+        <li>Paul Jungwirth · Illuminated Computing</li>
+        <li>Robert Haas · EDB</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="h5">Postermaster</h3>
+      <p>Andrey Borodin · Yandex Cloud</p>
+    </div>
+  </div>
+</section>
+
 <section id="contact" class="main)">
   <h2>How to reach us.</h2>
 
