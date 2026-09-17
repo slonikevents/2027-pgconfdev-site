@@ -42,7 +42,7 @@ jobs:
     - run: npm run build
       env:
         SVELTE_BASE: ${{ steps.configure-pages.outputs.base_path }}
-        # VITE_CLOUDFLARE_TOKEN: "0aab34cb5bd14a3bb175daa01ecd9b64"
+        VITE_CLOUDFLARE_TOKEN: "28b1a95553fa4cce97db735ca3c26ea2"
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v5
