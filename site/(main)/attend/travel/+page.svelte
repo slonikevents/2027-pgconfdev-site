@@ -380,6 +380,41 @@
     </li>
   </ul>
 
+  <ul class="main grid+16 dedent">
+    <li class="action-acme band note">
+      <hgroup class="h5">
+        <h3>
+          <Link href="https://www.lesaintsulpice.com/">
+            Hotel Saint-Sulpice
+          </Link>
+        </h3>
+        <p class="mono">From CAD $329</p>
+      </hgroup>
+      <p>
+        Book <a
+          href="https://be.synxis.com/?adult=1&arrive=2027-05-10&chain=17448&child=0&currency=CAD&depart=2027-05-11&group=POST0527&hotel=80196&level=hotel&locale=en-US&productcurrency=CAD&rooms=1"
+          >Online</a
+        > by April 8 2027
+      </p>
+      <p></p>
+
+      <p>
+        Located 414 rue Saint-Sulpice in the old city a 15 minute walk from the
+        venue.
+      </p>
+
+      <table style:font-variant-numeric="tabular-nums">
+        <caption>Nightly rates</caption>
+        <tbody>
+          <tr>
+            <td>1× Queen Bed</td>
+            <td class="mono" style:text-align="end">$333</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+  </ul>
+
   <div class="action-area edge">
     <h3 class="h6">Book early</h3>
 
