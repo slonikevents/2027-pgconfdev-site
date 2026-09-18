@@ -285,7 +285,7 @@
 
   <p>
     The venue has a wheelchair-accessible entrance and accessible parking, and
-    everything on the schedule will be on a single level.
+    escalators and elevators.
   </p>
 
   <p>
