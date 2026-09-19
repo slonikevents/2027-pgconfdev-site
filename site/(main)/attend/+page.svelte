@@ -284,7 +284,7 @@
   </hgroup>
 
   <p>
-    The venue has a wheelchair-accessible entrance, accessible parking, 
+    The venue has a wheelchair-accessible entrance, accessible parking,
     escalators, and elevators.
   </p>
 
