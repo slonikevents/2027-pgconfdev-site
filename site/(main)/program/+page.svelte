@@ -24,10 +24,6 @@
     padding-block: var(--margin);
     padding-inline: 0;
   }
-
-  #submit {
-    scroll-margin-block-start: var(--gap);
-  }
 </style>
 
 <svelte:head>
@@ -203,7 +199,7 @@
     <h3 class="iconic">
       <Presentation class="action" /> Presentations
     </h3>
-    <p><a href="#submit">Submit a presentation</a></p>
+    <p><a href="#">Submit a presentation</a></p>
   </hgroup>
 
   <p class="lede">
@@ -271,7 +267,7 @@
     <h3 class="iconic">
       <UsersRound /> <span>Community discussions</span>
     </h3>
-    <p><a href="#submit">Lead a community discussion</a></p>
+    <p><a href="#">Lead a community discussion</a></p>
   </hgroup>
 
   <p class="lede">
@@ -385,7 +381,7 @@
   <hgroup>
     <p>Content type</p>
     <h3 class="iconic"><BookOpen /> Workshops</h3>
-    <p><a href="#submit">Teach a workshop</a></p>
+    <p><a href="#">Teach a workshop</a></p>
   </hgroup>
 
   <p class="lede">
@@ -416,7 +412,7 @@
   <hgroup>
     <p>Content type</p>
     <h3 class="iconic"><MessagesSquare class="action" /> Panels</h3>
-    <p><a href="#submit">Convene a panel</a></p>
+    <p><a href="#">Convene a panel</a></p>
   </hgroup>
 
   <p class="lede">
@@ -457,7 +453,7 @@
     <h3 class="iconic">
       <FileImage class="action" /> Posters
     </h3>
-    <p><a href="#submit">Share a poster</a></p>
+    <p><a href="#">Share a poster</a></p>
   </hgroup>
 
   <p class="lede">
@@ -531,7 +527,7 @@
     <h3 class="iconic">
       <Lightbulb class="action" /> Other ideas
     </h3>
-    <p><a href="#submit">Pitch another idea</a></p>
+    <p><a href="#">Pitch another idea</a></p>
   </hgroup>
 
   <p class="lede">
