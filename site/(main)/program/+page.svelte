@@ -7,7 +7,6 @@
     FileImage,
     Lightbulb,
     LockKeyhole,
-    MessageCircle,
     MessagesSquare,
     Presentation,
     UsersRound,
@@ -298,35 +297,24 @@
   </aside>
 
   <p>
-    These sessions build on the Developer Meeting, Community Summit, and
-    Extension Ecosystem Summit formats. Do not feel limited to subjects that
-    have appeared there before. We want new ideas that expand the conversation.
+    Do not feel limited to subjects that have appeared there before. We want new
+    ideas that expand the conversation.
   </p>
 
   <p>
-    <strong>TODO</strong> Explain that there are three formats and why there are three
-    formats.
+    Community discussions have two types: open and closed. Choose the type that
+    best fits your session when submitting your proposal.
   </p>
 
-  <dl class="(main) grid/3@48- dedent section">
-    <div class="insert-area edge margin-gap">
+  <dl class="main grid+8 dedent section">
+    <div class="insert-acme">
       <dt class="h6 iconic">
-        <MessageCircle /> Open discussion
-      </dt>
-
-      <dd class="deck">
-        <p>Every seat is open to anyone, subject only to room capacity.</p>
-      </dd>
-
-      <dd><em>Example: The future of pg_stat_statements</em></dd>
-    </div>
-
-    <div class="action-area edge margin-gap">
-      <dt class="h6 iconic">
-        <BriefcaseBusiness /> Working group
+        <BriefcaseBusiness /> Open
       </dt>
       <dd class="deck">
-        <p>A small number of seats are reserved for invited participants.</p>
+        <p>
+          A small number of seats are reserved for key, invited participants.
+        </p>
 
         <p>
           The rest are open, with seating arranged to maximize collaboration
@@ -334,19 +322,24 @@
         </p>
       </dd>
       <dd>
-        <em>Example: Can the community support additional batch executors?</em>
+        <em>
+          Example:
+          <Link href="https://2026.pgconf.dev/session/727">
+            Multithreading Working Group
+          </Link>
+        </em>
       </dd>
     </div>
 
-    <div class="notice-area edge margin-gap">
+    <div class="notice-acme">
       <dt class="h6 iconic">
-        <LockKeyhole /> Closed session
+        <LockKeyhole /> Closed
       </dt>
       <dd class="deck">
         An invite-only, focused, productive, and private discussion among people
         already involved in the topic.
       </dd>
-      <dd><em>Example: The security committee discussing a recent CVE</em></dd>
+      <dd><em>Example: PostgreSQL Security Team Meeting</em></dd>
     </div>
   </dl>
 
@@ -441,10 +434,7 @@
     </p>
   </aside>
 
-  <p class="deck">
-    Accepted talks confer at most two complimentary registrations.
-    Twenty-five-minute talks with multiple speakers are unlikely to be accepted.
-  </p>
+  <p class="deck">Panels do not confer complimentary registration.</p>
 </section>
 
 <section id="posters" class="*:main">
