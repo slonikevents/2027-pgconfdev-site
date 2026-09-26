@@ -109,11 +109,9 @@
 
   <div class="(main) flex section">
     <Link href={REGISTER} class="button circle delete stroke">Register</Link>
-    <!-- "Submit a talk" hidden until the CFP opens — see hidden/program
     <Link href={resolve("/program")} class="button circle stroke">
-      Submit a Talk
+      Submit a Proposal
     </Link>
-    -->
   </div>
 </header>
 
