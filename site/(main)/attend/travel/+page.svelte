@@ -254,8 +254,8 @@
   </hgroup>
 
   <p class="lede">
-    We're negotiating rates at several downtown hotels within walking distance
-    of the Plaza Centre-Ville. A few more hotels will be added soon.
+    We have negotiated rates at several downtown hotels within walking distance
+    of the Plaza Centre-Ville. Book early to secure these rates.
   </p>
 
   <aside class="main ) note p">
@@ -415,6 +415,51 @@
     </li>
   </ul>
 
+  <ul class="main grid+16 dedent">
+    <li class="action-acme band note">
+      <hgroup class="h5">
+        <h3>
+          <Link href="https://hotelbonaventure.com/en/">Hotel Bonaventure</Link>
+        </h3>
+        <p class="mono">From CAD $319</p>
+      </hgroup>
+      <p>
+        Book <a
+          href="https://hotelbonaventure.ihotelier.com/book/dates-of-stay?groupID=5481890"
+          >Online</a
+        > The below rates apply until the hotel reaches a specified capacity. Book
+        early.
+      </p>
+      <p></p>
+
+      <p>
+        Located at 900 De La Gauchetière West, the hotel is across the street
+        from the venue.
+      </p>
+
+      <table style:font-variant-numeric="tabular-nums">
+        <caption>Nightly rates</caption>
+        <tbody>
+          <tr>
+            <td>1× Queen Bed</td>
+            <td class="mono" style:text-align="end">$319</td>
+          </tr>
+          <tr>
+            <td>1× King Bed</td>
+            <td class="mono" style:text-align="end">$319</td>
+          </tr>
+          <tr>
+            <td>2× Double Beds</td>
+            <td class="mono" style:text-align="end">$319</td>
+          </tr>
+          <tr>
+            <td>2× Queen Beds</td>
+            <td class="mono" style:text-align="end">$319</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+  </ul>
   <div class="action-area edge">
     <h3 class="h6">Book early</h3>
 
