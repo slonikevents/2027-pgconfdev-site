@@ -52,7 +52,7 @@
 
 <hr class="section" />
 
-<nav aria-labelledby="on-this-page" class=") none@-48 note">
+<nav aria-labelledby="on-this-page" class="( none@-64 note">
   <h2 id="on-this-page" class="over">On this page</h2>
   <ol>
     <li><a class="li-number" href="#confirmed">2027 sponsors</a></li>
