@@ -139,9 +139,8 @@
   </hgroup>
 
   <p class="main note">
-    Pricing is in Canadian dollars. Every tier includes a website name and logo,
-    a logo on common-area and foyer banners, a sticker-table benefit, and social
-    media appreciation.
+    Pricing is in Canadian dollars. Each card lists the benefits included at
+    that sponsorship level.
   </p>
 
   <div class="grid+16 (main)">
@@ -151,6 +150,10 @@
         <p class="mono price">CAD $27,500</p>
       </hgroup>
       <ul>
+        <li>Name and logo on the conference website</li>
+        <li>Logo on foyer and common-area banners</li>
+        <li>Sticker-table benefit</li>
+        <li>Social-media appreciation</li>
         <li>5 registration vouchers and 3 job postings</li>
         <li>Opening and closing acknowledgement</li>
         <li>T-shirt logo with prominent placement</li>
@@ -174,6 +177,10 @@
         <p class="mono price">CAD $9,900</p>
       </hgroup>
       <ul>
+        <li>Name and logo on the conference website</li>
+        <li>Logo on foyer and common-area banners</li>
+        <li>Sticker-table benefit</li>
+        <li>Social-media appreciation</li>
         <li>2 registration vouchers and 2 job postings</li>
         <li>Opening and closing acknowledgement</li>
         <li>T-shirt logo</li>
@@ -188,7 +195,11 @@
         <p class="mono price">CAD $2,500</p>
       </hgroup>
       <ul>
+        <li>Name and logo on the conference website</li>
+        <li>Logo on foyer and common-area banners</li>
         <li>1 registration voucher and 1 job posting</li>
+        <li>Sticker-table benefit</li>
+        <li>Social-media appreciation</li>
       </ul>
     </div>
   </div>
