@@ -19,23 +19,13 @@
     padding-inline: 0;
   }
 
-  /* .tier-gold { */
-  /*   --tier-color: oklch(0.72 0.13 85); */
-  /* } */
-  /* .tier-silver { */
-  /*   --tier-color: oklch(0.62 0.02 245); */
-  /* } */
-  /* .tier-bronze { */
-  /*   --tier-color: oklch(0.58 0.09 50); */
-  /* } */
-  /**/
-  /* .tier { */
-  /*   border-inline-start-color: var(--tier-color); */
-  /* } */
-  /**/
-  /* .tier .price { */
-  /*   color: var(--tier-color); */
-  /* } */
+  .tier ul {
+    padding-inline-start: 1.25em;
+  }
+
+  .tier li + li {
+    margin-block-start: 0.5em;
+  }
 </style>
 
 <svelte:head>
@@ -71,7 +61,6 @@
   </ol>
 </nav>
 
-<!-- Add back in when we post the actual sponsorship levels
 <aside class=") note area border" aria-labelledby="tiers-glance">
   <h2 id="tiers-glance" class="over">Tiers at a Glance</h2>
 
@@ -80,28 +69,27 @@
   <dl class="dedent">
     <div class="p">
       <dt class="over">Gold</dt>
-      <dd>CAD $15,000</dd>
+      <dd>CAD $27,500</dd>
     </div>
     <div class="p">
       <dt class="over">Silver</dt>
-      <dd>CAD $7,500</dd>
+      <dd>CAD $9,900</dd>
     </div>
     <div class="p">
       <dt class="over">Bronze</dt>
-      <dd>CAD $3,000</dd>
+      <dd>CAD $2,500</dd>
     </div>
   </dl>
 </aside>
--->
 
 <section class="main">
   <div class="action-area edge">
     <h3 class="h6">Sponsorships are open</h3>
     <p>
-      We are actively seeking sponsors for the 2027 edition. Tiers will be
-      announced soon. <Link href={`${resolve("/about/team")}#contact`}
+      We are actively seeking sponsors for the 2027 edition. <Link
+        href={`${resolve("/about/team")}#contact`}
         >Contact the sponsorship team</Link
-      > for a full prospectus.
+      > to start a conversation.
     </p>
   </div>
 </section>
@@ -147,56 +135,86 @@
 <section id="tiers">
   <hgroup class="main">
     <p class="section-number">Sponsorship tiers</p>
-    <h2>Three levels of support.</h2>
+    <h2>Three levels of support</h2>
   </hgroup>
 
   <p class="main note">
-    Pricing in Canadian dollars. Contact us for the full prospectus with
-    detailed benefit descriptions.
+    Pricing is in Canadian dollars. Every tier includes a website name and logo,
+    a logo on common-area and foyer banners, a sticker-table benefit, and social
+    media appreciation.
   </p>
 
-  <!-- Add back in when we post the actual sponsorship levels
   <div class="grid+16 (main)">
     <div class="note border edge tier tier-gold">
       <hgroup class="h4">
         <h3>Gold</h3>
-        <p class="mono price">CAD $15,000</p>
+        <p class="mono price">CAD $27,500</p>
       </hgroup>
-      <p>
-        Logo on website, printed program, and sponsor banner. Two complimentary
-        registrations. Table in the sponsor area.
-      </p>
+      <ul>
+        <li>5 registration vouchers and 3 job postings</li>
+        <li>Opening and closing acknowledgement</li>
+        <li>T-shirt logo with prominent placement</li>
+        <li>1 large and 1 small promotional item</li>
+        <li>Logo on recorded conference sessions</li>
+        <li>Banners at the front of presentation rooms</li>
+        <li>
+          One-paragraph company description on the website, up to 300 characters
+        </li>
+        <li>Option to claim one individual sponsorship benefit</li>
+        <li>
+          One 25-minute sponsored talk for the first 6 Gold sponsors to sign
+        </li>
+        <li>One off-hours event announced in the opening session</li>
+      </ul>
     </div>
 
     <div class="note border edge tier tier-silver">
       <hgroup class="h4">
         <h3>Silver</h3>
-        <p class="mono price">CAD $7,500</p>
+        <p class="mono price">CAD $9,900</p>
       </hgroup>
-      <p>
-        Logo on website and printed program. One complimentary registration.
-        Shared sponsor table.
-      </p>
+      <ul>
+        <li>2 registration vouchers and 2 job postings</li>
+        <li>Opening and closing acknowledgement</li>
+        <li>T-shirt logo</li>
+        <li>1 small promotional item</li>
+        <li>One off-hours event announced in the opening session</li>
+      </ul>
     </div>
 
     <div class="note border edge tier tier-bronze">
       <hgroup class="h4">
         <h3>Bronze</h3>
-        <p class="mono price">CAD $3,000</p>
+        <p class="mono price">CAD $2,500</p>
       </hgroup>
-      <p>Logo on website. One complimentary registration.</p>
+      <ul>
+        <li>1 registration voucher and 1 job posting</li>
+      </ul>
     </div>
   </div>
-  -->
+
+  <div class="main">
+    <p>
+      Gold individual sponsorship benefits are exclusive and first come, first
+      served. Available options include lanyards, the evening social event,
+      meals and coffee breaks, the Unconference, social areas and lounges, and a
+      plenary chair drop.
+    </p>
+    <p>
+      Physical-logo and promotional-item benefits require suitable assets and
+      payment by <time datetime="2027-03-15">March 15, 2027</time>. Registration
+      vouchers are subject to overall availability. Contact us for the complete
+      prospectus and sponsorship agreement.
+    </p>
+  </div>
 </section>
 
-<!-- Add back in when we post the actual sponsorship levels
 <section class="main">
   <p>
     <small>
-      Custom arrangements are possible — contact us to discuss. All sponsors are
-      listed in the printed program, website, and social media announcements.
-      Benefits are fulfilled based on the tier at time of contract.
+      Sponsors provide their own promotional items and banner assets. Organizer
+      approval and delivery details apply to benefits that use physical or
+      recorded-session assets.
     </small>
   </p>
 
@@ -206,7 +224,6 @@
     </Link>
   </p>
 </section>
--->
 
 <section
   class="area"
