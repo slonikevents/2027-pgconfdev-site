@@ -19,23 +19,24 @@
     padding-inline: 0;
   }
 
-  /* .tier-gold { */
-  /*   --tier-color: oklch(0.72 0.13 85); */
-  /* } */
-  /* .tier-silver { */
-  /*   --tier-color: oklch(0.62 0.02 245); */
-  /* } */
-  /* .tier-bronze { */
-  /*   --tier-color: oklch(0.58 0.09 50); */
-  /* } */
-  /**/
-  /* .tier { */
-  /*   border-inline-start-color: var(--tier-color); */
-  /* } */
-  /**/
-  /* .tier .price { */
-  /*   color: var(--tier-color); */
-  /* } */
+  .tier-gold {
+    --tier-color: oklch(0.72 0.13 85);
+  }
+  .tier-silver {
+    --tier-color: oklch(0.62 0.02 245);
+  }
+  .tier-bronze {
+    --tier-color: oklch(0.58 0.09 50);
+  }
+
+  .tier {
+    border-inline-start: 3px solid var(--tier-color);
+    padding-inline-start: 1rem;
+  }
+
+  .tier .price {
+    color: var(--tier-color);
+  }
 
   .tier ul {
     list-style-type: square;
@@ -204,7 +205,7 @@
 
   <!-- Add back in when we post the actual sponsorship levels -->
   <div class="main">
-    <section class="tier">
+    <section class="tier tier-gold">
       <hgroup class="h4">
         <h3>Gold</h3>
         <p class="mono price">CAD $27,500</p>
@@ -273,7 +274,7 @@
       </ul>
     </section>
 
-    <section class="tier">
+    <section class="tier tier-silver">
       <hgroup class="h4">
         <h3>Silver</h3>
         <p class="mono price">CAD $9,900</p>
@@ -321,7 +322,7 @@
       </ul>
     </section>
 
-    <section class="tier">
+    <section class="tier tier-bronze">
       <hgroup class="h4">
         <h3>Bronze</h3>
         <p class="mono price">CAD $2,500</p>
