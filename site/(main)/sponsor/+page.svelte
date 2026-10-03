@@ -89,6 +89,7 @@
   </ol>
 </nav>
 
+<!-- Add back in when we post the actual sponsorship levels -->
 <aside class=") note area border" aria-labelledby="tiers-glance">
   <h2 id="tiers-glance" class="over">Tiers at a Glance</h2>
 
@@ -201,6 +202,7 @@
     that sponsorship level.
   </p>
 
+  <!-- Add back in when we post the actual sponsorship levels -->
   <div class="main">
     <section class="tier">
       <hgroup class="h4">
@@ -369,6 +371,7 @@
   </div>
 </section>
 
+<!-- Add back in when we post the actual sponsorship levels -->
 <section class="main">
   <p>
     <small>
