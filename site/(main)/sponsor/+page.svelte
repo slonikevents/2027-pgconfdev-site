@@ -174,7 +174,7 @@
   </hgroup>
 
   <p class="main note">
-    Pricing is in Canadian dollars. Each card lists the benefits included at
+    Pricing is in Canadian dollars. Each level lists the benefits included at
     that sponsorship level.
   </p>
 
@@ -185,24 +185,66 @@
         <p class="mono price">CAD $27,500</p>
       </hgroup>
       <ul>
-        <li>Name and logo on the conference website</li>
-        <li>Logo on foyer and common-area banners</li>
-        <li>Sticker-table benefit</li>
-        <li>Social-media appreciation</li>
-        <li>5 registration vouchers and 3 job postings</li>
-        <li>Opening and closing acknowledgement</li>
-        <li>T-shirt logo with prominent placement</li>
-        <li>1 large and 1 small promotional item</li>
-        <li>Logo on recorded conference sessions</li>
-        <li>Banners at the front of presentation rooms</li>
         <li>
-          One-paragraph company description on the website, up to 300 characters
+          <strong>Website name and logo.</strong> Listed in the sponsors section of
+          the conference website.
         </li>
-        <li>Option to claim one individual sponsorship benefit</li>
         <li>
-          One 25-minute sponsored talk for the first 6 Gold sponsors to sign
+          <strong>Foyer and common-area banners.</strong> Logo displayed alongside
+          those of the other sponsors.
         </li>
-        <li>One off-hours event announced in the opening session</li>
+        <li>
+          <strong>Sticker table.</strong> Sponsor-provided stickers can be left at
+          the designated tables.
+        </li>
+        <li>
+          <strong>Social-media appreciation.</strong> Sponsor thanked in a PGConf.dev
+          social-media posting.
+        </li>
+        <li>
+          <strong>5 registration vouchers.</strong> Codes allow five attendees to
+          register at no cost, subject to overall availability.
+        </li>
+        <li>
+          <strong>3 job postings.</strong> Postings include a title, description,
+          and application link and are subject to organizer approval.
+        </li>
+        <li>
+          <strong>Opening and closing acknowledgement.</strong> Sponsor thanked during
+          both sessions.
+        </li>
+        <li>
+          <strong>T-shirt logo.</strong> Gold receives more prominent placement than
+          Silver.
+        </li>
+        <li>
+          <strong>Promotional items.</strong> Sponsor may provide one large and one
+          small item for distribution.
+        </li>
+        <li>
+          <strong>Recorded-session logo.</strong> Logo included with the recorded
+          conference sessions.
+        </li>
+        <li>
+          <strong>Presentation-room banners.</strong> Banners placed at the front
+          of rooms assigned by the organizer.
+        </li>
+        <li>
+          <strong>Company description.</strong> One paragraph of up to 300 characters
+          published on the conference website.
+        </li>
+        <li>
+          <strong>Individual sponsorship benefit.</strong> Option to claim one available
+          benefit, such as lanyards, meals, or the evening social.
+        </li>
+        <li>
+          <strong>Sponsored talk.</strong> A 25-minute talk is available to the first
+          six Gold sponsors to sign; the organizer assigns the room and time.
+        </li>
+        <li>
+          <strong>Off-hours event announcement.</strong> One sponsor-organized event
+          announced in the opening session.
+        </li>
       </ul>
     </section>
 
@@ -212,15 +254,45 @@
         <p class="mono price">CAD $9,900</p>
       </hgroup>
       <ul>
-        <li>Name and logo on the conference website</li>
-        <li>Logo on foyer and common-area banners</li>
-        <li>Sticker-table benefit</li>
-        <li>Social-media appreciation</li>
-        <li>2 registration vouchers and 2 job postings</li>
-        <li>Opening and closing acknowledgement</li>
-        <li>T-shirt logo</li>
-        <li>1 small promotional item</li>
-        <li>One off-hours event announced in the opening session</li>
+        <li>
+          <strong>Website name and logo.</strong> Listed in the sponsors section of
+          the conference website.
+        </li>
+        <li>
+          <strong>Foyer and common-area banners.</strong> Logo displayed alongside
+          those of the other sponsors.
+        </li>
+        <li>
+          <strong>Sticker table.</strong> Sponsor-provided stickers can be left at
+          the designated tables.
+        </li>
+        <li>
+          <strong>Social-media appreciation.</strong> Sponsor thanked in a PGConf.dev
+          social-media posting.
+        </li>
+        <li>
+          <strong>2 registration vouchers.</strong> Codes allow two attendees to register
+          at no cost, subject to overall availability.
+        </li>
+        <li>
+          <strong>2 job postings.</strong> Postings include a title, description,
+          and application link and are subject to organizer approval.
+        </li>
+        <li>
+          <strong>Opening and closing acknowledgement.</strong> Sponsor thanked during
+          both sessions.
+        </li>
+        <li>
+          <strong>T-shirt logo.</strong> Logo included on the conference shirt.
+        </li>
+        <li>
+          <strong>Promotional item.</strong> Sponsor may provide one small item for
+          distribution.
+        </li>
+        <li>
+          <strong>Off-hours event announcement.</strong> One sponsor-organized event
+          announced in the opening session.
+        </li>
       </ul>
     </section>
 
@@ -230,11 +302,30 @@
         <p class="mono price">CAD $2,500</p>
       </hgroup>
       <ul>
-        <li>Name and logo on the conference website</li>
-        <li>Logo on foyer and common-area banners</li>
-        <li>1 registration voucher and 1 job posting</li>
-        <li>Sticker-table benefit</li>
-        <li>Social-media appreciation</li>
+        <li>
+          <strong>Website name and logo.</strong> Listed in the sponsors section of
+          the conference website.
+        </li>
+        <li>
+          <strong>Foyer and common-area banners.</strong> Logo displayed alongside
+          those of the other sponsors.
+        </li>
+        <li>
+          <strong>Registration voucher.</strong> One attendee can register at no cost,
+          subject to overall availability.
+        </li>
+        <li>
+          <strong>Job posting.</strong> One organizer-approved posting with a title,
+          description, and application link.
+        </li>
+        <li>
+          <strong>Sticker table.</strong> Sponsor-provided stickers can be left at
+          the designated tables.
+        </li>
+        <li>
+          <strong>Social-media appreciation.</strong> Sponsor thanked in a PGConf.dev
+          social-media posting.
+        </li>
       </ul>
     </section>
   </div>
