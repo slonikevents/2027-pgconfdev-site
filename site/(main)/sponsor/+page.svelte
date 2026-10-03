@@ -61,6 +61,7 @@
   <ol>
     <li><a class="li-number" href="#confirmed">2027 sponsors</a></li>
     <li><a class="li-number" href="#become">Why sponsor</a></li>
+    <li><a class="li-number" href="#important-dates">Important dates</a></li>
     <li><a class="li-number" href="#tiers">Sponsorship tiers</a></li>
   </ol>
 </nav>
@@ -97,6 +98,36 @@
     </p>
   </div>
 </section>
+
+<aside
+  id="important-dates"
+  class=") note area border"
+  aria-labelledby="important-dates-title"
+>
+  <h2 id="important-dates-title" class="over">Important dates</h2>
+
+  <hr />
+
+  <dl class="dedent">
+    <div class="p">
+      <dt class="over"><time datetime="2027-03-15">March 15, 2027</time></dt>
+      <dd>Deadline for physical and recorded-session logo assets</dd>
+    </div>
+    <div class="p">
+      <dt class="over"><time datetime="2027-05-11">May 11, 2027</time></dt>
+      <dd>Conference begins</dd>
+    </div>
+  </dl>
+</aside>
+
+<p class="main section" style="text-align: center">
+  <Link
+    href="https://www.pgevents.ca/events/sponsor/signup/pgconfdev2027/"
+    class="button circle"
+  >
+    Sign up to sponsor
+  </Link>
+</p>
 
 <section id="confirmed" class="main">
   <hgroup>
