@@ -26,6 +26,10 @@
   .tier li + li {
     margin-block-start: 0.5em;
   }
+
+  .tier + .tier {
+    margin-block-start: var(--gap);
+  }
 </style>
 
 <svelte:head>
@@ -143,8 +147,8 @@
     that sponsorship level.
   </p>
 
-  <div class="grid+16 (main)">
-    <div class="note border edge tier tier-gold">
+  <div class="main">
+    <section class="tier">
       <hgroup class="h4">
         <h3>Gold</h3>
         <p class="mono price">CAD $27,500</p>
@@ -169,9 +173,9 @@
         </li>
         <li>One off-hours event announced in the opening session</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="note border edge tier tier-silver">
+    <section class="tier">
       <hgroup class="h4">
         <h3>Silver</h3>
         <p class="mono price">CAD $9,900</p>
@@ -187,9 +191,9 @@
         <li>1 small promotional item</li>
         <li>One off-hours event announced in the opening session</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="note border edge tier tier-bronze">
+    <section class="tier">
       <hgroup class="h4">
         <h3>Bronze</h3>
         <p class="mono price">CAD $2,500</p>
@@ -201,7 +205,7 @@
         <li>Sticker-table benefit</li>
         <li>Social-media appreciation</li>
       </ul>
-    </div>
+    </section>
   </div>
 
   <div class="main">
