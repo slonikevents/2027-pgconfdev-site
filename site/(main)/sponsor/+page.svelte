@@ -20,11 +20,16 @@
   }
 
   .tier ul {
-    padding-inline-start: 1.25em;
+    list-style-type: square;
+    padding-inline-start: 2rem;
+  }
+
+  .tier li > strong {
+    display: block;
   }
 
   .tier li + li {
-    margin-block-start: 0.5em;
+    margin-block-start: 0.25rem;
   }
 
   .tier + .tier {
