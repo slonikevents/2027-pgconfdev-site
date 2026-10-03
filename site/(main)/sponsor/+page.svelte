@@ -19,6 +19,14 @@
     padding-inline: 0;
   }
 
+  .sponsor-sidebar > aside:first-child {
+    margin-block-start: 0;
+  }
+
+  .sponsor-signup {
+    margin-block-start: 1rem;
+  }
+
   .tier-gold {
     --tier-color: oklch(0.72 0.13 85);
   }
@@ -90,69 +98,65 @@
   </ol>
 </nav>
 
-<!-- Add back in when we post the actual sponsorship levels -->
-<aside class=") note area border" aria-labelledby="tiers-glance">
-  <h2 id="tiers-glance" class="over">Tiers at a Glance</h2>
+<div class=") sponsor-sidebar">
+  <aside
+    id="important-dates"
+    class="note area border"
+    aria-labelledby="important-dates-title"
+  >
+    <h2 id="important-dates-title" class="over">Important dates</h2>
 
-  <hr />
+    <hr />
 
-  <dl class="dedent">
-    <div class="p">
-      <dt class="over">Gold</dt>
-      <dd>CAD $27,500</dd>
-    </div>
-    <div class="p">
-      <dt class="over">Silver</dt>
-      <dd>CAD $9,900</dd>
-    </div>
-    <div class="p">
-      <dt class="over">Bronze</dt>
-      <dd>CAD $2,500</dd>
-    </div>
-  </dl>
-</aside>
+    <dl class="dedent">
+      <div class="p">
+        <dt class="over"><time datetime="2027-03-15">March 15, 2027</time></dt>
+        <dd>Deadline for printed logo assets</dd>
+      </div>
+      <div class="p">
+        <dt class="over"><time datetime="2027-05-11">May 11, 2027</time></dt>
+        <dd>Conference begins</dd>
+      </div>
+    </dl>
+  </aside>
+
+  <aside class="note area border" aria-labelledby="tiers-glance">
+    <h2 id="tiers-glance" class="over">Tiers at a Glance</h2>
+
+    <hr />
+
+    <dl class="dedent">
+      <div class="p">
+        <dt class="over">Gold</dt>
+        <dd>CAD $27,500</dd>
+      </div>
+      <div class="p">
+        <dt class="over">Silver</dt>
+        <dd>CAD $9,900</dd>
+      </div>
+      <div class="p">
+        <dt class="over">Bronze</dt>
+        <dd>CAD $2,500</dd>
+      </div>
+    </dl>
+  </aside>
+
+</div>
 
 <section class="main">
   <div class="action-area edge">
     <h3 class="h6">Sponsorships are open</h3>
-    <p>
-      We are actively seeking sponsors for the 2027 edition. <Link
-        href={`${resolve("/about/team")}#contact`}
-        >Contact the sponsorship team</Link
-      > to start a conversation.
+    <p>We are actively seeking sponsors for the 2027 edition.</p>
+    <p class="sponsor-signup">
+      <Link
+        href="https://www.pgevents.ca/events/sponsor/signup/pgconfdev2027/"
+        class="button circle"
+      >
+        Sign up to sponsor
+      </Link>
     </p>
   </div>
 </section>
-
-<aside
-  id="important-dates"
-  class=") note area border"
-  aria-labelledby="important-dates-title"
->
-  <h2 id="important-dates-title" class="over">Important dates</h2>
-
-  <hr />
-
-  <dl class="dedent">
-    <div class="p">
-      <dt class="over"><time datetime="2027-03-15">March 15, 2027</time></dt>
-      <dd>Deadline for physical and recorded-session logo assets</dd>
-    </div>
-    <div class="p">
-      <dt class="over"><time datetime="2027-05-11">May 11, 2027</time></dt>
-      <dd>Conference begins</dd>
-    </div>
-  </dl>
-</aside>
-
-<p class="main section" style="text-align: center">
-  <Link
-    href="https://www.pgevents.ca/events/sponsor/signup/pgconfdev2027/"
-    class="button circle"
-  >
-    Sign up to sponsor
-  </Link>
-</p>
 
 <section id="confirmed" class="main">
   <hgroup>
@@ -211,61 +215,72 @@
         <p class="mono price">CAD $27,500</p>
       </hgroup>
       <ul>
-        <li>
-          <strong>Website name and logo.</strong> Listed in the sponsors section of
-          the conference website.
+         <li>
+          <strong>Sponsored talk.</strong> A 25-minute talk is available to the first
+          six Gold sponsors to sign; the organizer assigns the room and time.
         </li>
         <li>
-          <strong>Foyer and common-area banners.</strong> Logo displayed alongside
-          those of the other sponsors.
+          <strong>Banners at front of room</strong>  
+          The Sponsor is entitled to have a banner featuring their company name and logo at the front of the rooms used for presentation of conference talks.
+        </li>
+        <li> 
+          <strong>Business description on website</strong>
+          The Sponsor is entitled to have a short (1 paragraph, 300 characters) description of their company and products or services listed on The Event website.
         </li>
         <li>
-          <strong>Sticker table.</strong> Sponsor-provided stickers can be left at
-          the designated tables.
+          <strong> Logo on website</strong> 
+          The Sponsor is entitled to have their name and logo listed in the sponsors section of the pgconf.dev website. 
         </li>
         <li>
-          <strong>Social-media appreciation.</strong> Sponsor thanked in a PGConf.dev
-          social-media posting.
+          <strong>Logo featured on the recorded session videos</strong> 
+          The Sponsor is entitled to have their logo appear on the recorded video session
         </li>
         <li>
-          <strong>5 registration vouchers.</strong> Codes allow five attendees to
-          register at no cost, subject to overall availability.
+        <strong>‍Option to choose one individual sponsor benefit</strong>
+        The Sponsor is entitled to claim one (1) of the following sponsor benefits. Each of the benefits can be claimed by only one sponsor on a first come first serve basis after the sponsorship contract has been executed and the sponsorship confirmed.
+          <ul>
+              <li>The Sponsor's name will appear on the conference lanyards</li>
+              <li>The Sponsor will be credited as the sponsor for the evening social event</li>
+              <li>The Sponsor will be credited as the sponsor for meals and coffee breaks</li>
+              <li>The Sponsor will be credited as the sponsor for the Unconference</li>
+              <li>The Sponsor will be credited as the sponsor of the social area and any lounges</li>
+              <li>The Sponsor will be entitled to leave an item provided by The Sponsor on chairs during a plenary session (“Chair Drop”) </li> 
+          </ul>       
         </li>
         <li>
-          <strong>3 job postings.</strong> Postings include a title, description,
-          and application link and are subject to organizer approval.
+          <strong>Acknowledged in Opening & Closing Session.</strong> 
+          The Sponsor will be mentioned (by company name) and thanked in the opening and closing sessions.
         </li>
         <li>
-          <strong>Opening and closing acknowledgement.</strong> Sponsor thanked during
-          both sessions.
+          <strong>Logo on t-shirt</strong>  
+          The Sponsor is entitled to have their logo printed on the conference t-shirt. Sponsors logos will be arranged by The Organizer to give Gold level sponsors a more prominent placement than Silver level Sponsors.
         </li>
         <li>
-          <strong>T-shirt logo.</strong> Gold receives more prominent placement than
-          Silver.
+          <strong> Promotional item distribution</strong>  
+          The Sponsor has the right to distribute 1 large and 1 small promotional item to The Event attendees.
+        </li>
+        <li> <strong> Free conference vouchers</strong>
+          The Sponsor is entitled to five (5) free voucher to the conference
         </li>
         <li>
-          <strong>Promotional items.</strong> Sponsor may provide one large and one
-          small item for distribution.
+          <strong>‍Logo featured in conference banner in foyer and common areas.</strong> 
+          The Sponsor is entitled to have their logo appear (alongside those of other sponsors) on The Event banners in the common areas of the conferences.
         </li>
         <li>
-          <strong>Recorded-session logo.</strong> Logo included with the recorded
-          conference sessions.
+          <strong>Sticker benefit</strong> 
+          The sponsor is entitled to bring stickers that can be left at designated sticker tables
+        </li>
+        <li>
+          <strong>Social-media appreciation.</strong> 
+          Sponsor thanked in a PGConf.dev social-media posting.
+        </li>
+        <li>
+          <strong>Job listing on website</strong> 
+          The Sponsor is entitled to have 3 job posting appear on The Event website.
         </li>
         <li>
           <strong>Presentation-room banners.</strong> Banners placed at the front
           of rooms assigned by the organizer.
-        </li>
-        <li>
-          <strong>Company description.</strong> One paragraph of up to 300 characters
-          published on the conference website.
-        </li>
-        <li>
-          <strong>Individual sponsorship benefit.</strong> Option to claim one available
-          benefit, such as lanyards, meals, or the evening social.
-        </li>
-        <li>
-          <strong>Sponsored talk.</strong> A 25-minute talk is available to the first
-          six Gold sponsors to sign; the organizer assigns the room and time.
         </li>
         <li>
           <strong>Off-hours event announcement.</strong> One sponsor-organized event
@@ -281,39 +296,39 @@
       </hgroup>
       <ul>
         <li>
-          <strong>Website name and logo.</strong> Listed in the sponsors section of
-          the conference website.
+          <strong> Logo on website</strong> 
+          The Sponsor is entitled to have their name and logo listed in the sponsors section of the pgconf.dev website. 
         </li>
         <li>
-          <strong>Foyer and common-area banners.</strong> Logo displayed alongside
-          those of the other sponsors.
+          <strong>‍Logo featured in conference banner in foyer and common areas.</strong> 
+          The Sponsor is entitled to have their logo appear (alongside those of other sponsors) on The Event banners in the common areas of the conferences.
         </li>
         <li>
-          <strong>Sticker table.</strong> Sponsor-provided stickers can be left at
-          the designated tables.
+          <strong>Sticker benefit</strong> 
+          The sponsor is entitled to bring stickers that can be left at designated sticker tables
         </li>
         <li>
           <strong>Social-media appreciation.</strong> Sponsor thanked in a PGConf.dev
           social-media posting.
         </li>
-        <li>
-          <strong>2 registration vouchers.</strong> Codes allow two attendees to register
-          at no cost, subject to overall availability.
+        <li> <strong> Free conference vouchers</strong>
+          The Sponsor is entitled to two (2) free voucher to the conference
         </li>
         <li>
-          <strong>2 job postings.</strong> Postings include a title, description,
-          and application link and are subject to organizer approval.
+          <strong>Job listing on website</strong> 
+          The Sponsor is entitled to have 2 job posting appear on The Event website.
         </li>
         <li>
-          <strong>Opening and closing acknowledgement.</strong> Sponsor thanked during
-          both sessions.
+          <strong>Acknowledged in Opening & Closing Session.</strong> 
+          The Sponsor will be mentioned (by company name) and thanked in the opening and closing sessions.
         </li>
         <li>
-          <strong>T-shirt logo.</strong> Logo included on the conference shirt.
+          <strong>Logo on t-shirt</strong>  
+          The Sponsor is entitled to have their logo printed on the conference t-shirt. Sponsors logos will be arranged by The Organizer to give Gold level sponsors a more prominent placement than Silver level Sponsors.
         </li>
         <li>
-          <strong>Promotional item.</strong> Sponsor may provide one small item for
-          distribution.
+          <strong> Promotional item distribution</strong>  
+          The Sponsor has the right to distribute one small promotional item to The Event attendees.
         </li>
         <li>
           <strong>Off-hours event announcement.</strong> One sponsor-organized event
@@ -329,24 +344,23 @@
       </hgroup>
       <ul>
         <li>
-          <strong>Website name and logo.</strong> Listed in the sponsors section of
-          the conference website.
+          <strong> Logo on website</strong> 
+          The Sponsor is entitled to have their name and logo listed in the sponsors section of the pgconf.dev website. 
         </li>
         <li>
-          <strong>Foyer and common-area banners.</strong> Logo displayed alongside
-          those of the other sponsors.
+          <strong>‍Logo featured in conference banner in foyer and common areas.</strong> 
+          The Sponsor is entitled to have their logo appear (alongside those of other sponsors) on The Event banners in the common areas of the conferences.
+        </li>
+        <li> <strong> Free conference vouchers</strong>
+          The Sponsor is entitled to one (1) free voucher to the conference
         </li>
         <li>
-          <strong>Registration voucher.</strong> One attendee can register at no cost,
-          subject to overall availability.
+          <strong>Job listing on website</strong> 
+          The Sponsor is entitled to have 1 job posting appear on The Event website.
         </li>
         <li>
-          <strong>Job posting.</strong> One organizer-approved posting with a title,
-          description, and application link.
-        </li>
-        <li>
-          <strong>Sticker table.</strong> Sponsor-provided stickers can be left at
-          the designated tables.
+          <strong>Sticker benefit</strong> 
+          The sponsor is entitled to bring stickers that can be left at designated sticker tables
         </li>
         <li>
           <strong>Social-media appreciation.</strong> Sponsor thanked in a PGConf.dev
@@ -355,32 +369,9 @@
       </ul>
     </section>
   </div>
-
-  <div class="main">
-    <p>
-      Gold individual sponsorship benefits are exclusive and first come, first
-      served. Available options include lanyards, the evening social event,
-      meals and coffee breaks, the Unconference, social areas and lounges, and a
-      plenary chair drop.
-    </p>
-    <p>
-      Physical-logo and promotional-item benefits require suitable assets and
-      payment by <time datetime="2027-03-15">March 15, 2027</time>. Registration
-      vouchers are subject to overall availability. Contact us for the complete
-      prospectus and sponsorship agreement.
-    </p>
-  </div>
 </section>
 
-<!-- Add back in when we post the actual sponsorship levels -->
 <section class="main">
-  <p>
-    <small>
-      Sponsors provide their own promotional items and banner assets. Organizer
-      approval and delivery details apply to benefits that use physical or
-      recorded-session assets.
-    </small>
-  </p>
 
   <p class="section">
     <Link href={`${resolve("/about/team")}#contact`} class="button circle">
