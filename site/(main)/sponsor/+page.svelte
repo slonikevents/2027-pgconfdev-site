@@ -147,12 +147,18 @@
     <h3 class="h6">Sponsorships are open</h3>
     <p>We are actively seeking sponsors for the 2027 edition.</p>
     <p class="sponsor-signup">
-      <Link
+      <Link href={`${resolve("/about/team")}#contact`}
+        >Contact the sponsorship team</Link
+      > to start a conversation.
+
+      <!-- Uncomment when we are ready to start signing contracts
+     <Link
         href="https://www.pgevents.ca/events/sponsor/signup/pgconfdev2027/"
         class="button circle"
       >
         Sign up to sponsor
       </Link>
+-->
     </p>
   </div>
 </section>
@@ -306,10 +312,6 @@
         <li>
           <strong>Job listing on website</strong>
           The Sponsor is entitled to have 3 job posting appear on The Event website.
-        </li>
-        <li>
-          <strong>Presentation-room banners.</strong> Banners placed at the front
-          of rooms assigned by the organizer.
         </li>
         <li>
           <strong>Off-hours event announcement.</strong> One sponsor-organized event
