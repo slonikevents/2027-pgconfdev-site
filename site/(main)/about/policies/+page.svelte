@@ -99,6 +99,38 @@
   </p>
 </section>
 
+<section id="recording" class="main">
+  <hgroup>
+    <p class="section-number">Privacy</p>
+    <h2>Photography & Recordings</h2>
+  </hgroup>
+  <p>
+    Conference attendees with red lanyard have indicated that they prefer that
+    their photo is not included in social media posts. Conference attendees with
+    a blue lanyard have indicated that they are okay with their photo showing up
+    in social media posts.
+  </p>
+  <p>
+    We ask all attendees to try to avoid posting photos to social media with
+    people wearning a red lanyard. All attendees should be aware that PGConf.dev
+    2027 is on a public space and it is possible that your photo will included
+    in a social media post even if you are wearing a red lanyard. Many of the
+    talks at PGConf.dev 2027 will be recorded and posted on the Internet. If you
+    ask question during a recorded talk this might be included in a public
+    video. If you walk into the cameras view while it is recording a talk then
+    you might appear in a public video.
+  </p>
+  <p>
+    The conference will record and publish many of the conference sessions.
+    Attendees and speakers are not allowed to make their own vidoe recordings of
+    conference sessions. Attendees that want to capture audio for the purposes
+    of note taking or translation can do so in a non-disruptive manner but they
+    must not share the recordings or transcripts with others. Unauthorized
+    distribution may result in removal from the conference and not being allowed
+    to attend future PGConf.dev or Slonik Events Canada events
+  </p>
+</section>
+
 <section id="financial" class="main">
   <hgroup>
     <p class="section-number">Financial disclosure</p>
