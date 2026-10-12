@@ -400,7 +400,9 @@
 
       <p>
         Located 414 rue Saint-Sulpice in the old city a 15 minute walk from the
-        venue.
+        venue. Parking availability at the hotel is limited we recommend
+        attendees that require parking choose another hotel or be prepared to
+        make their own parking arrangements.
       </p>
 
       <table style:font-variant-numeric="tabular-nums">
