@@ -151,14 +151,12 @@
         >Contact the sponsorship team</Link
       > to start a conversation.
 
-      <!-- Uncomment when we are ready to start signing contracts
-     <Link
+      <Link
         href="https://www.pgevents.ca/events/sponsor/signup/pgconfdev2027/"
         class="button circle"
       >
         Sign up to sponsor
       </Link>
--->
     </p>
   </div>
 </section>
