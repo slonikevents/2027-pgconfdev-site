@@ -164,6 +164,8 @@
         <li>Dilip Kumar · Google</li>
         <li>Jonathan Katz · Databricks</li>
         <li>Paul Ramsey · Snowflake</li>
+        <li>Masahiko Sawada</li>
+        <li>Marco Slot</li>
         <li>Jacob Champion · EDB</li>
       </ul>
     </div>

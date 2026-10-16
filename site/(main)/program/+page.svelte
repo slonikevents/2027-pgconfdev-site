@@ -59,7 +59,7 @@
         <Presentation /> <a href="#presentations">Presentations</a>
       </dt>
       <dd class="deck">
-        Share knowledge, experience, research, or a new idea in a structured 25-
+        Share knowledge, experience, research, or a new idea in a structured 25
         or 50-minute talk.
       </dd>
     </div>
@@ -130,25 +130,25 @@
   <dl class="grid+8 dedent">
     <div class="p">
       <dt class="over">Main CFP closes</dt>
-      <dd><time datetime="2027-01-10T23:59-05:00">January 10, 2027</time></dd>
+      <dd><time datetime="2027-01-12T23:59-05:00">January 12, 2027</time></dd>
       <dd><small>11:59 PM Montréal time</small></dd>
     </div>
 
     <div class="p">
       <dt class="over">CFP responses sent</dt>
       <dd>
-        <time class="delete" datetime="2027-02-01">February 1, 2027</time>
+        <time datetime="2027-02-02">February 2, 2027</time>
       </dd>
     </div>
 
     <div class="p">
       <dt class="over">Discussion round 2 closes</dt>
-      <dd><time class="delete" datetime="2027-04-13">April 13, 2027</time></dd>
+      <dd><time datetime="2027-04-13">April 13, 2027</time></dd>
     </div>
 
     <div class="p">
       <dt class="over">Round 2 responses sent</dt>
-      <dd><time class="delete" datetime="2027-04-27">April 27, 2027</time></dd>
+      <dd><time datetime="2027-04-27">April 27, 2027</time></dd>
     </div>
   </dl>
 </section>
@@ -198,7 +198,7 @@
     <h3 class="iconic">
       <Presentation class="action" /> Presentations
     </h3>
-    <p><a href="#">Submit a presentation</a></p>
+    <p>Submit a presentation</p>
   </hgroup>
 
   <p class="lede">
@@ -208,7 +208,7 @@
 
   <aside class="main ) note">
     <h4 class="over iconic"><CalendarClock /> Submission deadline</h4>
-    <p><time datetime="2027-01-10T23:59-05:00">January 10, 2027</time></p>
+    <p><time datetime="2027-01-12T23:59-05:00">January 12, 2027</time></p>
   </aside>
 
   <p class="edge delete-area">
@@ -266,7 +266,7 @@
     <h3 class="iconic">
       <UsersRound /> <span>Community discussions</span>
     </h3>
-    <p><a href="#">Lead a community discussion</a></p>
+    <p>Lead a community discussion</p>
   </hgroup>
 
   <p class="lede">
@@ -279,18 +279,18 @@
     <dl class="dedent">
       <div class="p">
         <dt class="over">Round 1</dt>
-        <dd><time datetime="2027-01-10T23:59-05:00">January 10, 2027</time></dd>
+        <dd><time datetime="2027-01-12T23:59-05:00">January 12, 2027</time></dd>
       </div>
       <div class="p">
         <dt class="over">Round 2</dt>
         <dd>
-          <time class="delete" datetime="2027-04-13">April 13, 2027</time>
+          <time datetime="2027-04-13">April 13, 2027</time>
         </dd>
       </div>
       <div class="p">
         <dt class="over">Round 2 responses</dt>
         <dd>
-          <time class="delete" datetime="2027-04-27">April 27, 2027</time>
+          <time datetime="2027-04-27">April 27, 2027</time>
         </dd>
       </div>
     </dl>
@@ -374,7 +374,7 @@
   <hgroup>
     <p>Content type</p>
     <h3 class="iconic"><BookOpen /> Workshops</h3>
-    <p><a href="#">Teach a workshop</a></p>
+    <p>Teach a workshop</p>
   </hgroup>
 
   <p class="lede">
@@ -384,7 +384,7 @@
 
   <aside class="main ) note">
     <h4 class="over iconic"><CalendarClock /> Submission deadline</h4>
-    <p><time datetime="2027-01-10T23:59-05:00">January 10, 2027</time></p>
+    <p><time datetime="2027-01-12T23:59-05:00">January 12, 2027</time></p>
   </aside>
 
   <div class="note p">
@@ -405,7 +405,7 @@
   <hgroup>
     <p>Content type</p>
     <h3 class="iconic"><MessagesSquare class="action" /> Panels</h3>
-    <p><a href="#">Convene a panel</a></p>
+    <p>Convene a panel</p>
   </hgroup>
 
   <p class="lede">
@@ -416,7 +416,7 @@
 
   <aside class="main ) note">
     <h4 class="over iconic"><CalendarClock /> Submission deadline</h4>
-    <p><time datetime="2027-01-10T23:59-05:00">January 10, 2027</time></p>
+    <p><time datetime="2027-01-12T23:59-05:00">January 12, 2027</time></p>
   </aside>
 
   <p>
@@ -443,7 +443,7 @@
     <h3 class="iconic">
       <FileImage class="action" /> Posters
     </h3>
-    <p><a href="#">Share a poster</a></p>
+    <p>Share a poster</p>
   </hgroup>
 
   <p class="lede">
@@ -458,13 +458,13 @@
       <div class="p">
         <dt class="over">Interest</dt>
         <dd>
-          <time class="delete" datetime="2027-03-15">March 15, 2027</time>
+          <time datetime="2027-03-15">March 15, 2027</time>
         </dd>
       </div>
       <div class="p">
         <dt class="over">Final PDF</dt>
         <dd>
-          <time class="delete" datetime="2027-04-19">April 19, 2027</time>
+          <time datetime="2027-04-19">April 19, 2027</time>
         </dd>
       </div>
     </dl>
@@ -517,7 +517,7 @@
     <h3 class="iconic">
       <Lightbulb class="action" /> Other ideas
     </h3>
-    <p><a href="#">Pitch another idea</a></p>
+    <p>Pitch another idea</p>
   </hgroup>
 
   <p class="lede">
@@ -527,13 +527,27 @@
 
   <aside class="main ) note">
     <h4 class="over iconic"><CalendarClock /> Submission deadline</h4>
-    <p><time datetime="2027-01-10T23:59-05:00">January 10, 2027</time></p>
+    <p><time datetime="2027-01-12T23:59-05:00">January 12, 2027</time></p>
   </aside>
 
   <p>
     Do not feel limited to previous formats or subjects. We want ideas that
     expand the conversation and improve the experience.
   </p>
+
+  <aside class="main action-area edge">
+    <h4>What talks do you want to hear at PGConf.dev?</h4>
+    <p>
+      Our brand new
+      <Link
+        href="https://github.com/slonikevents/pgconf-dev-audience-topics/discussions/categories/topic-requests"
+      >
+        forum
+      </Link>
+      lets you request a talk, support an idea, or gauge interest in one you might
+      submit. Help speakers and the program committee see what people want.
+    </p>
+  </aside>
 </section>
 
 <section id="rules" class="main">
