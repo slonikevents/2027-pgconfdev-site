@@ -147,9 +147,8 @@
     <h3 class="h6">Sponsorships are open</h3>
     <p>We are actively seeking sponsors for the 2027 edition.</p>
     <p class="sponsor-signup">
-      <Link href={`${resolve("/about/team")}#contact`}
-        >Contact the sponsorship team</Link
-      > to start a conversation.
+      <Link href={`${resolve("/about/team")}#contact`}>Contact us</Link> if you have
+      any questions.
 
       <Link
         href="https://www.pgevents.ca/events/sponsor/signup/pgconfdev2027/"
