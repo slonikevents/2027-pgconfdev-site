@@ -149,7 +149,8 @@
     <p class="sponsor-signup">
       <Link href={`${resolve("/about/team")}#contact`}>Contact us</Link> if you have
       any questions.
-
+    </p>
+    <p>
       <Link
         href="https://www.pgevents.ca/events/sponsor/signup/pgconfdev2027/"
         class="button circle"
