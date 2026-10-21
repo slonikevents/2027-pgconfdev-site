@@ -519,6 +519,11 @@
     unlikely to be accepted.
   </p>
 
+  <p>
+    For past examples, see the
+    <Link href="https://2026.pgconf.dev/posters">2026 posters</Link>.
+  </p>
+
   <h4 class="h6">Your poster should include</h4>
   <ul>
     <li>A visual representation of the patch or project.</li>
@@ -598,7 +603,7 @@
     </li>
     <li>
       Browse the
-      <Link href="https://www.pgevents.ca/events/pgconfdev2026/schedule/">
+      <Link href="https://2026.pgconf.dev/schedule/tuesday">
         PGConf.dev 2026 schedule
       </Link>
       to see what was accepted last year and find more inspiration.
