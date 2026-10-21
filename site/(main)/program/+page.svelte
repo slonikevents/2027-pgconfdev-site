@@ -56,8 +56,13 @@
   </p>
 
   <p class="flex">
-    <button class="circle" disabled>Submit a proposal</button>
-    <button class="circle stroke" disabled>Manage your submissions</button>
+    <Link class="button circle" href="https://www.pgevents.ca/events/pgconfdev2027/callforpapers/new/">
+      Submit a proposal
+    </Link>
+
+    <Link class="button circle stroke" href="https://www.pgevents.ca/events/pgconfdev2027/callforpapers/">
+      Manage your submissions
+    </Link>
   </p>
 </header>
 
