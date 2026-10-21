@@ -61,11 +61,17 @@
   </p>
 
   <p class="flex">
-    <Link class="button circle" href="https://www.pgevents.ca/events/pgconfdev2027/callforpapers/new/">
+    <Link
+      class="button circle"
+      href="https://www.pgevents.ca/events/pgconfdev2027/callforpapers/new/"
+    >
       Submit a proposal
     </Link>
 
-    <Link class="button circle stroke" href="https://www.pgevents.ca/events/pgconfdev2027/callforpapers/">
+    <Link
+      class="button circle stroke"
+      href="https://www.pgevents.ca/events/pgconfdev2027/callforpapers/"
+    >
       Manage your submissions
     </Link>
   </p>

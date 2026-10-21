@@ -148,44 +148,44 @@
 <section id="program-committee" class="main)">
   <hgroup>
     <p>Program</p>
-    <h2>The 2026 program team.</h2>
+    <h2>The 2027 program team.</h2>
   </hgroup>
 
   <p class="lede text">
-    The 2027 committees will be announced before submissions open. Last year's
-    program was run by the following community members.
+    These community members review submissions and build the program. A few
+    seats are still being filled.
   </p>
 
-  <div class="grid+14" style:gap="var(--margin)">
+  <dl class="grid+14 dedent" style:gap="var(--margin)">
     <div>
-      <h3 class="h5">Program committee</h3>
-      <ul class="dedent">
-        <li>Melanie Plageman · Microsoft</li>
-        <li>Dilip Kumar · Google</li>
-        <li>Jonathan Katz · Databricks</li>
-        <li>Paul Ramsey · Snowflake</li>
-        <li>Masahiko Sawada</li>
-        <li>Marco Slot</li>
-        <li>Jacob Champion · EDB</li>
-      </ul>
+      <dt class="h5">Talk committee</dt>
+      <dd>Melanie Plageman · Microsoft</dd>
+      <dd>Jonathan Katz · Databricks</dd>
+      <dd>Jacob Champion · EDB</dd>
+      <dd>Masahiko Sawada · AWS</dd>
+      <dd>Marco Slot · Snowflake</dd>
     </div>
 
     <div>
-      <h3 class="h5">Tuesday planning committee</h3>
-      <ul class="dedent">
-        <li>Claire Giordano · Microsoft</li>
-        <li>Corey Hunker · Apple</li>
-        <li>Matthias van de Meent · Databricks</li>
-        <li>Paul Jungwirth · Illuminated Computing</li>
-        <li>Robert Haas · EDB</li>
-      </ul>
+      <dt class="h5">Content solicitation committee</dt>
+      <dd>Ashutosh Bapat</dd>
+      <dd>Andrey Borodin · Yandex Cloud</dd>
+      <dd>Gwen Shapira · Nile</dd>
+      <dd class="deck">More members to be announced</dd>
     </div>
 
     <div>
-      <h3 class="h5">Postermaster</h3>
-      <p>Andrey Borodin · Yandex Cloud</p>
+      <dt class="h5">Other content committee</dt>
+      <dd>Gwen Shapira · Nile</dd>
+      <dd>Andrey Borodin · Yandex Cloud</dd>
+      <dd class="deck">More members to be announced</dd>
     </div>
-  </div>
+
+    <div>
+      <dt class="h5">Postermaster</dt>
+      <dd>Andrey Borodin · Yandex Cloud</dd>
+    </div>
+  </dl>
 </section>
 
 <section id="contact" class="main)">
