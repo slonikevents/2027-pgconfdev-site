@@ -18,6 +18,15 @@
 </script>
 
 <style>
+  .iconic {
+    align-items: baseline;
+  }
+
+  /* Center the icon on the text's cap box instead of its line box */
+  .iconic > :global(.icon) {
+    translate: 0 calc((1em - 1cap) / 2);
+  }
+
   section.area {
     margin-block: 0;
     padding-block: var(--margin);
