@@ -27,6 +27,11 @@
     translate: 0 calc((1em - 1cap) / 2);
   }
 
+  /* Insane Safari bug in revert-layer */
+  section:where(:not(:last-child)) {
+    margin-block: var(--margin);
+  }
+
   section.area {
     margin-block: 0;
     padding-block: var(--margin);
