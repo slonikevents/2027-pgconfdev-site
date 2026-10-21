@@ -121,22 +121,12 @@
   </dl>
 </section>
 
-<nav class=") note" aria-labelledby="on-this-page">
-  <h2 id="on-this-page" class="over">On this page</h2>
-  <ol>
-    <li><a class="li-number" href="#why-submit">Why submit</a></li>
-    <li><a class="li-number" href="#timeline">Timeline</a></li>
-    <li><a class="li-number" href="#presentations">Content types</a></li>
-    <li><a class="li-number" href="#rules">Rules &amp; tips</a></li>
-  </ol>
-</nav>
-
-<section class="( main section">
+<section class="( main) section">
   <h2 class="h5 iconic">
-    <CalendarDays /> Important dates
+    <CalendarDays /> <span>Important dates</span>
   </h2>
 
-  <dl class="grid+8 dedent">
+  <dl class="grid+14 dedent">
     <div class="p">
       <dt class="over">Main CFP closes</dt>
       <dd><time datetime="2027-01-12T23:59-05:00">January 12, 2027</time></dd>
@@ -162,6 +152,16 @@
   </dl>
 </section>
 
+<nav class=") note" aria-labelledby="on-this-page">
+  <h2 id="on-this-page" class="over">On this page</h2>
+  <ol>
+    <li><a class="li-number" href="#why-submit">Why submit</a></li>
+    <li><a class="li-number" href="#timeline">Timeline</a></li>
+    <li><a class="li-number" href="#presentations">Content types</a></li>
+    <li><a class="li-number" href="#rules">Rules &amp; tips</a></li>
+  </ol>
+</nav>
+
 <section id="why-submit" class="main">
   <hgroup>
     <p class="section-number">Why submit</p>
@@ -184,7 +184,7 @@
 <section id="timeline" class="main">
   <hgroup>
     <p class="section-number">Timeline</p>
-    <h2>How the timeline works</h2>
+    <h3>How the timeline works</h3>
   </hgroup>
 
   <p>
@@ -196,8 +196,12 @@
   <p>
     Community discussions can also be submitted in a second round for
     late-breaking topics. Proposals not selected in the first round roll over
-    automatically. Posters follow their own interest and final-PDF deadlines,
-    listed with the poster details below.
+    automatically.
+  </p>
+
+  <p>
+    Posters follow their own interest and final-PDF deadlines, listed with the
+    poster details below.
   </p>
 </section>
 
@@ -205,27 +209,29 @@
   <hgroup>
     <p>Content type</p>
     <h3 class="iconic">
-      <Presentation class="action" /> Presentations
+      <Presentation /> Presentations
     </h3>
     <p>Submit a presentation</p>
   </hgroup>
+
+  <aside class="main ) note p">
+    <div class="over iconic">
+      <CalendarClock /> <span>Submission deadline</span>
+    </div>
+    <p><time datetime="2027-01-12">January 12, 2027</time></p>
+  </aside>
 
   <p class="lede">
     Presentations are structured sessions where community members share
     knowledge, experiences, or new ideas with the PostgreSQL community.
   </p>
 
-  <aside class="main ) note">
-    <h4 class="over iconic"><CalendarClock /> Submission deadline</h4>
-    <p><time datetime="2027-01-12T23:59-05:00">January 12, 2027</time></p>
-  </aside>
-
-  <p class="edge delete-area">
+  <p>
     Propose a presentation as either a 25- or 50-minute talk. Do not submit the
     same proposal to both tracks.
   </p>
 
-  <dl class="main grid+8 dedent section">
+  <dl class="main grid+14 dedent section">
     <div class="action-acme">
       <dt class="h5">25-minute talk</dt>
       <dd>
@@ -260,12 +266,10 @@
     <li>Surface new perspectives or practical techniques.</li>
   </ul>
 
-  <h4>What could you present?</h4>
-
   <p>
-    Failed projects, proof-of-concept features, performance work, database
-    research, architectural problems, community concerns, how-tos, missing
-    features, and user needs.
+    This could be a failed project, a proof-of-concept feature, performance
+    work, database research, an architectural problem, a community concern, a
+    how-to, a missing feature, or an unmet user need.
   </p>
 </section>
 
@@ -278,17 +282,15 @@
     <p>Lead a community discussion</p>
   </hgroup>
 
-  <p class="lede">
-    Community Discussion Sessions are interactive meetings where you can work
-    through issues related to Postgres, its ecosystem, and its community.
-  </p>
+  <aside class="main ) note p">
+    <div class="over iconic">
+      <CalendarClock /> <span>Discussion rounds</span>
+    </div>
 
-  <aside class="main ) note">
-    <h4 class="over iconic"><CalendarClock /> Discussion rounds</h4>
     <dl class="dedent">
       <div class="p">
         <dt class="over">Round 1</dt>
-        <dd><time datetime="2027-01-12T23:59-05:00">January 12, 2027</time></dd>
+        <dd><time datetime="2027-01-12">January 12, 2027</time></dd>
       </div>
       <div class="p">
         <dt class="over">Round 2</dt>
@@ -305,22 +307,29 @@
     </dl>
   </aside>
 
+  <p class="lede">
+    Community Discussion Sessions are interactive meetings where you can work
+    through issues related to Postgres, its ecosystem, and its community.
+  </p>
+
   <p>
-    Do not feel limited to subjects that have appeared there before. We want new
-    ideas that expand the conversation.
+    Do not feel limited to subjects from previous years. We want new ideas that
+    expand the conversation.
   </p>
 
   <p>
     Community discussions have two types: open and closed. Choose the type that
-    best fits your session when submitting your proposal.
+    best fits your session when submitting your proposal. Neither type is
+    recorded.
   </p>
 
-  <dl class="main grid+8 dedent section">
+  <dl class="main grid+14 dedent section">
     <div class="insert-acme">
       <dt class="h6 iconic">
         <BriefcaseBusiness /> Open
       </dt>
-      <dd class="deck">
+
+      <dd class="deck p">
         <p>
           A small number of seats are reserved for key, invited participants.
         </p>
@@ -330,13 +339,13 @@
           among the invited attendees.
         </p>
       </dd>
-      <dd>
-        <em>
-          Example:
-          <Link href="https://2026.pgconf.dev/session/727">
-            Multithreading Working Group
-          </Link>
-        </em>
+
+      <dd class="deck p">
+        <em>Example:</em>
+
+        <Link href="https://2026.pgconf.dev/session/727">
+          Multithreading Working Group
+        </Link>
       </dd>
     </div>
 
@@ -344,11 +353,15 @@
       <dt class="h6 iconic">
         <LockKeyhole /> Closed
       </dt>
-      <dd class="deck">
+
+      <dd class="deck p">
         An invite-only, focused, productive, and private discussion among people
         already involved in the topic.
       </dd>
-      <dd><em>Example: PostgreSQL Security Team Meeting</em></dd>
+
+      <dd class="deck p">
+        <em>Example:</em> PostgreSQL Security Team Meeting
+      </dd>
     </div>
   </dl>
 
@@ -367,43 +380,40 @@
     overlapping key attendees.
   </p>
 
-  <div class="edge">
-    <h4 class="h6">Submission notes</h4>
-    <ul>
-      <li>
-        Proposals not accepted in the first round automatically roll over to the
-        second, so submitting early improves your chances.
-      </li>
-      <li>Community Discussion Sessions will not be recorded.</li>
-    </ul>
-  </div>
+  <p>
+    Proposals not accepted in the first round roll over to the second
+    automatically, so submitting early improves your chances.
+  </p>
 </section>
 
 <section id="workshops" class="*:main">
   <hgroup>
     <p>Content type</p>
-    <h3 class="iconic"><BookOpen /> Workshops</h3>
+    <h3 class="iconic">
+      <BookOpen /> Workshops
+    </h3>
     <p>Teach a workshop</p>
   </hgroup>
+
+  <aside class="main ) note p">
+    <div class="over iconic">
+      <CalendarClock /> <span>Submission deadline</span>
+    </div>
+    <p><time datetime="2027-01-12">January 12, 2027</time></p>
+  </aside>
 
   <p class="lede">
     Have an idea for educating current and future Postgres hackers and extension
     developers? Propose a hands-on practical training or collaborative workshop.
   </p>
 
-  <aside class="main ) note">
-    <h4 class="over iconic"><CalendarClock /> Submission deadline</h4>
-    <p><time datetime="2027-01-12T23:59-05:00">January 12, 2027</time></p>
-  </aside>
-
-  <div class="note p">
-    <h4 class="over">A previous example</h4>
-    <p>
-      <Link href="https://2026.pgconf.dev/session/553">
-        How to read and write the SQL standard
-      </Link>
-    </p>
-  </div>
+  <p>
+    For a past example, see
+    <Link href="https://2026.pgconf.dev/session/553">
+      How to read and write the SQL standard
+    </Link>
+    from 2026.
+  </p>
 
   <p class="deck">
     Accepted workshops confer at most two complimentary registrations.
@@ -413,9 +423,18 @@
 <section id="panels" class="area *:main">
   <hgroup>
     <p>Content type</p>
-    <h3 class="iconic"><MessagesSquare class="action" /> Panels</h3>
+    <h3 class="iconic">
+      <MessagesSquare /> Panels
+    </h3>
     <p>Convene a panel</p>
   </hgroup>
+
+  <aside class="main ) note p">
+    <div class="over iconic">
+      <CalendarClock /> <span>Submission deadline</span>
+    </div>
+    <p><time datetime="2027-01-12">January 12, 2027</time></p>
+  </aside>
 
   <p class="lede">
     Bring together experts to weigh in on an important community topic, from
@@ -423,25 +442,18 @@
     community organizing and growing new leaders.
   </p>
 
-  <aside class="main ) note">
-    <h4 class="over iconic"><CalendarClock /> Submission deadline</h4>
-    <p><time datetime="2027-01-12T23:59-05:00">January 12, 2027</time></p>
-  </aside>
-
   <p>
     List proposed panelists. The list need not be final, but confirm that
     everyone named is open to participating.
   </p>
 
-  <aside class="note p">
-    <h4 class="over">An example</h4>
-
-    <p>
-      <Link href="https://2026.pgconf.dev/session/558">
-        Beyond the Source: The Human Architecture of PostgreSQL
-      </Link>
-    </p>
-  </aside>
+  <p>
+    For a past example, see
+    <Link href="https://2026.pgconf.dev/session/558">
+      Beyond the Source: The Human Architecture of PostgreSQL
+    </Link>
+    from 2026.
+  </p>
 
   <p class="deck">Panels do not confer complimentary registration.</p>
 </section>
@@ -450,19 +462,16 @@
   <hgroup>
     <p>Content type</p>
     <h3 class="iconic">
-      <FileImage class="action" /> Posters
+      <FileImage /> Posters
     </h3>
     <p>Share a poster</p>
   </hgroup>
 
-  <p class="lede">
-    Present your work visually and use it to attract co-authors, reviewers, and
-    collaborators, or simply to improve discussion around a patch, extension,
-    tool, or community initiative.
-  </p>
+  <aside class="main ) note p">
+    <div class="over iconic">
+      <CalendarClock /> <span>Poster deadlines</span>
+    </div>
 
-  <aside class="main ) note">
-    <h4 class="over iconic"><CalendarClock /> Poster deadlines</h4>
     <dl class="dedent">
       <div class="p">
         <dt class="over">Interest</dt>
@@ -479,14 +488,15 @@
     </dl>
   </aside>
 
-  <aside class="main ) note">
-    <h4 class="over">The board</h4>
-    <p><strong>A1 size</strong><br />594 × 841 mm</p>
-    <p>Capacity is limited to 20–30 posters.</p>
-  </aside>
+  <p class="lede">
+    Present your work visually and use it to attract co-authors, reviewers, and
+    collaborators, or simply to improve discussion around a patch, extension,
+    tool, or community initiative.
+  </p>
 
   <p>
-    Posters will be displayed during dedicated coffee and poster-session breaks.
+    Boards are A1 size (594 × 841 mm), and capacity is limited to 20–30 posters.
+    Posters are displayed during dedicated coffee and poster-session breaks.
     On-site presenters receive priority locations, but remote authors are
     welcome: we can print and display a poster and, in some cases, mail it back.
   </p>
@@ -509,13 +519,10 @@
     </li>
   </ul>
 
-  <div class="edge p">
-    <h4 class="h6">Submission notes</h4>
-    <p>
-      Include your name, topic, and whether you expect to attend in person when
-      expressing interest.
-    </p>
-  </div>
+  <p>
+    When expressing interest, include your name, topic, and whether you expect
+    to attend in person.
+  </p>
 
   <p class="deck">Accepted posters do not confer complimentary registration.</p>
 </section>
@@ -524,39 +531,38 @@
   <hgroup>
     <p>Content type</p>
     <h3 class="iconic">
-      <Lightbulb class="action" /> Other ideas
+      <Lightbulb /> Other ideas
     </h3>
     <p>Pitch another idea</p>
   </hgroup>
+
+  <aside class="main ) note p">
+    <div class="over iconic">
+      <CalendarClock /> <span>Submission deadline</span>
+    </div>
+    <p><time datetime="2027-01-12">January 12, 2027</time></p>
+  </aside>
 
   <p class="lede">
     From Community Office Hours to a group run, propose an idea that enriches
     the conference and connects its community.
   </p>
 
-  <aside class="main ) note">
-    <h4 class="over iconic"><CalendarClock /> Submission deadline</h4>
-    <p><time datetime="2027-01-12T23:59-05:00">January 12, 2027</time></p>
-  </aside>
-
   <p>
     Do not feel limited to previous formats or subjects. We want ideas that
     expand the conversation and improve the experience.
   </p>
 
-  <aside class="main action-area edge">
-    <h4>What talks do you want to hear at PGConf.dev?</h4>
-    <p>
-      Our brand new
-      <Link
-        href="https://github.com/slonikevents/pgconf-dev-audience-topics/discussions/categories/topic-requests"
-      >
-        forum
-      </Link>
-      lets you request a talk, support an idea, or gauge interest in one you might
-      submit. Help speakers and the program committee see what people want.
-    </p>
-  </aside>
+  <p>
+    Our new
+    <Link
+      href="https://github.com/slonikevents/pgconf-dev-audience-topics/discussions/categories/topic-requests"
+    >
+      topic request forum
+    </Link>
+    lets you request a talk, support an idea, or gauge interest in one you might submit,
+    so speakers and the program committee can see what people want.
+  </p>
 </section>
 
 <section id="rules" class="main">
@@ -582,9 +588,9 @@
     </li>
     <li>
       Browse the
-      <a href="https://www.pgevents.ca/events/pgconfdev2026/schedule/">
+      <Link href="https://www.pgevents.ca/events/pgconfdev2026/schedule/">
         PGConf.dev 2026 schedule
-      </a>
+      </Link>
       to see what was accepted last year and find more inspiration.
     </li>
   </ul>
