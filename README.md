@@ -144,6 +144,16 @@ screens. Target breakpoints are `48rem`, `64rem`, and `80rem`.
 Use semantic HTML. Eschew `<div>`, `<span>`, etc. when a [more appropriate
 element] exists.
 
+### Sponsor logos
+
+Add confirmed sponsors to `site/(main)/sponsors.ts`, under `gold`, `silver`, or
+`bronze`. Put logo assets in `site/(main)/logos/`, import them, and provide each
+sponsor's `name`, `url`, and `logo`. Gold sponsors can also have a `description`.
+
+`site/(main)/Sponsors.svelte` displays the list on both the home and sponsor
+pages, with larger logos for higher levels. Descriptions appear on the sponsor
+page only. Empty levels are hidden automatically.
+
 [Svelte]: https://svelte.dev/docs/svelte/overview
 [SvelteKit]: https://svelte.dev/docs/kit/introduction
 [adapter-static]: https://svelte.dev/docs/kit/adapter-static

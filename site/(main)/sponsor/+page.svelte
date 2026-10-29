@@ -1,7 +1,13 @@
 <script>
   import { resolve } from "$app/paths";
   import Link from "$lib/Link";
+  import { SPONSORS } from "../sponsors";
+  import Sponsors from "../Sponsors.svelte";
   import BreadcrumbNav from "./BreadcrumbNav.svelte";
+
+  const hasSponsors = Object.values(SPONSORS).some(
+    (sponsors) => sponsors.length > 0,
+  );
 </script>
 
 <style>
@@ -164,13 +170,21 @@
 <section id="confirmed" class="main">
   <hgroup>
     <p class="section-number">2027 sponsors</p>
-    <h2>Confirmed sponsors will appear here.</h2>
+    <h2>
+      {hasSponsors
+        ? "Thank you to our sponsors."
+        : "Confirmed sponsors will appear here."}
+    </h2>
   </hgroup>
 
-  <p>
-    Announcements will be made as sponsorships are confirmed. Check back or
-    follow us on social media.
-  </p>
+  {#if hasSponsors}
+    <Sponsors />
+  {:else}
+    <p>
+      Announcements will be made as sponsorships are confirmed. Check back or
+      follow us on social media.
+    </p>
+  {/if}
 </section>
 
 <section id="become" class="main">

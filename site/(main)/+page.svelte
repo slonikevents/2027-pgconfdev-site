@@ -4,6 +4,7 @@
   import { Mastodon } from "$lib/icon";
   import Link from "$lib/Link";
   import type { PageProps } from "./$types";
+  import Sponsors from "./Sponsors.svelte";
   import Status from "./Status.svelte";
 
   const { data }: PageProps = $props();
@@ -153,6 +154,8 @@
         can't.
       </p>
     </hgroup>
+
+    <Sponsors compact />
 
     <p>
       <Link href={resolve("/sponsor")}>Sponsor PGConf.dev 2027 →</Link>
