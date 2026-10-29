@@ -1,7 +1,6 @@
 <!--
   @component Sponsor logos grouped by level, using the shared 2027 sponsor list.
-  The compact version shows Gold and Silver logos without descriptions on the
-  home page.
+  The compact version shows logos without descriptions on the home page.
 -->
 
 <script lang="ts">
@@ -54,6 +53,12 @@
   .compact.tier-silver {
     --logo-height: 4rem;
     --logo-width: 12rem;
+  }
+
+  .compact.tier-bronze {
+    --column-width: 12rem;
+    --logo-height: 2.5rem;
+    --logo-width: 8rem;
   }
 
   h3 {
@@ -109,7 +114,7 @@
 </style>
 
 {#each levels as { key, name } (key)}
-  {#if sponsors[key].length > 0 && (!compact || key !== "bronze")}
+  {#if sponsors[key].length > 0}
     <section
       class="sponsor-tier tier-{key}"
       class:compact
