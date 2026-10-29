@@ -116,6 +116,18 @@
   --code-color: rgb(92 99 112);
 }
 
+.tier-gold {
+  --tier-color: rgb(183 136 0);
+}
+
+.tier-silver {
+  --tier-color: rgb(112 112 122);
+}
+
+.tier-bronze {
+  --tier-color: rgb(139 69 19);
+}
+
 :where(.action, .notice, .insert, .delete) {
   color: var(--fg);
 }

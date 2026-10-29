@@ -33,16 +33,6 @@
     margin-block-start: 1rem;
   }
 
-  .tier-gold {
-    --tier-color: oklch(0.72 0.13 85);
-  }
-  .tier-silver {
-    --tier-color: oklch(0.62 0.02 245);
-  }
-  .tier-bronze {
-    --tier-color: oklch(0.58 0.09 50);
-  }
-
   .tier {
     border-inline-start: 3px solid var(--tier-color);
     padding-inline-start: 1rem;

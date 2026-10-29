@@ -35,29 +35,23 @@
     margin-block-start: var(--margin);
   }
 
-  [data-tier="gold"] {
-    --tier-color: rgb(183 136 0);
+  .tier-gold {
     --logo-height: 12rem;
     --logo-width: 28rem;
   }
 
-  [data-tier="silver"] {
-    --tier-color: rgb(112 112 122);
-  }
-
-  [data-tier="bronze"] {
-    --tier-color: rgb(139 69 19);
+  .tier-bronze {
     --logo-height: 4rem;
     --logo-width: 14rem;
   }
 
-  .compact[data-tier="gold"] {
+  .compact.tier-gold {
     --column-width: 24rem;
     --logo-height: 10rem;
     --logo-width: 24rem;
   }
 
-  .compact[data-tier="silver"] {
+  .compact.tier-silver {
     --logo-height: 4rem;
     --logo-width: 12rem;
   }
@@ -75,7 +69,7 @@
     padding: 0;
   }
 
-  [data-tier="bronze"] ul {
+  .tier-bronze ul {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -117,9 +111,8 @@
 {#each levels as { key, name } (key)}
   {#if sponsors[key].length > 0 && (!compact || key !== "bronze")}
     <section
-      class="sponsor-tier"
+      class="sponsor-tier tier-{key}"
       class:compact
-      data-tier={key}
       aria-labelledby={`${id}-${key}`}
     >
       <h3 id={`${id}-${key}`}>{name} Sponsors</h3>
