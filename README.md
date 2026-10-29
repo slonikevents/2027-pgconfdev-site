@@ -150,9 +150,11 @@ Add confirmed sponsors to `site/(main)/sponsors.ts`, under `gold`, `silver`, or
 `bronze`. Put logo assets in `site/(main)/logos/`, import them, and provide each
 sponsor's `name`, `url`, and `logo`. Gold sponsors can also have a `description`.
 
-`site/(main)/Sponsors.svelte` displays the list on both the home and sponsor
-pages, with larger logos for higher levels. Descriptions appear on the sponsor
-page only. Empty levels are hidden automatically.
+`site/(main)/Sponsors.svelte` shows Gold and Silver on the home page. Gold logos
+are larger. Descriptions appear only for Gold sponsors on the sponsor page.
+
+On the sponsor page, Gold and Silver each use one logo per row. Bronze uses
+two logos per row. Empty levels are hidden automatically.
 
 [Svelte]: https://svelte.dev/docs/svelte/overview
 [SvelteKit]: https://svelte.dev/docs/kit/introduction

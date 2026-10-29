@@ -1,6 +1,7 @@
 <!--
   @component Sponsor logos grouped by level, using the shared 2027 sponsor list.
-  The compact version omits Gold descriptions for the home page.
+  The compact version shows Gold and Silver logos without descriptions on the
+  home page.
 -->
 
 <script lang="ts">
@@ -35,56 +36,54 @@
   }
 
   [data-tier="gold"] {
-    --tier-color: oklch(0.72 0.13 85);
-    --column-width: 20rem;
+    --tier-color: rgb(183 136 0);
     --logo-height: 12rem;
     --logo-width: 28rem;
   }
 
   [data-tier="silver"] {
-    --tier-color: oklch(0.62 0.02 245);
+    --tier-color: rgb(112 112 122);
   }
 
   [data-tier="bronze"] {
-    --tier-color: oklch(0.58 0.09 50);
-    --column-width: 12rem;
+    --tier-color: rgb(139 69 19);
     --logo-height: 4rem;
     --logo-width: 14rem;
   }
 
   .compact[data-tier="gold"] {
-    --logo-height: 8rem;
-    --logo-width: 22rem;
+    --column-width: 24rem;
+    --logo-height: 10rem;
+    --logo-width: 24rem;
   }
 
   .compact[data-tier="silver"] {
     --logo-height: 4rem;
-    --logo-width: 16rem;
-  }
-
-  .compact[data-tier="bronze"] {
-    --logo-height: 3rem;
     --logo-width: 12rem;
   }
 
   h3 {
-    font-size: var(--h4-size);
+    color: var(--tier-color);
   }
 
   ul {
     display: grid;
     gap: var(--gap);
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(min(100%, var(--column-width)), 1fr)
-    );
+    grid-template-columns: minmax(0, 1fr);
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
-  [data-tier="gold"]:not(.compact) ul {
-    grid-template-columns: 1fr;
+  [data-tier="bronze"] ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .compact ul {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(min(100%, var(--column-width)), 1fr)
+    );
   }
 
   li {
@@ -116,7 +115,7 @@
 </style>
 
 {#each levels as { key, name } (key)}
-  {#if sponsors[key].length > 0}
+  {#if sponsors[key].length > 0 && (!compact || key !== "bronze")}
     <section
       class="sponsor-tier"
       class:compact
