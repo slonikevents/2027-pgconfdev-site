@@ -18,6 +18,11 @@
 
 {#snippet list()}
   <li><Link href={resolve("/program")}>Call for Proposals</Link></li>
+  <li>
+    <Link href={resolve("/program/talk-solicitation")}>
+      Talk Solicitation Program
+    </Link>
+  </li>
 {/snippet}
 
 <SectionNav aria-labelledby="program-nav" {...rest}>

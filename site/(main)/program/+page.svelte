@@ -11,6 +11,7 @@
     Presentation,
     UsersRound,
   } from "@lucide/svelte";
+  import { resolve } from "$app/paths";
   import { getContext } from "$lib/layout";
   import Link from "$lib/Link";
 
@@ -575,11 +576,9 @@
   </p>
 
   <p>
-    Our new
-    <Link
-      href="https://github.com/slonikevents/pgconf-dev-audience-topics/discussions/categories/topic-requests"
-    >
-      topic request forum
+    Our
+    <Link href={resolve("/program/talk-solicitation")}>
+      Talk Solicitation Program
     </Link>
     lets you request a talk, support an idea, or gauge interest in one you might submit,
     so speakers and the program committee can see what people want.
