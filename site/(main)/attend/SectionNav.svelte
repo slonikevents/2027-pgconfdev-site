@@ -20,6 +20,9 @@
   <li><Link href={resolve("/attend/registration")}>Registration</Link></li>
   <li><Link href={resolve("/attend")}>Venue</Link></li>
   <li><Link href={resolve("/attend/travel")}>Travel &amp; Hotels</Link></li>
+  <li>
+    <Link href={resolve("/attend/travel-sponsorship")}>Travel Sponsorship</Link>
+  </li>
   <!-- Social Events hidden until we know what we're running — see hidden/social
   <li><Link href={resolve("/attend/social")}>Social Events</Link></li>
   -->
