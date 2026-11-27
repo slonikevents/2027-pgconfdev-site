@@ -188,6 +188,23 @@
   </dl>
 </section>
 
+<section id="volunteers" class="main)">
+  <hgroup>
+    <h1>Volunteers</h1>
+  </hgroup>
+
+  <p class="lede text">
+    The organizing committee couldn't run the conference without the help of our
+    dedicated volunteers. Every small task helps make the event possible.
+  </p>
+
+  <dl class="grid/2@30- grid/3@48- dedent" style:gap="var(--margin)">
+    <dt class="p">Cary Huang</dt>
+    <dt class="p">Shayon Sanyal</dt>
+    <dt class="p">Grant Zhou</dt>
+  </dl>
+</section>
+
 <section id="contact" class="main)">
   <h2>How to reach us.</h2>
 
